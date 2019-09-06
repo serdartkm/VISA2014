@@ -1,0 +1,865 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Node Id="@f73408c4-b4f3-4dfc-9be4-d6564a2ec5c1" UnusableNodeName="ModelEditorSettings" State="Maximized" X="150" Y="150" Width="838" Height="639" MaximizedOnScreen="\\.\DISPLAY1">
+    <Node Id="@9358a3c4-75db-44a3-8f15-254ab3a67ffe" UnusableNodeName="ModelEditorControl" CurrentAspect="tk-TM" SplitterPosition="0,5" SearchControllVisible="0" FocusedObject="Application" GroupSettings="BOModel=True;Controllers=True" />
+    <Node Id="@18fce36d-c2f2-4299-916a-3ce2401ea008" UnusableNodeName="SearchControl" SearchSplitterPosition="262" SchemaVisible="1" />
+  </Node>
+  <NavigationItems Id="NavigationItems" GenerateRelatedReportsGroup="True" GenerateRelatedViewVariantsGroup="True">
+    <Items Id="Items">
+      <Item Id="@d9cff83a-20a4-46bc-a508-67166357a1dd">
+        <Items Id="Items">
+          <Item Id="@168cd910-6d54-4d39-80c2-0183a03eb925" ViewId="IVisa_ListView_Import" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Options Id="Options" Skin="London Liquid Sky" FormStyle="Ribbon">
+    <Node Id="@00140f22-53d2-4541-9505-9a8df3281160" UnusableNodeName="PrintingSettings" Margins="100, 100, 100, 100" PageHeaderFooter="&lt;XtraSerializer version=&quot;1.0&quot; application=&quot;XtraPrintingPageHeaderFooter&quot;&gt;&#xD;&#xA;  &lt;property name=&quot;Header&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;    &lt;property name=&quot;Content&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;    &lt;property name=&quot;LineAlignment&quot;&gt;Near&lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Font&quot;&gt;Microsoft Sans Serif, 8.25pt&lt;/property&gt;&#xD;&#xA;  &lt;/property&gt;&#xD;&#xA;  &lt;property name=&quot;Footer&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;    &lt;property name=&quot;Content&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;    &lt;property name=&quot;LineAlignment&quot;&gt;Near&lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Font&quot;&gt;Microsoft Sans Serif, 8.25pt&lt;/property&gt;&#xD;&#xA;  &lt;/property&gt;&#xD;&#xA;&lt;/XtraSerializer&gt;" />
+    <Node Id="@d018714f-9fff-4e55-80ca-758282e09397" UnusableNodeName="RibbonOptions" MinimizeRibbon="False" />
+  </Options>
+  <Templates Id="Templates">
+    <Template Id="DevExpress.ExpressApp.Win.Templates.DetailViewForm">
+      <Node Id="@6dc2f69a-999a-4ea2-aef4-40a833fad954" UnusableNodeName="FormStates" IsNewNode="True">
+        <Node Id="AppConf_DetailView" UnusableNodeName="FormState" State="Normal" X="50" Y="50" Width="802" Height="598" IsNewNode="True" />
+        <Node Id="ApplicationTypeForEmployee_DetailView" UnusableNodeName="FormState" State="Normal" X="296" Y="30" Width="735" Height="658" IsNewNode="True" />
+        <Node Id="ApplicationTypeForFamilyMember_DetailView" UnusableNodeName="FormState" State="Maximized" X="264" Y="92" Width="802" Height="598" MaximizedOnScreen="\\.\DISPLAY1" IsNewNode="True" />
+        <Node Id="BaseApplicationType_DetailView" UnusableNodeName="FormState" State="Normal" X="75" Y="75" Width="802" Height="598" IsNewNode="True" />
+        <Node Id="CheckPoint_DetailView" UnusableNodeName="FormState" State="Normal" X="175" Y="175" Width="802" Height="567" IsNewNode="True" />
+        <Node Id="DepartmentForRegistration_DetailView" UnusableNodeName="FormState" State="Normal" X="25" Y="25" Width="800" Height="567" IsNewNode="True" />
+        <Node Id="IAddress_DetailView" UnusableNodeName="FormState" State="Maximized" MaximizedOnScreen="\\.\DISPLAY1" X="125" Y="125" Width="808" Height="604" IsNewNode="True" />
+        <Node Id="IAddresses_DetailView" UnusableNodeName="FormState" State="Normal" X="180" Y="125" Width="745" Height="380" IsNewNode="True" />
+        <Node Id="IAddressOfResidence_DetailView" UnusableNodeName="FormState" State="Normal" X="0" Y="0" Width="1024" Height="768" IsNewNode="True" />
+        <Node Id="IApplication_DetailView" UnusableNodeName="FormState" State="Maximized" X="206" Y="23" Width="984" Height="795" MaximizedOnScreen="\\.\DISPLAY1" IsNewNode="True" />
+        <Node Id="IApplicationForEmpInvitation_DetailView" UnusableNodeName="FormState" State="Normal" X="97" Y="33" Width="1084" Height="651" IsNewNode="True" />
+        <Node Id="IApplicationResult_DetailView" UnusableNodeName="FormState" State="Normal" X="216" Y="23" Width="850" Height="653" IsNewNode="True" />
+        <Node Id="IAppliedMinistery_DetailView" UnusableNodeName="FormState" State="Normal" X="25" Y="25" Width="802" Height="598" IsNewNode="True" />
+        <Node Id="IBorderZone_DetailView" UnusableNodeName="FormState" State="Normal" X="635" Y="80" Width="629" Height="518" IsNewNode="True" />
+        <Node Id="IBorderZoneForVisa_DetailView" UnusableNodeName="FormState" State="Normal" X="0" Y="0" Width="1024" Height="768" IsNewNode="True" />
+        <Node Id="ICity_DetailView" UnusableNodeName="FormState" State="Normal" X="100" Y="100" Width="802" Height="598" IsNewNode="True" />
+        <Node Id="ICompany_DetailView" UnusableNodeName="FormState" State="Normal" X="289" Y="50" Width="803" Height="500" IsNewNode="True" />
+        <Node Id="ICompanyRepresentative_DetailView" UnusableNodeName="FormState" State="Normal" X="316" Y="172" Width="800" Height="567" IsNewNode="True" />
+        <Node Id="IContract_DetailView" UnusableNodeName="FormState" State="Normal" X="75" Y="75" Width="800" Height="567" IsNewNode="True" />
+        <Node Id="ICopy_DetailView" UnusableNodeName="FormState" State="Normal" X="150" Y="150" Width="800" Height="567" IsNewNode="True" />
+        <Node Id="ICountry_DetailView" UnusableNodeName="FormState" State="Normal" X="214" Y="80" Width="802" Height="598" IsNewNode="True" />
+        <Node Id="IDocumentCopy_DetailView" UnusableNodeName="FormState" State="Normal" X="125" Y="125" Width="802" Height="567" IsNewNode="True" />
+        <Node Id="IDocumentOfAddress_DetailView" UnusableNodeName="FormState" State="Normal" X="25" Y="25" Width="800" Height="567" IsNewNode="True" />
+        <Node Id="IEducation_DetailView" UnusableNodeName="FormState" State="Normal" X="0" Y="0" Width="1024" Height="768" IsNewNode="True" />
+        <Node Id="IEducationInstitution_DetailView" UnusableNodeName="FormState" State="Normal" X="197" Y="117" Width="800" Height="567" IsNewNode="True" />
+        <Node Id="IEmployee_DetailView" UnusableNodeName="FormState" State="Maximized" MaximizedOnScreen="\\.\DISPLAY1" X="0" Y="0" Width="1128" Height="787" IsNewNode="True" />
+        <Node Id="IEmployeeInApplication_DetailView" UnusableNodeName="FormState" State="Normal" X="284" Y="213" Width="670" Height="309" IsNewNode="True" />
+        <Node Id="IEntryPoint_DetailView" UnusableNodeName="FormState" State="Normal" X="100" Y="100" Width="802" Height="598" IsNewNode="True" />
+        <Node Id="IFamilyMember_DetailView" UnusableNodeName="FormState" State="Maximized" MaximizedOnScreen="\\.\DISPLAY1" X="0" Y="0" Width="1032" Height="775" IsNewNode="True" />
+        <Node Id="IFamilyMemberInApplication_DetailView" UnusableNodeName="FormState" State="Normal" X="171" Y="68" Width="825" Height="477" IsNewNode="True" />
+        <Node Id="IGender_DetailView" UnusableNodeName="FormState" State="Normal" X="305" Y="52" Width="992" Height="598" IsNewNode="True" />
+        <Node Id="IInvitation_DetailView" UnusableNodeName="FormState" State="Normal" X="256" Y="57" Width="928" Height="629" IsNewNode="True" />
+        <Node Id="IInvitationRegection_DetailView" UnusableNodeName="FormState" State="Normal" X="190" Y="106" Width="1007" Height="577" IsNewNode="True" />
+        <Node Id="ILocationPermittedToWork_DetailView" UnusableNodeName="FormState" State="Normal" X="175" Y="175" Width="802" Height="567" IsNewNode="True" />
+        <Node Id="ILongProcessApplication_DetailView" UnusableNodeName="FormState" State="Maximized" MaximizedOnScreen="\\.\DISPLAY1" X="0" Y="0" Width="1088" Height="787" IsNewNode="True" />
+        <Node Id="IMaritalStatus_DetailView" UnusableNodeName="FormState" State="Normal" X="219" Y="95" Width="802" Height="598" IsNewNode="True" />
+        <Node Id="IPassport_DetailView" UnusableNodeName="FormState" State="Normal" X="0" Y="0" Width="1024" Height="768" MaximizedOnScreen="\\.\DISPLAY1" IsNewNode="True" />
+        <Node Id="IPerson_DetailView" UnusableNodeName="FormState" State="Maximized" MaximizedOnScreen="\\.\DISPLAY1" X="251" Y="0" Width="1388" Height="795" IsNewNode="True" />
+        <Node Id="IPersonInApplication_DetailView" UnusableNodeName="FormState" State="Normal" X="0" Y="0" Width="1024" Height="768" MaximizedOnScreen="\\.\DISPLAY1" IsNewNode="True" />
+        <Node Id="IPersonInInvitation_DetailView" UnusableNodeName="FormState" State="Normal" X="318" Y="140" Width="802" Height="567" IsNewNode="True" />
+        <Node Id="IPersonInResult_DetailView" UnusableNodeName="FormState" State="Normal" X="246" Y="125" Width="802" Height="567" IsNewNode="True" />
+        <Node Id="IPersonn_DetailView" UnusableNodeName="FormState" State="Maximized" MaximizedOnScreen="\\.\DISPLAY1" X="100" Y="100" Width="824" Height="588" IsNewNode="True" />
+        <Node Id="IPlural_DetailView" UnusableNodeName="FormState" State="Maximized" X="147" Y="0" Width="1058" Height="780" MaximizedOnScreen="\\.\DISPLAY1" IsNewNode="True" />
+        <Node Id="IPosition_DetailView" UnusableNodeName="FormState" State="Normal" X="242" Y="103" Width="802" Height="567" IsNewNode="True" />
+        <Node Id="IRegectionLetter_DetailView" UnusableNodeName="FormState" State="Normal" X="288" Y="89" Width="951" Height="567" IsNewNode="True" />
+        <Node Id="IRegion_DetailView" UnusableNodeName="FormState" State="Normal" X="100" Y="100" Width="802" Height="598" IsNewNode="True" />
+        <Node Id="IRelation_DetailView" UnusableNodeName="FormState" State="Normal" X="193" Y="76" Width="802" Height="598" IsNewNode="True" />
+        <Node Id="ISimpleProcessApplication_DetailView" UnusableNodeName="FormState" State="Maximized" MaximizedOnScreen="\\.\DISPLAY1" X="0" Y="0" Width="1032" Height="775" IsNewNode="True" />
+        <Node Id="IsInvitationWithWorkPermit_DetailView" UnusableNodeName="FormState" State="Normal" X="226" Y="82" Width="802" Height="598" IsNewNode="True" />
+        <Node Id="ISpeciality_DetailView" UnusableNodeName="FormState" State="Normal" X="125" Y="125" Width="800" Height="567" IsNewNode="True" />
+        <Node Id="IsWizaWithWorkPermit_DetailView" UnusableNodeName="FormState" State="Normal" X="199" Y="100" Width="800" Height="567" IsNewNode="True" />
+        <Node Id="ITravelInformation_DetailView" UnusableNodeName="FormState" State="Normal" X="0" Y="0" Width="1024" Height="768" IsNewNode="True" />
+        <Node Id="IUrgency_DetailView" UnusableNodeName="FormState" State="Normal" X="125" Y="125" Width="801" Height="598" IsNewNode="True" />
+        <Node Id="IVisa_DetailView" UnusableNodeName="FormState" State="Normal" X="0" Y="0" Width="1024" Height="768" MaximizedOnScreen="\\.\DISPLAY1" IsNewNode="True" />
+        <Node Id="IVisaCategory_DetailView" UnusableNodeName="FormState" State="Normal" X="75" Y="75" Width="802" Height="598" IsNewNode="True" />
+        <Node Id="IVisaIssuedPlace_DetailView" UnusableNodeName="FormState" State="Normal" X="291" Y="92" Width="802" Height="598" IsNewNode="True" />
+        <Node Id="IVisaType_DetailView" UnusableNodeName="FormState" State="Normal" X="150" Y="150" Width="802" Height="598" IsNewNode="True" />
+        <Node Id="IWorkHistory_DetailView" UnusableNodeName="FormState" State="Normal" X="0" Y="0" Width="1024" Height="768" IsNewNode="True" />
+        <Node Id="IWorkPermit_DetailView" UnusableNodeName="FormState" State="Normal" X="0" Y="0" Width="1024" Height="768" IsNewNode="True" />
+        <Node Id="IWorkPermitLetter_DetailView" UnusableNodeName="FormState" State="Maximized" X="0" Y="0" Width="1024" Height="768" MaximizedOnScreen="\\.\DISPLAY1" IsNewNode="True" />
+        <Node Id="IWorkPermitLocation_DetailView" UnusableNodeName="FormState" State="Normal" X="0" Y="0" Width="1024" Height="768" IsNewNode="True" />
+        <Node Id="ReportData_DetailView" UnusableNodeName="FormState" State="Normal" X="25" Y="25" Width="802" Height="598" IsNewNode="True" />
+        <Node Id="SecuritySystemMemberPermissionsObject_DetailView" UnusableNodeName="FormState" State="Normal" X="50" Y="50" Width="802" Height="567" IsNewNode="True" />
+        <Node Id="SecuritySystemObjectPermissionsObject_DetailView" UnusableNodeName="FormState" State="Normal" X="125" Y="125" Width="802" Height="567" IsNewNode="True" />
+        <Node Id="SecuritySystemRole_DetailView" UnusableNodeName="FormState" State="Normal" X="75" Y="75" Width="992" Height="567" IsNewNode="True" />
+        <Node Id="SecuritySystemTypePermissionObject_DetailView" UnusableNodeName="FormState" State="Normal" X="230" Y="99" Width="915" Height="567" IsNewNode="True" />
+        <Node Id="SecuritySystemUser_DetailView" UnusableNodeName="FormState" State="Normal" X="175" Y="175" Width="802" Height="567" IsNewNode="True" />
+      </Node>
+    </Template>
+    <Template Id="DevExpress.ExpressApp.Win.Templates.LookupControlTemplate">
+      <Node Id="@219c2ef0-cf95-4ed5-ab4d-e95b350a3aad" UnusableNodeName="FormStates" IsNewNode="True">
+        <Node Id="ApplicationTypeForEmployee_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="ApplicationTypeForFamilyMember_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="AuditTrail_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="BaseApplicationType_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="CheckPoint_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="DepartmentForRegistration_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IAddress_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IAddresses_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IAddressOfResidence_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IApplication_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IApplicationResult_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IAppliedMinistery_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IBorderZone_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IBorderZoneForVisa_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="ICity_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="ICompany_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="ICompanyRepresentative_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IContract_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="ICountries_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="ICountry_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IDepartment_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IDocumentOfAddress_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IEducationInstitution_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IEducationLevel_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IEmployee_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IEntryPoint_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IGender_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IInvitation_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="ILocationPermittedToWork_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IMaritalStatus_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IPassport_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IPassportType_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IPerson_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IPersonInApplication_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IPersonn_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IPlural_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IPosition_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IPurposeOfTrave_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IRegion_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IRelation_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IŞäherEtrap_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IsInvitationWithWorkPermit_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="ISpeciality_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IsWizaWithWorkPermit_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="ITravelInformation_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IUrgency_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IVisa_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IVisaCategory_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IVisaIssuedPlace_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IVisaPeriod_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IVisaType_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IWorkHistory_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IWorkPermit_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="IWorkPermitLocation_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="PrefferedVisaCategory_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+        <Node Id="PurposeOfTravel_LookupListView" UnusableNodeName="FormState" IsNewNode="True" />
+      </Node>
+    </Template>
+    <Template Id="DevExpress.ExpressApp.Win.Templates.LookupForm">
+      <Node Id="@6f4fee44-84a3-4559-a4de-4375f17dc28d" UnusableNodeName="FormStates" IsNewNode="True">
+        <Node Id="Default" UnusableNodeName="FormState" State="Normal" X="392" Y="186" Width="628" Height="398" IsNewNode="True" />
+      </Node>
+    </Template>
+    <Template Id="DevExpress.ExpressApp.Win.Templates.MainForm" DockManagerSettings="﻿&lt;XtraSerializer version=&quot;1.0&quot; application=&quot;DockManager&quot;&gt;&#xD;&#xA;  &lt;property name=&quot;#LayoutVersion&quot; /&gt;&#xD;&#xA;  &lt;property name=&quot;AutoHiddenPanelCaptionShowMode&quot;&gt;ShowForAllPanels&lt;/property&gt;&#xD;&#xA;  &lt;property name=&quot;Panels&quot; iskey=&quot;true&quot; value=&quot;1&quot;&gt;&#xD;&#xA;    &lt;property name=&quot;Item1&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;Visibility&quot;&gt;Visible&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FloatLocation&quot;&gt;@1,X=0@1,Y=0&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Dock&quot;&gt;Left&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;XtraID&quot;&gt;0&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Footer&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Tabbed&quot;&gt;false&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;TabsPosition&quot;&gt;Bottom&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;TabsScroll&quot;&gt;false&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ImageIndex&quot;&gt;-1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;XtraZIndex&quot;&gt;1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;TabText&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Hint&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Text&quot;&gt;Navigation&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;OriginalSize&quot;&gt;@3,Width=205@3,Height=200&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;XtraBounds&quot;&gt;@1,X=0@3,Y=153@3,Width=205@3,Height=569&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;AllowFloating&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;AllowDockLeft&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;AllowDockRight&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;AllowDockTop&quot;&gt;false&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;AllowDockBottom&quot;&gt;false&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;AllowDockFill&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;AllowDockAsTabbedDocument&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;ShowMaximizeButton&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;ShowAutoHideButton&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;ShowCloseButton&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FloatOnDblClick&quot;&gt;true&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;XtraParentID&quot;&gt;-1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;XtraSavedParentID&quot;&gt;-1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;XtraAutoHideContainerDock&quot;&gt;Float&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ID&quot;&gt;24977e30-0ea6-44aa-8fa4-9abaeb178b5e&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;DockVertical&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FloatVertical&quot;&gt;false&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Header&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;XtraActiveChildID&quot;&gt;-1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Count&quot;&gt;0&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SavedDock&quot;&gt;Left&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SavedMdiDocument&quot;&gt;false&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SavedTabbed&quot;&gt;false&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FloatSize&quot;&gt;@3,Width=146@3,Height=428&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SavedIndex&quot;&gt;2&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;  &lt;/property&gt;&#xD;&#xA;  &lt;property name=&quot;TopZIndexControls&quot; iskey=&quot;true&quot; value=&quot;4&quot;&gt;&#xD;&#xA;    &lt;property name=&quot;Item1&quot;&gt;DevExpress.XtraBars.BarDockControl&lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item2&quot;&gt;System.Windows.Forms.StatusBar&lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item3&quot;&gt;DevExpress.ExpressApp.Win.Templates.Controls.XafRibbonControl&lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item4&quot;&gt;DevExpress.XtraBars.Ribbon.RibbonStatusBar&lt;/property&gt;&#xD;&#xA;  &lt;/property&gt;&#xD;&#xA;  &lt;property name=&quot;ActivePanelID&quot;&gt;-1&lt;/property&gt;&#xD;&#xA;  &lt;property name=&quot;DockingOptions&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;    &lt;property name=&quot;CursorFloatCanceled&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;    &lt;property name=&quot;HideImmediatelyOnAutoHide&quot;&gt;false&lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;CloseActiveTabOnly&quot;&gt;true&lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;CloseActiveFloatTabOnly&quot;&gt;false&lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;ShowCaptionOnMouseHover&quot;&gt;false&lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;ShowCaptionImage&quot;&gt;false&lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;ShowMaximizeButton&quot;&gt;true&lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;ShowAutoHideButton&quot;&gt;true&lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;ShowCloseButton&quot;&gt;true&lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;FloatOnDblClick&quot;&gt;true&lt;/property&gt;&#xD;&#xA;  &lt;/property&gt;&#xD;&#xA;  &lt;property name=&quot;AutoHideContainers&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;&lt;/XtraSerializer&gt;">
+      <Node Id="@44104a10-ca6a-4e10-83e4-31e6224198ad" UnusableNodeName="FormStates" IsNewNode="True">
+        <Node Id="Default" UnusableNodeName="FormState" State="Maximized" MaximizedOnScreen="\\.\DISPLAY1" X="0" Y="0" Width="1112" Height="787" IsNewNode="True" />
+      </Node>
+      <Node Id="@a7d0d59f-c3ea-4e6c-9a1f-b8a55dfb1d97" UnusableNodeName="NavBarCustomization" Width="199" NavigationPaneMaxVisibleGroups="8" IsNewNode="True" />
+    </Template>
+    <Template Id="DevExpress.ExpressApp.Win.Templates.PopupForm">
+      <Node Id="@8b73ee23-d789-42f5-a3c5-069b3f9da1e9" UnusableNodeName="FormStates" IsNewNode="True">
+        <Node Id="ChangePasswordOnLogonParameters_DetailView" UnusableNodeName="FormState" State="Normal" X="399" Y="162" Width="562" Height="413" IsNewNode="True" />
+        <Node Id="CriteriaProvider_DetailView" UnusableNodeName="FormState" State="Normal" X="399" Y="162" Width="562" Height="414" IsNewNode="True" />
+        <Node Id="IAudit_DetailView" UnusableNodeName="FormState" State="Normal" X="399" Y="162" Width="562" Height="413" IsNewNode="True" />
+        <Node Id="IDocumentCopy_DetailView" UnusableNodeName="FormState" State="Normal" X="399" Y="162" Width="562" Height="414" IsNewNode="True" />
+        <Node Id="IPersonInApplication_DetailView" UnusableNodeName="FormState" State="Normal" X="399" Y="162" Width="562" Height="417" IsNewNode="True" />
+        <Node Id="Script_DetailView" UnusableNodeName="FormState" State="Normal" X="284" Y="170" Width="650" Height="546" IsNewNode="True" />
+        <Node Id="ValidationResults_Error_DetailView" UnusableNodeName="FormState" State="Normal" X="399" Y="162" Width="677" Height="413" IsNewNode="True" />
+        <Node Id="ValidationResults_Passed_DetailView" UnusableNodeName="FormState" State="Normal" X="399" Y="162" Width="562" Height="413" IsNewNode="True" />
+      </Node>
+    </Template>
+  </Templates>
+  <Views Id="Views">
+    <ListView Id="AppForEmp">
+      <Node Id="@dbf03c85-7c43-4f77-867c-4bd6ec05160c" UnusableNodeName="Variants" Current="@c9072db8-fe5d-4d52-ad58-817fadbded36" IsNewNode="True">
+        <Node Id="@c9072db8-fe5d-4d52-ad58-817fadbded36" UnusableNodeName="Variant" ViewID="ApplicationForEmployeesInvitation" Caption="1_Invitation" Index="1" IsNewNode="True" />
+        <Node Id="@dfa474ae-0301-4e24-b4db-f339bd64406a" UnusableNodeName="Variant" ViewID="ApplicationForChangingEmployeesInvitation" Caption="2_Changing Invitation" Index="2" IsNewNode="True" />
+      </Node>
+    </ListView>
+    <ListView Id="Employee_Invitation_Variable" IsActiveFilterEnabled="True" ActiveFilterString="" />
+    <ListView Id="EmpPersonal_Variable_PersonalData" IsActiveFilterEnabled="True" ActiveFilterString="" />
+    <ListView Id="Familymember_Invitation_Variable" IsActiveFilterEnabled="True" ActiveFilterString="" />
+    <DetailView Id="IAddressOfResidence_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="UseParentOptions">
+            <LayoutGroup Id="IAddressOfResidence" TextAlignMode="UseParentOptions">
+              <LayoutGroup Id="Item1">
+                <TabbedGroup Id="Item4">
+                  <LayoutGroup Id="Item3">
+                    <LayoutGroup Id="Item2" TextAlignMode="AlignLocal" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="ChangeHistory_Group">
+                    <LayoutItem Id="ChangeHistory" TextAlignMode="AutoSize" />
+                  </LayoutGroup>
+                </TabbedGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IApplication_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="UseParentOptions">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="IApplication">
+                <LayoutGroup Id="IApplication_col1">
+                  <LayoutGroup Id="Item3">
+                    <LayoutGroup Id="Autof6a688cd-06d7-42d1-a5d0-1023ffc8940e">
+                      <LayoutGroup Id="Auto58fc8379-3bc8-4e44-ac79-b2fd2f938f28">
+                        <LayoutGroup Id="Auto4df90b3c-58e8-41ed-a5ab-a846e5fa12fa">
+                          <LayoutGroup Id="Autoa48ac16b-59c9-44ee-9655-eb25e9a6943f">
+                            <LayoutGroup Id="Autof5ae22e5-09a3-4186-bdb4-15f2ea5252c6" TextAlignMode="AlignLocal">
+                              <LayoutItem Id="Tagtabazar" ViewItem="Tagtabazar" />
+                              <LayoutItem Id="Daşoguz" ViewItem="Daşoguz" />
+                              <LayoutItem Id="Serhetabat" ViewItem="Serhetabat" />
+                            </LayoutGroup>
+                          </LayoutGroup>
+                        </LayoutGroup>
+                      </LayoutGroup>
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <TabbedGroup Id="Item9">
+                    <LayoutGroup Id="PersonInApplication" TextAlignMode="AlignLocal">
+                      <LayoutItem Id="PersonInApplication" TextAlignMode="AutoSize" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Invitations" TextAlignMode="AlignLocal">
+                      <LayoutItem Id="Invitations" TextAlignMode="AutoSize" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Item8" TextAlignMode="AlignLocal">
+                      <LayoutItem Id="WorkPermit" ViewItem="WorkPermit" />
+                    </LayoutGroup>
+                  </TabbedGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Item5">
+                <LayoutItem Id="AutoApplicationDate" ViewItem="AutoApplicationDate" />
+                <LayoutItem Id="AutoApplicationNumber" ViewItem="AutoApplicationNumber" />
+              </LayoutGroup>
+            </TabbedGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="Invitations" TextAlignMode="AlignLocal">
+              <LayoutItem Id="Invitations" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="PersonInApplication" TextAlignMode="AlignLocal">
+              <LayoutItem Id="PersonInApplication" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="IApplication_ListView">
+      <Node Id="@cc423453-f47a-4d4f-ae19-d28344804714" UnusableNodeName="Variants" Current="">
+        <Node Id="AllApplication" UnusableNodeName="Variant" ViewID="All" Caption="1_All" Index="1" IsNewNode="True" />
+        <Node Id="@3d8ace8a-8777-4770-b824-3d319241e644" UnusableNodeName="Variant" ViewID="ApplicationForEmployee" Caption="2_Employee" Index="2" IsNewNode="True" />
+        <Node Id="@235dffc2-8550-4fdc-aa02-b703ba5d6e37" UnusableNodeName="Variant" ViewID="ApplicationForFamilymember" Caption="3_FamilyMember" Index="3" IsNewNode="True" />
+      </Node>
+    </ListView>
+    <ListView Id="IApplication_PersonInApplication_ListView" IsActiveFilterEnabled="True" ActiveFilterString="" />
+    <DetailView Id="IApplicationResult_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="UseParentOptions">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="Item2">
+                <LayoutGroup Id="CopyOfResult" TextAlignMode="AlignLocal">
+                  <LayoutItem Id="CopyOfResult" TextAlignMode="AutoSize" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </TabbedGroup>
+            <LayoutGroup Id="IApplicationResult" TextAlignMode="UseParentOptions" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="PersonInResultLetter" TextAlignMode="AlignLocal">
+              <LayoutItem Id="PersonInResultLetter" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="CopyOfResult" TextAlignMode="AlignLocal">
+              <LayoutItem Id="CopyOfResult" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ICompany_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="UseParentOptions">
+            <LayoutGroup Id="ICompany_col1" TextAlignMode="UseParentOptions">
+              <LayoutGroup Id="Item3" TextAlignMode="UseParentOptions" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IEducation_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="UseParentOptions">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="ChangeHistory" TextAlignMode="AlignLocal">
+                <LayoutItem Id="ChangeHistory" TextAlignMode="AutoSize" />
+              </LayoutGroup>
+              <LayoutGroup Id="Item2">
+                <LayoutGroup Id="DiplomaCopy_Group">
+                  <LayoutItem Id="DiplomaCopy" ViewItem="DiplomaCopy" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </TabbedGroup>
+            <LayoutGroup Id="IEducation" TextAlignMode="UseParentOptions" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="DiplomaCopy" TextAlignMode="AlignLocal">
+              <LayoutItem Id="DiplomaCopy" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IEmployee_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="UseParentOptions">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="ChangeHistory" TextAlignMode="AlignLocal">
+                <LayoutItem Id="ChangeHistory" TextAlignMode="AutoSize" />
+              </LayoutGroup>
+            </TabbedGroup>
+            <LayoutGroup Id="IMessage" TextAlignMode="UseParentOptions" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="WorkHistories" TextAlignMode="AlignLocal">
+              <LayoutItem Id="WorkHistories" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="Educations" TextAlignMode="AlignLocal">
+              <LayoutItem Id="Educations" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="WorkPermits" TextAlignMode="AlignLocal">
+              <LayoutItem Id="WorkPermits" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="FamilyMembers" TextAlignMode="AlignLocal">
+              <LayoutItem Id="FamilyMembers" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="EmployeeInApplications" TextAlignMode="AlignLocal">
+              <LayoutItem Id="EmployeeInApplications" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="AddressOfResidences" TextAlignMode="AlignLocal">
+              <LayoutItem Id="AddressOfResidences" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="TravelInformations" TextAlignMode="AlignLocal">
+              <LayoutItem Id="TravelInformations" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="Passports" TextAlignMode="AlignLocal">
+              <LayoutItem Id="Passports" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="FamilyMemberInApplications" TextAlignMode="AlignLocal">
+              <LayoutItem Id="FamilyMemberInApplications" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="IEmployee_ListView">
+      <Node Id="@bb2d7962-9b34-41fa-b31d-1d8faaeb858e" UnusableNodeName="Variants" Current="@90fd7c01-1577-4341-a15f-762ed02acf77">
+        <Node Id="@90fd7c01-1577-4341-a15f-762ed02acf77" UnusableNodeName="Variant" ViewID="EmpPersonal_Variable_PersonalData" Caption="Personal Info" Index="0" IsNewNode="True" />
+        <Node Id="@83c57f46-1bcc-4e15-894f-93fa799174e9" UnusableNodeName="Variant" ViewID="IEmployee_ListView_Visa" Caption="Visa" Index="1" IsNewNode="True" />
+        <Node Id="@40764308-4e1f-4be1-8db0-98a44fe2c635" UnusableNodeName="Variant" ViewID="EmpPassport_Variable" Caption="Passport" Index="2" IsNewNode="True" />
+        <Node Id="@25afcc07-d93b-43fc-b654-a962b22ddcbf" UnusableNodeName="Variant" ViewID="Employee_Registration_Variable" Index="3" IsNewNode="True" />
+        <Node Id="@ad271ed8-909e-4ebe-958d-47996546a82d" UnusableNodeName="Variant" ViewID="Employee_Invitation_Variable" Index="4" Caption="Invitation" IsNewNode="True" />
+        <Node Id="@c024308f-4d5f-437e-9718-d2a223e40533" UnusableNodeName="Variant" ViewID="Employee_WorkPermit_Variable" Caption="WorkPermit" Index="5" IsNewNode="True" />
+        <Node Id="@91b29874-8284-4116-a37d-a57c147c5fbf" UnusableNodeName="Variant" Index="6" Caption="Address" ViewID="Emp_Adress_Variable" IsNewNode="True" />
+      </Node>
+    </ListView>
+    <ListView Id="IEmployee_ListView_Import">
+      <Node Id="@5e61b279-7448-46a5-a8b1-b4773592a0cb" UnusableNodeName="Variants" Current="@90fd7c01-1577-4341-a15f-762ed02acf77" IsNewNode="True">
+        <Node Id="@90fd7c01-1577-4341-a15f-762ed02acf77" UnusableNodeName="Variant" ViewID="EmpPersonal_Variable_PersonalData" Caption="Personal Info" Index="0" IsNewNode="True" />
+        <Node Id="@83c57f46-1bcc-4e15-894f-93fa799174e9" UnusableNodeName="Variant" ViewID="IEmployee_ListView_Visa" Caption="Visa" Index="1" IsNewNode="True" />
+        <Node Id="@40764308-4e1f-4be1-8db0-98a44fe2c635" UnusableNodeName="Variant" ViewID="EmpPassport_Variable" Caption="Passport" Index="2" IsNewNode="True" />
+        <Node Id="@25afcc07-d93b-43fc-b654-a962b22ddcbf" UnusableNodeName="Variant" ViewID="Employee_Registration_Variable" Index="3" IsNewNode="True" />
+        <Node Id="@ad271ed8-909e-4ebe-958d-47996546a82d" UnusableNodeName="Variant" ViewID="Employee_Invitation_Variable" Index="4" Caption="Invitation" IsNewNode="True" />
+        <Node Id="@c024308f-4d5f-437e-9718-d2a223e40533" UnusableNodeName="Variant" ViewID="Employee_WorkPermit_Variable" Caption="WorkPermit" Index="5" IsNewNode="True" />
+        <Node Id="@91b29874-8284-4116-a37d-a57c147c5fbf" UnusableNodeName="Variant" Index="6" Caption="Address" ViewID="Emp_Adress_Variable" IsNewNode="True" />
+      </Node>
+    </ListView>
+    <DetailView Id="IFamilyMember_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="UseParentOptions">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="ChangeHistory" TextAlignMode="AlignLocal">
+                <LayoutItem Id="ChangeHistory" TextAlignMode="AutoSize" />
+              </LayoutGroup>
+            </TabbedGroup>
+            <LayoutGroup Id="IMessage" TextAlignMode="UseParentOptions" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="WorkHistories" TextAlignMode="AlignLocal">
+              <LayoutItem Id="WorkHistories" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="Educations" TextAlignMode="AlignLocal">
+              <LayoutItem Id="Educations" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="WorkPermits" TextAlignMode="AlignLocal">
+              <LayoutItem Id="WorkPermits" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="FamilyMembers" TextAlignMode="AlignLocal">
+              <LayoutItem Id="FamilyMembers" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="FamilyMemberInApplications" TextAlignMode="AlignLocal">
+              <LayoutItem Id="FamilyMemberInApplications" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="EmployeeInApplications" TextAlignMode="AlignLocal">
+              <LayoutItem Id="EmployeeInApplications" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="TravelInformations" TextAlignMode="AlignLocal">
+              <LayoutItem Id="TravelInformations" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="AddressOfResidences" TextAlignMode="AlignLocal">
+              <LayoutItem Id="AddressOfResidences" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="Passports" TextAlignMode="AlignLocal">
+              <LayoutItem Id="Passports" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="IFamilyMember_ListView">
+      <Node Id="@185f3c61-d934-4f08-83a6-71666c0ffd45" UnusableNodeName="Variants" Current="@2d5ea8b0-01f0-4a3f-a863-bc67f04cd81a">
+        <Node Id="@2d5ea8b0-01f0-4a3f-a863-bc67f04cd81a" UnusableNodeName="Variant" Index="0" Caption="Personal Info" ViewID="FamilyMember_Variable_PersonalData_" IsNewNode="True" />
+        <Node Id="@2a572b59-dee8-470a-b9ad-efe0cbe3abac" UnusableNodeName="Variant" Index="1" ViewID="IFamilyMember_ListView_Visa_" IsNewNode="True" />
+        <Node Id="@8e264e18-0ebf-4677-afaf-75377a571fa7" UnusableNodeName="Variant" Index="2" ViewID="FamilyMemberPassport_Variable_" IsNewNode="True" />
+        <Node Id="@63dc653d-b480-47b6-9312-078af8dbdb3c" UnusableNodeName="Variant" Index="3" ViewID="FamilyMember_Registration_Variable_" IsNewNode="True" />
+        <Node Id="@8adb4312-de00-406e-bb06-c8309e6eb6c2" UnusableNodeName="Variant" Index="4" ViewID="FamilyMember_Invitation_Variable_" Caption="Invitation" IsNewNode="True" />
+        <Node Id="@b21cc406-068e-4e3b-b34a-98b4dccea53f" UnusableNodeName="Variant" Index="4" Caption="Address" ViewID="FamilyMember_Adress_Variable_" IsNewNode="True" />
+      </Node>
+    </ListView>
+    <ListView Id="IFamilyMember_ListView_Import">
+      <Node Id="@27fd35e2-1084-4508-b5d2-0ac24bb22051" UnusableNodeName="Variants" Current="@2d5ea8b0-01f0-4a3f-a863-bc67f04cd81a" IsNewNode="True">
+        <Node Id="@2d5ea8b0-01f0-4a3f-a863-bc67f04cd81a" UnusableNodeName="Variant" Index="0" Caption="Personal Info" ViewID="FamilyMember_Variable_PersonalData_" IsNewNode="True" />
+        <Node Id="@2a572b59-dee8-470a-b9ad-efe0cbe3abac" UnusableNodeName="Variant" Index="1" ViewID="IFamilyMember_ListView_Visa_" IsNewNode="True" />
+        <Node Id="@8e264e18-0ebf-4677-afaf-75377a571fa7" UnusableNodeName="Variant" Index="2" ViewID="FamilyMemberPassport_Variable_" IsNewNode="True" />
+        <Node Id="@63dc653d-b480-47b6-9312-078af8dbdb3c" UnusableNodeName="Variant" Index="3" ViewID="FamilyMember_Registration_Variable_" IsNewNode="True" />
+        <Node Id="@8adb4312-de00-406e-bb06-c8309e6eb6c2" UnusableNodeName="Variant" Index="4" ViewID="FamilyMember_Invitation_Variable_" Caption="Invitation" IsNewNode="True" />
+        <Node Id="@b21cc406-068e-4e3b-b34a-98b4dccea53f" UnusableNodeName="Variant" Index="4" Caption="Address" ViewID="FamilyMember_Adress_Variable_" IsNewNode="True" />
+      </Node>
+    </ListView>
+    <DetailView Id="ILocalEmployee_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <TabbedGroup Id="Tabs" Index="1" RelativeSize="52">
+            <LayoutGroup Id="WorkHistories" TextAlignMode="AlignLocal" RelativeSize="100" ImageName="BO_Position">
+              <LayoutItem Id="WorkHistories" TextAlignMode="AutoSize" SizeConstraintsType="Default" RelativeSize="100" ViewItem="WorkHistories" />
+            </LayoutGroup>
+            <LayoutGroup Id="Educations" TextAlignMode="AlignLocal" RelativeSize="100" ImageName="BO_Unknown">
+              <LayoutItem Id="Educations" TextAlignMode="AutoSize" SizeConstraintsType="Default" RelativeSize="100" ViewItem="Educations" />
+            </LayoutGroup>
+            <LayoutGroup Id="WorkPermits" TextAlignMode="AlignLocal" RelativeSize="100" ImageName="BO_UnKnown">
+              <LayoutItem Id="WorkPermits" TextAlignMode="AutoSize" SizeConstraintsType="Default" RelativeSize="100" ViewItem="WorkPermits" />
+            </LayoutGroup>
+            <LayoutGroup Id="FamilyMembers" TextAlignMode="AlignLocal" RelativeSize="100" ImageName="BO_Person">
+              <LayoutItem Id="FamilyMembers" TextAlignMode="AutoSize" SizeConstraintsType="Default" RelativeSize="100" ViewItem="FamilyMembers" />
+            </LayoutGroup>
+            <LayoutGroup Id="FamilyMemberInApplications" TextAlignMode="AlignLocal" RelativeSize="100" ImageName="BO_UnKnown">
+              <LayoutItem Id="FamilyMemberInApplications" TextAlignMode="AutoSize" SizeConstraintsType="Default" RelativeSize="100" ViewItem="FamilyMemberInApplications" />
+            </LayoutGroup>
+            <LayoutGroup Id="EmployeeInApplications" TextAlignMode="AlignLocal" RelativeSize="100" ImageName="BO_UnKnown">
+              <LayoutItem Id="EmployeeInApplications" TextAlignMode="AutoSize" SizeConstraintsType="Default" RelativeSize="100" ViewItem="EmployeeInApplications" />
+            </LayoutGroup>
+            <LayoutGroup Id="TravelInformations" TextAlignMode="AlignLocal" RelativeSize="100" ImageName="">
+              <LayoutItem Id="TravelInformations" TextAlignMode="AutoSize" SizeConstraintsType="Default" RelativeSize="100" ViewItem="TravelInformations" />
+            </LayoutGroup>
+            <LayoutGroup Id="AddressOfResidences" TextAlignMode="AlignLocal" RelativeSize="100" ImageName="BO_Address">
+              <LayoutItem Id="AddressOfResidences" TextAlignMode="AutoSize" SizeConstraintsType="Default" RelativeSize="100" ViewItem="AddressOfResidences" />
+            </LayoutGroup>
+            <LayoutGroup Id="Passports" TextAlignMode="AlignLocal" RelativeSize="100" ImageName="BO_UnKnown">
+              <LayoutItem Id="Passports" TextAlignMode="AutoSize" SizeConstraintsType="Default" RelativeSize="100" ViewItem="Passports" />
+            </LayoutGroup>
+          </TabbedGroup>
+          <LayoutGroup Id="SimpleEditors" RelativeSize="47" ImageName="">
+            <LayoutGroup Id="IPersonn" RelativeSize="84" ImageName="" Caption="LocalEmployee">
+              <LayoutGroup Id="IPersonn_col1" RelativeSize="36" ImageName="">
+                <LayoutItem Id="FirstName" SizeConstraintsType="Default" RelativeSize="20" ViewItem="FirstName" />
+                <LayoutItem Id="LastName" SizeConstraintsType="Default" RelativeSize="15" ViewItem="LastName" />
+                <LayoutItem Id="MiddleName" SizeConstraintsType="Default" RelativeSize="15" ViewItem="MiddleName" />
+                <LayoutItem Id="Gender" SizeConstraintsType="Default" RelativeSize="15" Index="3" ViewItem="Gender" />
+                <LayoutItem Id="BirthDate" SizeConstraintsType="Default" RelativeSize="15" Index="4" ViewItem="BirthDate" />
+                <LayoutItem Id="MaritalStatus" SizeConstraintsType="Default" RelativeSize="20" Index="5" ViewItem="MaritalStatus" />
+                <LayoutItem Id="BirthCountry" SizeConstraintsType="Default" RelativeSize="9" Index="6" ViewItem="BirthCountry" />
+                <LayoutItem Id="BirthPlace" SizeConstraintsType="Default" RelativeSize="8" Index="6" ViewItem="BirthPlace" />
+                <LayoutItem Id="ContractNumber" SizeConstraintsType="Default" RelativeSize="11" Index="6" ViewItem="ContractNumber" />
+                <LayoutItem Id="Wage" SizeConstraintsType="Default" RelativeSize="10" Index="6" ViewItem="Wage" />
+                <LayoutItem Id="Photo" SizeConstraintsType="Default" RelativeSize="7" Index="8" ViewItem="Photo" />
+                <LayoutItem Id="Contract" SizeConstraintsType="Default" RelativeSize="6" ViewItem="Contract" />
+                <LayoutItem Id="ForeignAddress" SizeConstraintsType="Default" RelativeSize="6" ViewItem="ForeignAddress" />
+                <LayoutItem Id="ForeignAddressCountry" SizeConstraintsType="Default" RelativeSize="7" ViewItem="ForeignAddressCountry" />
+                <LayoutItem Id="FullName" SizeConstraintsType="Default" RelativeSize="7" ViewItem="FullName" />
+              </LayoutGroup>
+              <LayoutGroup Id="IPersonn_col2" RelativeSize="60" ImageName="" Direction="Horizontal" Caption="IPersonn_col2">
+                <LayoutGroup Id="Auto072e5c75-2a04-41d3-99c6-e9c4b2820822" ShowCaption="False" Caption="" Index="0" RelativeSize="60">
+                  <LayoutItem Id="BirthPlace" ViewItem="BirthPlace" SizeConstraintsType="Default" Index="0" RelativeSize="20" />
+                  <LayoutItem Id="BirthCountry" ViewItem="BirthCountry" SizeConstraintsType="Default" Index="1" RelativeSize="15" />
+                  <LayoutItem Id="Wage" ViewItem="Wage" SizeConstraintsType="Default" Index="2" RelativeSize="15" />
+                  <LayoutItem Id="ContractNumber" ViewItem="ContractNumber" SizeConstraintsType="Default" Index="3" RelativeSize="15" />
+                  <LayoutItem Id="IDNumber" ViewItem="IDNumber" SizeConstraintsType="Default" Index="4" RelativeSize="35" />
+                </LayoutGroup>
+                <LayoutItem Id="Photo" ViewItem="Photo" SizeConstraintsType="Default" Index="1" RelativeSize="40" />
+                <LayoutItem Id="LastPosition" SizeConstraintsType="Default" Index="3" RelativeSize="73" ViewItem="LastPosition" />
+                <LayoutItem Id="LastRegistration" SizeConstraintsType="Default" Index="5" RelativeSize="6" ViewItem="LastRegistration" />
+                <LayoutItem Id="LastStrikeOff" SizeConstraintsType="Default" Index="5" RelativeSize="6" ViewItem="LastStrikeOff" />
+                <LayoutItem Id="LastWorkPermit" SizeConstraintsType="Default" Index="5" RelativeSize="6" ViewItem="LastWorkPermit" />
+                <LayoutItem Id="InvitationState" SizeConstraintsType="Default" Index="6" RelativeSize="59" ViewItem="InvitationState" />
+                <LayoutItem Id="LastInvitation" SizeConstraintsType="Default" Index="6" RelativeSize="6" ViewItem="LastInvitation" />
+                <LayoutItem Id="LastTravelInfo" SizeConstraintsType="Default" Index="6" RelativeSize="6" ViewItem="LastTravelInfo" />
+                <LayoutItem Id="PersonState" SizeConstraintsType="Default" Index="6" RelativeSize="6" ViewItem="PersonState" />
+                <LayoutItem Id="RegistrationState" SizeConstraintsType="Default" Index="6" RelativeSize="6" ViewItem="RegistrationState" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="IMessage" RelativeSize="15" ImageName="">
+              <LayoutItem Id="Message" SizeConstraintsType="Default" RelativeSize="100" ViewItem="Message" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ILongProcessApplication_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="UseParentOptions">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="IApplication" TextAlignMode="UseParentOptions">
+                <LayoutGroup Id="IApplication_col1" TextAlignMode="UseParentOptions">
+                  <LayoutGroup Id="Auto539fc28c-4f58-4310-837b-c00883c98629" TextAlignMode="UseParentOptions">
+                    <LayoutGroup Id="Item3" TextAlignMode="UseParentOptions">
+                      <LayoutGroup Id="Auto167c9169-016d-460a-9535-08d484869c39" TextAlignMode="UseParentOptions">
+                        <LayoutGroup Id="Auto5ff9faf3-d563-44d8-be87-3a52bd1275d4" TextAlignMode="UseParentOptions">
+                          <LayoutGroup Id="Auto05fec32d-16bb-4514-a4a7-a3c8eb2fe3d9" TextAlignMode="UseParentOptions">
+                            <LayoutGroup Id="Auto3e19dd74-0802-4074-bbe2-ebfae26aa60b" TextAlignMode="UseParentOptions">
+                              <LayoutGroup Id="Auto12a1d5d9-16a7-4c1d-a5a1-a8f9797e1db2" TextAlignMode="UseParentOptions">
+                                <LayoutItem Id="BaseApplicationType" TextAlignMode="UseParentOptions" />
+                                <LayoutItem Id="NumberOfPerson" TextAlignMode="UseParentOptions" />
+                              </LayoutGroup>
+                              <LayoutGroup Id="Auto7a15d638-7303-4cff-9d85-af63008a42ef" TextAlignMode="UseParentOptions">
+                                <LayoutGroup Id="Autofbb2c820-7767-4b5a-9464-f282e4086bcf" TextAlignMode="UseParentOptions" />
+                                <LayoutGroup Id="Auto6293909b-7f21-4356-ba77-3e315c78e996" TextAlignMode="UseParentOptions">
+                                  <LayoutGroup Id="Auto54da12ae-9362-471c-a688-f6ce6e578cd3" TextAlignMode="UseParentOptions" />
+                                  <LayoutGroup Id="Auto14b5d228-567a-4c8e-83e5-cf8518264255" TextAlignMode="UseParentOptions">
+                                    <LayoutGroup Id="Autod41aca5a-8d68-4e66-8249-3892b846f10c" TextAlignMode="UseParentOptions" />
+                                    <LayoutGroup Id="Autof3a0f79b-0c89-4901-b591-b14ce13a0c8e" TextAlignMode="UseParentOptions">
+                                      <LayoutGroup Id="Autoeade9fe8-98a3-4839-a3a8-a01cf5cada58" TextAlignMode="UseParentOptions">
+                                        <LayoutItem Id="VisaCategory" TextAlignMode="UseParentOptions" />
+                                        <LayoutItem Id="BorderZonePeriod" TextAlignMode="UseParentOptions" />
+                                        <LayoutGroup Id="Auto694bd0d0-ba67-4f8d-9a15-c772c3d22310" TextAlignMode="UseParentOptions">
+                                          <LayoutGroup Id="Auto4756b667-73f5-455f-8282-3e781c4d88c2" TextAlignMode="UseParentOptions">
+                                            <LayoutItem Id="IsInvitationWithWorkPermit" TextAlignMode="UseParentOptions" />
+                                            <LayoutItem Id="IsWizaWithWorkPermit" TextAlignMode="UseParentOptions" />
+                                            <LayoutItem Id="ChooseBorderZoneType" TextAlignMode="UseParentOptions" />
+                                          </LayoutGroup>
+                                          <LayoutItem Id="BorderZoneForVisa" TextAlignMode="UseParentOptions" />
+                                        </LayoutGroup>
+                                      </LayoutGroup>
+                                    </LayoutGroup>
+                                  </LayoutGroup>
+                                </LayoutGroup>
+                              </LayoutGroup>
+                            </LayoutGroup>
+                          </LayoutGroup>
+                        </LayoutGroup>
+                      </LayoutGroup>
+                    </LayoutGroup>
+                    <LayoutGroup Id="Item5" TextAlignMode="UseParentOptions">
+                      <LayoutItem Id="AutoRegistration" TextAlignMode="UseParentOptions" />
+                      <LayoutItem Id="ManualApplicationNumber" TextAlignMode="UseParentOptions" />
+                      <LayoutItem Id="ManualApplicationDate" TextAlignMode="UseParentOptions" />
+                      <LayoutItem Id="Urgency" TextAlignMode="UseParentOptions" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <TabbedGroup Id="Item7">
+                    <LayoutGroup Id="PersonInApplication" TextAlignMode="AlignLocal">
+                      <LayoutItem Id="PersonInApplication" TextAlignMode="AutoSize" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Invitations" TextAlignMode="AlignLocal">
+                      <LayoutItem Id="ApplicationResult" TextAlignMode="AutoSize" />
+                    </LayoutGroup>
+                  </TabbedGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Item2" TextAlignMode="UseParentOptions">
+                <LayoutItem Id="DateForwardedToMonistery" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="MinisteriesDocumentDate" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="MinisteriesDocumentNumber" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="ProcessDate" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="ProcessNumber" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="ApplicationState" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="Cancelled" TextAlignMode="UseParentOptions" />
+              </LayoutGroup>
+              <LayoutGroup Id="Item6" TextAlignMode="UseParentOptions">
+                <LayoutItem Id="ChangeHistory" TextAlignMode="AutoSize" />
+              </LayoutGroup>
+            </TabbedGroup>
+            <LayoutGroup Id="IRegistration" TextAlignMode="UseParentOptions" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="Invitations" TextAlignMode="AlignLocal">
+              <LayoutItem Id="Invitations" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="PersonInApplication" TextAlignMode="AlignLocal">
+              <LayoutItem Id="PersonInApplication" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="ILongProcessApplication_ListView" IsActiveFilterEnabled="True" ActiveFilterString="" />
+    <DetailView Id="IPassport_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="UseParentOptions">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="Item2">
+                <LayoutItem Id="LastVisa" TextAlignMode="AutoSize" />
+              </LayoutGroup>
+              <LayoutGroup Id="Item4">
+                <LayoutGroup Id="PassportCopy" TextAlignMode="AlignLocal">
+                  <LayoutItem Id="PassportCopy" TextAlignMode="AutoSize" />
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="ChangeHistory" TextAlignMode="AlignLocal">
+                <LayoutItem Id="ChangeHistory" TextAlignMode="AutoSize" />
+              </LayoutGroup>
+            </TabbedGroup>
+            <LayoutGroup Id="IPassport" TextAlignMode="UseParentOptions">
+              <LayoutGroup Id="IPassport_col1" TextAlignMode="UseParentOptions">
+                <LayoutItem Id="PassportNumber" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="PassportType" TextAlignMode="UseParentOptions" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="Visas" TextAlignMode="AlignLocal">
+              <LayoutItem Id="Visas" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="PassportCopy" TextAlignMode="AlignLocal">
+              <LayoutItem Id="PassportCopy" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IPersonInApplication_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="AlignLocal">
+            <TabbedGroup Id="Item2">
+              <LayoutGroup Id="IPersonInApplication" TextAlignMode="UseParentOptions">
+                <LayoutGroup Id="IPersonInApplication_col1" TextAlignMode="AlignLocal">
+                  <LayoutGroup Id="Item5" TextAlignMode="UseParentOptions">
+                    <LayoutItem Id="Position" TextAlignMode="UseParentOptions" />
+                    <LayoutItem Id="Passport" TextAlignMode="UseParentOptions" />
+                    <LayoutItem Id="Visa" TextAlignMode="UseParentOptions" />
+                    <LayoutItem Id="VisaIssuedPlace" TextAlignMode="UseParentOptions" />
+                    <LayoutItem Id="Address" TextAlignMode="UseParentOptions" />
+                    <LayoutItem Id="AddressOfResidence" TextAlignMode="UseParentOptions" />
+                    <LayoutItem Id="EmployeeEntryDate" TextAlignMode="UseParentOptions" />
+                    <LayoutItem Id="FamilyMemberEntryDate" TextAlignMode="UseParentOptions" />
+                    <LayoutItem Id="CheckPoint" TextAlignMode="UseParentOptions" />
+                    <LayoutItem Id="PurposeOfTrave" TextAlignMode="UseParentOptions" />
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Item3" TextAlignMode="UseParentOptions">
+                <LayoutGroup Id="Item1" TextAlignMode="UseParentOptions">
+                  <LayoutItem Id="RegistrationDate" TextAlignMode="UseParentOptions" />
+                  <LayoutItem Id="RegistrationNumber" TextAlignMode="UseParentOptions" />
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="ChangeHistory_Group" TextAlignMode="AlignLocal">
+                <LayoutItem Id="ChangeHistory" ViewItem="ChangeHistory" />
+              </LayoutGroup>
+            </TabbedGroup>
+            <LayoutGroup Id="IPersonInApplication" TextAlignMode="UseParentOptions">
+              <LayoutGroup Id="IPersonInApplication_col1" TextAlignMode="UseParentOptions">
+                <LayoutItem Id="Passport" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="Visa" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="Address" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="AddressOfResidence" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="Employee" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="FamilyMember" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="Position" TextAlignMode="UseParentOptions" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IPersonInApplication_DetailView_Copy">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="AlignLocal">
+            <TabbedGroup Id="Item2">
+              <LayoutGroup Id="IPersonInApplication">
+                <LayoutGroup Id="IPersonInApplication_col1" TextAlignMode="AlignLocal" />
+              </LayoutGroup>
+            </TabbedGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="IPersonInApplication_ListView" IsActiveFilterEnabled="True" ActiveFilterString="" />
+    <ListView Id="IPersonInApplication_ListView_Import" IsActiveFilterEnabled="True" ActiveFilterString="" />
+    <ListView Id="IPersonInApplication_ListView_ReadOnly" IsActiveFilterEnabled="True" ActiveFilterString="" />
+    <DetailView Id="IPersonInResult_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="UseParentOptions">
+            <LayoutGroup Id="IPersonInResult" TextAlignMode="UseParentOptions" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="IRelation_LookupListView" IsActiveFilterEnabled="True" ActiveFilterString="" />
+    <DetailView Id="ISimpleProcessApplication_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="UseParentOptions">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="IApplication">
+                <LayoutGroup Id="IApplication_col1">
+                  <LayoutGroup Id="Auto67a48f82-e96c-4f5c-bdfb-6ed9faac9ca4">
+                    <LayoutGroup Id="Item3">
+                      <LayoutGroup Id="Auto90877775-347c-48ab-a09c-bf4caf98c0c3">
+                        <LayoutGroup Id="Autoc60e55ad-2529-44fd-8afa-3978058dee41" TextAlignMode="AlignLocal" />
+                      </LayoutGroup>
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Item7">
+                <LayoutItem Id="ChangeHistory" TextAlignMode="AutoSize" />
+              </LayoutGroup>
+            </TabbedGroup>
+            <LayoutGroup Id="IRegistration" TextAlignMode="UseParentOptions" />
+            <TabbedGroup Id="Tabs">
+              <LayoutGroup Id="PersonInApplication" TextAlignMode="AlignLocal">
+                <LayoutItem Id="PersonInApplication" TextAlignMode="AutoSize" />
+              </LayoutGroup>
+              <LayoutGroup Id="ApplicationResult" TextAlignMode="AlignLocal">
+                <LayoutItem Id="ApplicationResult" TextAlignMode="AutoSize" />
+              </LayoutGroup>
+            </TabbedGroup>
+            <LayoutGroup Id="IApplicationForBorderZonePermit" TextAlignMode="UseParentOptions" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="ApplicationResult" TextAlignMode="AlignLocal">
+              <LayoutItem Id="ApplicationResult" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="PersonInApplication" TextAlignMode="AlignLocal">
+              <LayoutItem Id="PersonInApplication" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="ISimpleProcessApplication_ListView" IsActiveFilterEnabled="True" ActiveFilterString="" />
+    <DetailView Id="IVisa_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="UseParentOptions">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="IVisa" TextAlignMode="UseParentOptions">
+                <LayoutGroup Id="IVisa_col1" TextAlignMode="UseParentOptions">
+                  <LayoutGroup Id="Item3" TextAlignMode="UseParentOptions" />
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Item2">
+                <LayoutItem Id="PersonInAppForVisaExtention" TextAlignMode="AutoSize" />
+              </LayoutGroup>
+              <LayoutGroup Id="Item4" TextAlignMode="AlignLocal">
+                <LayoutItem Id="VisaCopy" TextAlignMode="AutoSize" />
+              </LayoutGroup>
+              <LayoutGroup Id="ChangeHistory" TextAlignMode="AlignLocal">
+                <LayoutItem Id="ChangeHistory" TextAlignMode="AutoSize" />
+              </LayoutGroup>
+            </TabbedGroup>
+            <LayoutGroup Id="IVisa" TextAlignMode="UseParentOptions">
+              <LayoutGroup Id="IVisa_col1" TextAlignMode="UseParentOptions">
+                <LayoutItem Id="VisaNumber" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="VisaType" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="VisaCategory" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="VisaIssuedPlace" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="VisaIssuedDate" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="VisaStartDate" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="VisaEndDate" TextAlignMode="UseParentOptions" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="VisaCopy" TextAlignMode="AlignLocal">
+              <LayoutItem Id="VisaCopy" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IWorkHistory_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="UseParentOptions">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="ChangeHistory_Group">
+                <LayoutItem Id="ChangeHistory" TextAlignMode="AutoSize" />
+              </LayoutGroup>
+            </TabbedGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IWorkPermit_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="UseParentOptions">
+            <LayoutGroup Id="IWorkPermit" TextAlignMode="UseParentOptions">
+              <LayoutGroup Id="IWorkPermit_col1" TextAlignMode="UseParentOptions">
+                <LayoutItem Id="Employee" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="Passport" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="Position" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="StartDateOfWorkPermit" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="ExpiringDateOfWorkPermit" TextAlignMode="UseParentOptions" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IWorkPermitLetter_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="UseParentOptions">
+            <LayoutGroup Id="IWorkPermitLetter" TextAlignMode="UseParentOptions">
+              <TabbedGroup Id="Item2">
+                <LayoutGroup Id="WorkPermitCopy" TextAlignMode="AlignLocal">
+                  <LayoutItem Id="WorkPermitCopy" TextAlignMode="AutoSize" />
+                </LayoutGroup>
+              </TabbedGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="WorkPermits" TextAlignMode="AlignLocal">
+              <LayoutItem Id="WorkPermits" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="WorkPermitCopy" TextAlignMode="AlignLocal">
+              <LayoutItem Id="WorkPermitCopy" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="ILocalEmployee_ListView" ShowAutoFilterRow="True" />
+  </Views>
+</Application>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel Id="BOModel">
+    <Class Name="VISA2014.Module.DC.IPersonInResult">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="ExpectedDateOfArrival" Caption="Ожидаемая дата прибытия" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+</Application>

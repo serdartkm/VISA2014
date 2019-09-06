@@ -1,0 +1,907 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B0368DD3-A5D9-45CE-BCA5-04E9C8F78768}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VISA2014.Module</RootNamespace>
+    <AssemblyName>VISA2014.Module</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'EasyTest|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\EasyTest\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;EASYTEST</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DatabaseUserSettings, Version=1.0.4789.17682, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.AuditTrail.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.ConditionalAppearance.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Reports.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Security.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Validation.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.ViewVariantsModule.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Xpo.v12.2">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v12.2.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v12.2">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v12.2">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.Base.v12.2">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.BaseImpl.v12.2">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v12.2">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v12.2.Extensions, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress\DXperience 12.2\Bin\Framework\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicNP.CryptoLicensing, Version=9.0.0.0, Culture=neutral, PublicKeyToken=4a3c0a4c668b48b4" />
+    <Reference Include="Spire.Pdf, Version=3.2.52.56040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\e-iceblue\Spire.Pdf-Fe\Bin\NET4.0\Spire.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessObjects\AppConf.cs" />
+    <Compile Include="BusinessObjects\AppearenceHelper.cs" />
+    <Compile Include="BusinessObjects\ApplicationType.cs" />
+    <Compile Include="BusinessObjects\ApplicationTypeForEmployee.cs" />
+    <Compile Include="BusinessObjects\ApplicationTypeForFamilyMember.cs" />
+    <Compile Include="BusinessObjects\AuditTrail.cs" />
+    <Compile Include="BusinessObjects\BaseApplicationType.cs" />
+    <Compile Include="BusinessObjects\Bellik.cs" />
+    <Compile Include="BusinessObjects\CheckPoint.cs" />
+    <Compile Include="BusinessObjects\DepartmentForRegistration.cs" />
+    <Compile Include="BusinessObjects\GoşmaçaIşlemägeRugsatÝeri.cs" />
+    <Compile Include="BusinessObjects\Helper.cs" />
+    <Compile Include="BusinessObjects\IdentitiDocCopied.cs" />
+    <Compile Include="BusinessObjects\Interface1.cs" />
+    <Compile Include="BusinessObjects\IsInvitationWithWorkPermit.cs" />
+    <Compile Include="BusinessObjects\IsWizaWithWorkPermit.cs" />
+    <Compile Include="BusinessObjects\IşlemägeRugsatEdilenYer.cs" />
+    <Compile Include="BusinessObjects\PrefferedVisaCategory.cs" />
+    <Compile Include="BusinessObjects\Proje.cs" />
+    <Compile Include="BusinessObjects\PurposeOfTravel.cs" />
+    <Compile Include="BusinessObjects\Salary.cs" />
+    <Compile Include="BusinessObjects\Taşaron.cs" />
+    <Compile Include="BusinessObjects\UserCode.cs" />
+    <Compile Include="DC\VisaStateHelper.cs" />
+    <Compile Include="DC\CreateMergedPDF.cs" />
+    <Compile Include="DC\FamilyProofDocument.cs" />
+    <Compile Include="DC\HelperFillForm.cs" />
+    <Compile Include="DC\Helperpdf.cs" />
+    <Compile Include="DC\IAddress.cs" />
+    <Compile Include="DC\IApplication.cs" />
+    <Compile Include="DC\IApplicationForBorderZonePermit.cs" />
+    <Compile Include="DC\IApplicationResult.cs" />
+    <Compile Include="DC\IBorderZone.cs" />
+    <Compile Include="DC\IBorderZoneForVisa.cs" />
+    <Compile Include="DC\ICompany.cs" />
+    <Compile Include="DC\ICompanyRepresentative.cs" />
+    <Compile Include="DC\IDictionary.cs" />
+    <Compile Include="DC\IEmployee.cs" />
+    <Compile Include="DC\IFamilyMember.cs" />
+    <Compile Include="DC\ILongProcessApplications.cs" />
+    <Compile Include="DC\IPassport.cs" />
+    <Compile Include="DC\IPassportCopy.cs" />
+    <Compile Include="DC\IPerson.cs" />
+    <Compile Include="DC\IPersonInApplication.cs" />
+    <Compile Include="DC\IPersonInResult.cs" />
+    <Compile Include="DC\IPlurals.cs" />
+    <Compile Include="DC\IRemainingDays.cs" />
+    <Compile Include="DC\ISimpleProcessApplication.cs" />
+    <Compile Include="DC\ITravelInformation.cs" />
+    <Compile Include="DC\IVisa.cs" />
+    <Compile Include="DC\IWorkHistory.cs" />
+    <Compile Include="DC\IWorkPermit.cs" />
+    <Compile Include="DC\IWorkPermitLocation.cs" />
+    <Compile Include="DC\UpdateHelperClasses.cs" />
+    <Compile Include="DC\WorkPermitStateHelper.cs" />
+    <Compile Include="Module.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Module.Designer.cs">
+      <DependentUpon>Module.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DatabaseUpdate\Updater.cs" />
+    <Compile Include="Properties\Resources.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Module.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Module.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DatabaseUpdate\ReadMe.txt" />
+    <None Include="UnusableNodes1.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes3_ru-RU.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes3_ru-RU_ru-ru.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes3_ru-RU_tk-tm.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes3_ru-RU_tr-tr.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes3_ru.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes3_tk-TM.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes3_tk-TM_ru-ru.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes3_tk-TM_ru-ru_ru-ru.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes3_tk-TM_ru-ru_tk-tm.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes3_tk-TM_ru-ru_tr-tr.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes3_tk-TM_ru.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes3_tk-TM_tk-tm.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes3_tk-TM_tk.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes3_tk-TM_tr-tr.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes3_tk.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes3_tr-TR.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes3.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes5_ru-RU.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes5_ru-RU_ru-ru.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes5_ru-RU_tk-tm.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes5_ru-RU_tr-tr.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes5_ru.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes5_tk-TM.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes5_tk-TM_ru-ru.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes5_tk-TM_ru-ru_ru-ru.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes5_tk-TM_ru-ru_tk-tm.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes5_tk-TM_ru-ru_tr-tr.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes5_tk-TM_ru.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes5_tk-TM_tk-tm.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes5_tk-TM_tk.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes5_tk-TM_tr-tr.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes5_tk.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes5_tr-TR.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes5.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes6_ru-RU.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes6_ru-RU_ru-ru.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes6_ru-RU_tk-tm.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes6_ru-RU_tr-tr.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes6_ru.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes6_tk-TM.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes6_tk-TM_ru-ru.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes6_tk-TM_ru-ru_ru-ru.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes6_tk-TM_ru-ru_tk-tm.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes6_tk-TM_ru-ru_tr-tr.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes6_tk-TM_ru.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes6_tk-TM_tk-tm.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes6_tk-TM_tk.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes6_tk-TM_tr-tr.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes6_tk.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes6_tr-TR.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes6.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes8_ru-RU.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes8_ru-RU_ru-ru.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes8_ru-RU_tk-tm.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes8_ru-RU_tr-tr.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes8_ru.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes8_tk-TM.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes8_tk-TM_ru-ru.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes8_tk-TM_ru-ru_ru-ru.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes8_tk-TM_ru-ru_tk-tm.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes8_tk-TM_ru-ru_tr-tr.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes8_tk-TM_ru.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes8_tk-TM_tk-tm.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes8_tk-TM_tk.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes8_tk-TM_tr-tr.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes8_tk.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes8_tr-TR.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes8.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes9_ru-RU.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes9_ru-RU_ru-ru.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes9_ru-RU_tk-tm.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes9_ru-RU_tr-tr.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes9_ru.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes9_tk-TM.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes9_tk-TM_ru-ru.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes9_tk-TM_ru-ru_ru-ru.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes9_tk-TM_ru-ru_tk-tm.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes9_tk-TM_ru-ru_tr-tr.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes9_tk-TM_ru.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes9_tk-TM_tk-tm.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes9_tk-TM_tk.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes9_tk-TM_tr-tr.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes9_tk.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes9_tr-TR.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes9.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes10_ru-RU.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes10_ru-RU_ru-ru.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes10_ru-RU_tk-tm.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes10_ru-RU_tr-tr.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes10_ru.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes10_tk-TM.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes10_tk-TM_ru-ru.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes10_tk-TM_ru-ru_ru-ru.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes10_tk-TM_ru-ru_tk-tm.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes10_tk-TM_ru-ru_tr-tr.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes10_tk-TM_ru.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes10_tk-TM_tk-tm.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes10_tk-TM_tk.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes10_tk-TM_tr-tr.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes10_tk.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes10_tr-TR.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="lib\DatabaseUserSettings.dll" />
+    <Content Include="lib\DatabaseUserSettings.pdb" />
+    <Content Include="lib\FoxLearn.License.dll" />
+    <Content Include="lib\itextsharp.dll" />
+    <Content Include="lib\LogicNP.CryptoLicensing.dll" />
+    <Content Include="lib\LogicNP.CryptoLicensing.xml" />
+    <Content Include="lib\Spire.License.dll" />
+    <Content Include="lib\Spire.License.xml" />
+    <Content Include="lib\Spire.Pdf.dll" />
+    <Content Include="lib\Spire.Pdf.xml" />
+    <Content Include="updateSQL\SQLQuery1.sql" />
+    <Content Include="updateSQL\SQLQuery14updateCounter.sql" />
+    <Content Include="updateSQL\SQLQuery2 updatecountries.sql" />
+    <Content Include="updateSQL\SQLQuery4.sql" />
+    <Content Include="updateSQL\SQLQueryupdateMaritalStatus.sql" />
+    <Content Include="updateSQL\SQLQueryUpdateRegion.sql" />
+    <Content Include="Visa_Application_TM_QR_08.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BusinessObjects\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Controllers\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EmbeddedReport\A.Maglumat.repx" />
+    <EmbeddedResource Include="EmbeddedReport\AppForEmpInvit.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Application.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Borçnama.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Contract with Employee.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Current Work Permits.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Employee in Invitation.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Employee.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Employees On Invitation.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Family Member in Invitation.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Family Member On Invitation.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Form16 Family Member.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Form16.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Hasaba duranlar%28Işär%29.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Hasaba duranlar%28ma%29.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Hasapda çykarlanlar %28Işgär%29.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Hasapdan çykarlanlar%28ma%29.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Hasapdan çykarylan.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Iş rugsatnama möhleti tamamlanýan.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Iş rugsatnamaly.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Iş rugsatnamasyz.repx" />
+    <EmbeddedResource Include="EmbeddedReport\mypdf.pdf" />
+    <EmbeddedResource Include="EmbeddedReport\Pasport möhleti tamamlanýan%28Işgar%29.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Pasport möhleti tamamlanýan%28ma%29.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Pasport möhleti tamamlanýan.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Personal List%28Işgär%29.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Personal List%28ma%29.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Personal List.repx" />
+    <EmbeddedResource Include="EmbeddedReport\PersonInApplication.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Rejected Employee.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Rejected Family Member.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Salgy patent möhleti tamamlanýan%28Işgär%29.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Salgy patent möhleti tamamlanýan%28ma%29.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Salgy patent möhleti tamamlanýan.repx" />
+    <EmbeddedResource Include="EmbeddedReport\W. Maglumat.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Wiza möhleti tamamlanýan%28Işgär%29.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Wiza möhleti tamamlanýan%28ma%29.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Wiza möhleti tamamlanýan.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Wiza möhleti tamamlanýanlar%28Işgär%29.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Wiza möhleti tamamlanýanlar%28ma%29.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Wizasy uzaltmakda %28Işgär%29.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Wizasy uzaltmakda%28ma%29.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Wizasy uzaltmakda.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Yatyrlan Iş rugsatnamalary.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Şahsy maglumat%28Işgär%29.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Şahsy maglumat%28ma%29.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Şahsy maglumat.repx" />
+    <EmbeddedResource Include="EmbeddedReport\A.Maglumat %28Gap insaat%29.repx" />
+    <EmbeddedResource Include="EmbeddedReport\A.Maglumat %28OwadanAda%29.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Borçnama%28Endustrial%29.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Contract%28Owadan ada%29.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Contract.repx" />
+    <EmbeddedResource Include="EmbeddedReport\DiplomCopy.repx" />
+    <EmbeddedResource Include="EmbeddedReport\FamiliProofDoc.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Form.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Form16 arkasy.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Form16..repx" />
+    <EmbeddedResource Include="EmbeddedReport\Hakimlik sanawy.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Hasaba alnanlar.repx" />
+    <EmbeddedResource Include="EmbeddedReport\LojmanHat.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Ministr sanawy.repx" />
+    <EmbeddedResource Include="EmbeddedReport\PasportCopy.repx" />
+    <EmbeddedResource Include="EmbeddedReport\PassportNusga.repx" />
+    <EmbeddedResource Include="EmbeddedReport\PassportWeVızaNusga.repx" />
+    <EmbeddedResource Include="EmbeddedReport\PersonalList.repx" />
+    <EmbeddedResource Include="EmbeddedReport\RaporVizaExtention.repx" />
+    <EmbeddedResource Include="EmbeddedReport\RaporVizaExtentionFM.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Raýat-Hukuk şertnama.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Rugsatnama Nusga.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Surat.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Surat3we4.repx" />
+    <EmbeddedResource Include="EmbeddedReport\VisaCopy.repx" />
+    <EmbeddedResource Include="EmbeddedReport\WW.Maglumat%28ADT%29.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Yeni Davetiye Başvuru Durumlari  MA.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Yeni Davetiye Başvuru Durumlari.repx" />
+    <EmbeddedResource Include="EmbeddedReport\ÇakylykGöçürmekNusga.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Çalışma izni.repx" />
+    <EmbeddedResource Include="EmbeddedReport\Şertnama.repx" />
+    <None Include="FunctionalTests\17_1_App_GoBusinessTrip.ets" />
+    <None Include="FunctionalTests\Address.ets" />
+    <None Include="FunctionalTests\Applications.ets" />
+    <None Include="FunctionalTests\Config.xml.bak" />
+    <None Include="FunctionalTests\MyTest.ets" />
+    <None Include="FunctionalTests\PaspState.ets" />
+    <None Include="FunctionalTests\ProcessVisa.ets" />
+    <None Include="FunctionalTests\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FunctionalTests\Sample.ets" />
+    <None Include="FunctionalTests\SimpleTest.ets" />
+    <None Include="FunctionalTests\VisaState.ets" />
+    <None Include="FunctionalTests\WebSample.ets" />
+    <None Include="FunctionalTests\WinSample.ets" />
+    <None Include="Images\ReadMe.txt" />
+    <EmbeddedResource Include="Model.DesignedDiffs.xafml" />
+    <EmbeddedResource Include="Model.DesignedDiffs.Localization.tk-TM.xafml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model.DesignedDiffs.Localization.tr-TR.xafml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model.DesignedDiffs.Localization.ru.xafml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model.DesignedDiffs.Localization.tk.xafml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model.DesignedDiffs.Localization.ru-RU.xafml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model.DesignedDiffs.Localization.ru-RU_ru-ru.xafml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model.DesignedDiffs.Localization.ru-RU_tk-tm.xafml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model.DesignedDiffs.Localization.ru-RU_tr-tr.xafml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model.DesignedDiffs.Localization.tk-TM_ru-ru.xafml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model.DesignedDiffs.Localization.tk-TM_ru-ru_ru-ru.xafml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model.DesignedDiffs.Localization.tk-TM_ru-ru_tk-tm.xafml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model.DesignedDiffs.Localization.tk-TM_ru-ru_tr-tr.xafml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model.DesignedDiffs.Localization.tk-TM_ru.xafml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model.DesignedDiffs.Localization.tk-TM_tk-tm.xafml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model.DesignedDiffs.Localization.tk-TM_tk.xafml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model.DesignedDiffs.Localization.tk-TM_tr-tr.xafml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FunctionalTests\01_1_AppInvitEmp.inc" />
+    <Content Include="FunctionalTests\02_1_AppVisaExtentionEmp.inc" />
+    <Content Include="FunctionalTests\03_1_AppBorderZonePermitEmp.inc" />
+    <Content Include="FunctionalTests\04_1_AppInvit_SP_Emp.inc" />
+    <Content Include="FunctionalTests\05_1_AppInvitFM.inc" />
+    <Content Include="FunctionalTests\06_1_AppVisaExtFM.inc" />
+    <Content Include="FunctionalTests\07_1_AppChangeInvitPerson.inc" />
+    <Content Include="FunctionalTests\08_1_AppVisaCatChange_Person.inc" />
+    <Content Include="FunctionalTests\09_1_AppVisaTransfer_Person.inc" />
+    <Content Include="FunctionalTests\10_1_AppRegUpOnArr_Person.inc" />
+    <Content Include="FunctionalTests\11_1_AppReg_Info_Address_Person.inc" />
+    <Content Include="FunctionalTests\12_1_AppReg_Info_Passport_Person.inc" />
+    <Content Include="FunctionalTests\13_1_AppReg_Info_Visa_Person.inc" />
+    <Content Include="FunctionalTests\14_1_AppStrikeOff_Leave_Person.inc" />
+    <Content Include="FunctionalTests\15_1_AppStrikeOff_NewLocation_Person.inc" />
+    <Content Include="FunctionalTests\16_1_AppReg_NewLocation_Person.inc" />
+    <Content Include="FunctionalTests\17_1_App_GoBusinessTrip.inc" />
+    <Content Include="FunctionalTests\AddressOfResidence.inc" />
+    <Content Include="FunctionalTests\Applications_01_1_AppInvitEmp_VISA2014.Win_View.png" />
+    <Content Include="FunctionalTests\Applications_06_1_AppVisaExtFM_VISA2014.Win_View.png" />
+    <Content Include="FunctionalTests\Applications_EmpInAppInvit_VISA2014.Win_View.png" />
+    <Content Include="FunctionalTests\Applications_FMInAppInvit_VISA2014.Win_View.png" />
+    <Content Include="FunctionalTests\Applications_VISA2014.Win_View.jpeg" />
+    <Content Include="FunctionalTests\Config.xml" />
+    <Content Include="FunctionalTests\Education.inc" />
+    <Content Include="FunctionalTests\Education_1.inc" />
+    <Content Include="FunctionalTests\Employee.inc" />
+    <Content Include="FunctionalTests\EmployeeInState.inc" />
+    <Content Include="FunctionalTests\FamilyMember.inc" />
+    <Content Include="FunctionalTests\FMNewPassport.inc" />
+    <Content Include="FunctionalTests\FMTravel.inc" />
+    <Content Include="FunctionalTests\Images\01_1_AppInvitEmp.png" />
+    <Content Include="FunctionalTests\Images\02_1_AppVisaExtentionEmp.png" />
+    <Content Include="FunctionalTests\Images\03_1_AppBorderZonePermitEmp.png" />
+    <Content Include="FunctionalTests\Images\04_1_AppInvit_SP_Emp.png" />
+    <Content Include="FunctionalTests\Images\05_1_AppInvitFM.png" />
+    <Content Include="FunctionalTests\Images\06_1_AppVisaExtFM.png" />
+    <Content Include="FunctionalTests\Images\07_1_AppChangeInvitFM.png" />
+    <Content Include="FunctionalTests\Images\08_1_AppVisaCatChange_Person.png" />
+    <Content Include="FunctionalTests\Images\09_1_AppVisaTransfer_Person.png" />
+    <Content Include="FunctionalTests\Images\10_1_AppRegUpOnArr_Person.png" />
+    <Content Include="FunctionalTests\Images\11_1_AppReg_Info_Address_Person.png" />
+    <Content Include="FunctionalTests\Images\12_1_AppReg_Info_Passport_Person.png" />
+    <Content Include="FunctionalTests\Images\13_1_AppReg_Info_Visa_Person.png" />
+    <Content Include="FunctionalTests\Images\14_1_AppStrikeOff_Leave_Person.png" />
+    <Content Include="FunctionalTests\Images\15_1_AppStrikeOff_NewLocation_Person.png" />
+    <Content Include="FunctionalTests\Images\16_1_AppReg_NewLocation_Person.png" />
+    <Content Include="FunctionalTests\Images\EmpInAppBorderZonePermitEmp.png" />
+    <Content Include="FunctionalTests\Images\EmpInAppInvit.png" />
+    <Content Include="FunctionalTests\Images\EmpInAppInvit_SP_Emp.png" />
+    <Content Include="FunctionalTests\Images\EmpInAppVisaExtention.png" />
+    <Content Include="FunctionalTests\Images\FMInAppInvit.png" />
+    <Content Include="FunctionalTests\Images\FMInAppRegUpOnArr_Person.png" />
+    <Content Include="FunctionalTests\Images\FMInAppReg_Info_Address_Person.png" />
+    <Content Include="FunctionalTests\Images\FMInAppReg_Info_Passport_Person.png" />
+    <Content Include="FunctionalTests\Images\FMInAppStrikeOff_Leave_Person.png" />
+    <Content Include="FunctionalTests\Images\FMInAppStrikeOff_NewLocation_Person.png" />
+    <Content Include="FunctionalTests\Images\FMInAppVisaCatChange_Person.png" />
+    <Content Include="FunctionalTests\Images\FMInAppVisaExt.png" />
+    <Content Include="FunctionalTests\Images\FMInAppVisaTransfer_Person.png" />
+    <Content Include="FunctionalTests\Images\FNInAppReg_NewLocation_Person.png" />
+    <Content Include="FunctionalTests\Images\Form16_FM.png" />
+    <Content Include="FunctionalTests\Images\PersonInAppChangingInvit.png" />
+    <Content Include="FunctionalTests\InvisibleFields.inc" />
+    <Content Include="FunctionalTests\InvitForFM.inc" />
+    <Content Include="FunctionalTests\Login.inc" />
+    <Content Include="FunctionalTests\NewFMVisa.inc" />
+    <Content Include="FunctionalTests\PaspState_VISA2014.Win_View.jpeg" />
+    <Content Include="FunctionalTests\Passport.inc" />
+    <Content Include="FunctionalTests\PassportState_VISA2014.Win_View.jpeg" />
+    <Content Include="FunctionalTests\Passport_1.inc" />
+    <Content Include="FunctionalTests\Passport_2.inc" />
+    <Content Include="FunctionalTests\Passport_3.inc" />
+    <Content Include="FunctionalTests\ProcessAppForChangingInvitation.inc" />
+    <Content Include="FunctionalTests\ProcessEmployeeInApplicationForInvitation.inc" />
+    <Content Include="FunctionalTests\ProcessForApplicationForInvitation.inc" />
+    <Content Include="FunctionalTests\ProcessInvitForEmployee.inc" />
+    <Content Include="FunctionalTests\ProcessVisa_VISA2014.Win_View.jpeg" />
+    <Content Include="FunctionalTests\TestsLog.xml" />
+    <Content Include="FunctionalTests\Visa.inc" />
+    <Content Include="FunctionalTests\VisaProcess_VISA2014.Win_View.jpeg" />
+    <Content Include="FunctionalTests\VisaState_VISA2014.Win_View.jpeg" />
+    <Content Include="FunctionalTests\Visa_1.inc" />
+    <Content Include="FunctionalTests\Visa_2.inc" />
+    <Content Include="FunctionalTests\Visa_3.inc" />
+    <Content Include="FunctionalTests\Visa_4.inc" />
+    <Content Include="FunctionalTests\Visa_5.inc" />
+    <Content Include="FunctionalTests\Visa_6.inc" />
+    <Content Include="FunctionalTests\WorkHistory.inc" />
+    <Content Include="FunctionalTests\WorkHistory_1.inc" />
+    <Content Include="FunctionalTests\WorkPermit.inc" />
+    <Content Include="Resources\AndrewFuller.jpg" />
+    <Content Include="Resources\AnnaDotthWorth.jpg" />
+    <Content Include="Resources\CompanyLogo.png" />
+    <Content Include="Resources\ExpressAppLogo.png" />
+    <Content Include="Resources\JanetLevering.jpg" />
+    <Content Include="Resources\LauraKallahan.jpg" />
+    <Content Include="Resources\MargaretPeacock.jpg" />
+    <Content Include="Resources\MichaelSuyama.jpg" />
+    <Content Include="Resources\NancyDavolio.jpg" />
+    <Content Include="Resources\RobertKing.jpg" />
+    <Content Include="Resources\StevenBuchanan.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

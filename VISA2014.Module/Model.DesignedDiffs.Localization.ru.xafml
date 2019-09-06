@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="DialogCancel" ToolTip="Ýatyrmak" Caption="Ýatyrmak" />
+      <Action Id="Logoff" Caption="Çykmak" />
+      <Action Id="Logon" Caption="Girmek" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Security.AuthenticationStandardLogonParameters">
+      <OwnMembers>
+        <Member Name="Password" Caption="Parol" />
+        <Member Name="UserName" Caption="Ulanyjy ady" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IApplication">
+      <OwnMembers>
+        <Member Name="Cancelled" Caption="Ýatyrlan" />
+        <Member Name="IsComplete" Caption="Iş Tamamlandy" />
+        <Member Name="Rejected" Caption="Garşylyk" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IPersonInApplication">
+      <OwnMembers>
+        <Member Name="Cancelled" Caption="Ýatyrlan" />
+        <Member Name="Rejected" Caption="Garşylyk" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IPersonn">
+      <OwnMembers>
+        <Member Name="IsOutSideOfCountry" Caption="Ý_Daşynda" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="VISA2014.Module.DC.ApplicationStateEnum">
+        <LocalizationItem Name="Cancelled" Value="Ýatyrlan" />
+        <LocalizationItem Name="Rejected" Value="Garşylyk" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.InvitationStateEnum">
+        <LocalizationItem Name="Rejected" Value="Garşylyk" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.RegistrationStateEnum">
+        <LocalizationItem Name="REG_NOT_REQUIRED" Value="HA_Boşadylan" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <Views>
+    <DetailView Id="AuthenticationStandardLogonParameters_DetailView" Caption="Girmek" />
+    <DetailView Id="IApplication_DetailView">
+      <Items>
+        <PropertyEditor Id="IsComplete" Caption="Iş Tamamlandy" />
+      </Items>
+    </DetailView>
+    <ListView Id="IApplication_PersonInApplication_ListView">
+      <Columns>
+        <ColumnInfo Id="Cancelled" Caption="Ýatyrlan" />
+      </Columns>
+    </ListView>
+    <DetailView Id="IEmployee_DetailView">
+      <Items>
+        <PropertyEditor Id="IsOutSideOfCountry" Caption="Ý_Daşynda" />
+      </Items>
+    </DetailView>
+    <ListView Id="ILongProcessApplication_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Rejected" Caption="Garşylyk" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>

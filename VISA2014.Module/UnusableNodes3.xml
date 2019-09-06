@@ -1,0 +1,549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems Id="NavigationItems" GenerateRelatedReportsGroup="True" />
+  <Options Id="Options" Skin="London Liquid Sky" FormStyle="Ribbon" />
+  <Templates Id="Templates">
+    <Template Id="DevExpress.ExpressApp.Win.Templates.MainForm" DockManagerSettings="﻿&lt;XtraSerializer version=&quot;1.0&quot; application=&quot;DockManager&quot;&gt;&#xD;&#xA;  &lt;property name=&quot;#LayoutVersion&quot; /&gt;&#xD;&#xA;  &lt;property name=&quot;AutoHiddenPanelCaptionShowMode&quot;&gt;ShowForAllPanels&lt;/property&gt;&#xD;&#xA;  &lt;property name=&quot;Panels&quot; iskey=&quot;true&quot; value=&quot;1&quot;&gt;&#xD;&#xA;    &lt;property name=&quot;Item1&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;Visibility&quot;&gt;Visible&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FloatLocation&quot;&gt;@1,X=0@1,Y=0&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Dock&quot;&gt;Left&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;XtraID&quot;&gt;0&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Footer&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Tabbed&quot;&gt;false&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;TabsPosition&quot;&gt;Bottom&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;TabsScroll&quot;&gt;false&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ImageIndex&quot;&gt;-1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;XtraZIndex&quot;&gt;1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;TabText&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Hint&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Text&quot;&gt;Navigation&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;OriginalSize&quot;&gt;@3,Width=205@3,Height=200&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;XtraBounds&quot;&gt;@1,X=0@3,Y=153@3,Width=205@3,Height=569&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;AllowFloating&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;AllowDockLeft&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;AllowDockRight&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;AllowDockTop&quot;&gt;false&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;AllowDockBottom&quot;&gt;false&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;AllowDockFill&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;AllowDockAsTabbedDocument&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;ShowMaximizeButton&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;ShowAutoHideButton&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;ShowCloseButton&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FloatOnDblClick&quot;&gt;true&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;XtraParentID&quot;&gt;-1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;XtraSavedParentID&quot;&gt;-1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;XtraAutoHideContainerDock&quot;&gt;Float&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ID&quot;&gt;24977e30-0ea6-44aa-8fa4-9abaeb178b5e&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;DockVertical&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FloatVertical&quot;&gt;false&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Header&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;XtraActiveChildID&quot;&gt;-1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Count&quot;&gt;0&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SavedDock&quot;&gt;Left&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SavedMdiDocument&quot;&gt;false&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SavedTabbed&quot;&gt;false&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FloatSize&quot;&gt;@3,Width=146@3,Height=428&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SavedIndex&quot;&gt;2&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;  &lt;/property&gt;&#xD;&#xA;  &lt;property name=&quot;TopZIndexControls&quot; iskey=&quot;true&quot; value=&quot;4&quot;&gt;&#xD;&#xA;    &lt;property name=&quot;Item1&quot;&gt;DevExpress.XtraBars.BarDockControl&lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item2&quot;&gt;System.Windows.Forms.StatusBar&lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item3&quot;&gt;DevExpress.ExpressApp.Win.Templates.Controls.XafRibbonControl&lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item4&quot;&gt;DevExpress.XtraBars.Ribbon.RibbonStatusBar&lt;/property&gt;&#xD;&#xA;  &lt;/property&gt;&#xD;&#xA;  &lt;property name=&quot;ActivePanelID&quot;&gt;-1&lt;/property&gt;&#xD;&#xA;  &lt;property name=&quot;DockingOptions&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;    &lt;property name=&quot;CursorFloatCanceled&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;    &lt;property name=&quot;HideImmediatelyOnAutoHide&quot;&gt;false&lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;CloseActiveTabOnly&quot;&gt;true&lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;CloseActiveFloatTabOnly&quot;&gt;false&lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;ShowCaptionOnMouseHover&quot;&gt;false&lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;ShowCaptionImage&quot;&gt;false&lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;ShowMaximizeButton&quot;&gt;true&lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;ShowAutoHideButton&quot;&gt;true&lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;ShowCloseButton&quot;&gt;true&lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;FloatOnDblClick&quot;&gt;true&lt;/property&gt;&#xD;&#xA;  &lt;/property&gt;&#xD;&#xA;  &lt;property name=&quot;AutoHideContainers&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;&lt;/XtraSerializer&gt;" />
+  </Templates>
+  <Views Id="Views">
+    <ListView Id="Employee_Invitation_Variable" IsActiveFilterEnabled="True" ActiveFilterString="" />
+    <ListView Id="EmpPersonal_Variable_PersonalData" IsActiveFilterEnabled="True" ActiveFilterString="" />
+    <ListView Id="Familymember_Invitation_Variable" IsActiveFilterEnabled="True" ActiveFilterString="" />
+    <DetailView Id="IAddressOfResidence_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="UseParentOptions">
+            <LayoutGroup Id="IAddressOfResidence" TextAlignMode="UseParentOptions">
+              <LayoutGroup Id="Item1">
+                <TabbedGroup Id="Item4">
+                  <LayoutGroup Id="Item3">
+                    <LayoutGroup Id="Item2" TextAlignMode="AlignLocal" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="ChangeHistory_Group">
+                    <LayoutItem Id="ChangeHistory" TextAlignMode="AutoSize" />
+                  </LayoutGroup>
+                </TabbedGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IApplication_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="UseParentOptions">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="IApplication">
+                <LayoutGroup Id="IApplication_col1">
+                  <LayoutGroup Id="Item3">
+                    <LayoutGroup Id="Autof6a688cd-06d7-42d1-a5d0-1023ffc8940e">
+                      <LayoutGroup Id="Auto58fc8379-3bc8-4e44-ac79-b2fd2f938f28">
+                        <LayoutGroup Id="Auto4df90b3c-58e8-41ed-a5ab-a846e5fa12fa">
+                          <LayoutGroup Id="Autoa48ac16b-59c9-44ee-9655-eb25e9a6943f">
+                            <LayoutGroup Id="Autof5ae22e5-09a3-4186-bdb4-15f2ea5252c6" TextAlignMode="AlignLocal" />
+                          </LayoutGroup>
+                        </LayoutGroup>
+                      </LayoutGroup>
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <TabbedGroup Id="Item9">
+                    <LayoutGroup Id="PersonInApplication" TextAlignMode="AlignLocal">
+                      <LayoutItem Id="PersonInApplication" TextAlignMode="AutoSize" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Invitations" TextAlignMode="AlignLocal">
+                      <LayoutItem Id="Invitations" TextAlignMode="AutoSize" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Item8" TextAlignMode="AlignLocal" />
+                  </TabbedGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+            </TabbedGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="Invitations" TextAlignMode="AlignLocal">
+              <LayoutItem Id="Invitations" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="PersonInApplication" TextAlignMode="AlignLocal">
+              <LayoutItem Id="PersonInApplication" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="IApplication_PersonInApplication_ListView" IsActiveFilterEnabled="True" ActiveFilterString="" />
+    <DetailView Id="IApplicationResult_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="UseParentOptions">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="Item2">
+                <LayoutGroup Id="CopyOfResult" TextAlignMode="AlignLocal">
+                  <LayoutItem Id="CopyOfResult" TextAlignMode="AutoSize" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </TabbedGroup>
+            <LayoutGroup Id="IApplicationResult" TextAlignMode="UseParentOptions" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="PersonInResultLetter" TextAlignMode="AlignLocal">
+              <LayoutItem Id="PersonInResultLetter" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="CopyOfResult" TextAlignMode="AlignLocal">
+              <LayoutItem Id="CopyOfResult" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ICompany_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="UseParentOptions">
+            <LayoutGroup Id="ICompany_col1" TextAlignMode="UseParentOptions">
+              <LayoutGroup Id="Item3" TextAlignMode="UseParentOptions" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IEducation_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="UseParentOptions">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="ChangeHistory" TextAlignMode="AlignLocal">
+                <LayoutItem Id="ChangeHistory" TextAlignMode="AutoSize" />
+              </LayoutGroup>
+              <LayoutGroup Id="Item2">
+                <LayoutGroup Id="DiplomaCopy_Group">
+                  <LayoutItem Id="DiplomaCopy" ViewItem="DiplomaCopy" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </TabbedGroup>
+            <LayoutGroup Id="IEducation" TextAlignMode="UseParentOptions" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="DiplomaCopy" TextAlignMode="AlignLocal">
+              <LayoutItem Id="DiplomaCopy" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IEmployee_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="UseParentOptions">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="ChangeHistory" TextAlignMode="AlignLocal">
+                <LayoutItem Id="ChangeHistory" TextAlignMode="AutoSize" />
+              </LayoutGroup>
+            </TabbedGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="EmployeeInApplications" TextAlignMode="AlignLocal">
+              <LayoutItem Id="EmployeeInApplications" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="TravelInformations" TextAlignMode="AlignLocal">
+              <LayoutItem Id="TravelInformations" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="AddressOfResidences" TextAlignMode="AlignLocal">
+              <LayoutItem Id="AddressOfResidences" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="Passports" TextAlignMode="AlignLocal">
+              <LayoutItem Id="Passports" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="Educations" TextAlignMode="AlignLocal">
+              <LayoutItem Id="Educations" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="FamilyMembers" TextAlignMode="AlignLocal">
+              <LayoutItem Id="FamilyMembers" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="WorkHistories" TextAlignMode="AlignLocal">
+              <LayoutItem Id="WorkHistories" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="WorkPermits" TextAlignMode="AlignLocal">
+              <LayoutItem Id="WorkPermits" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IFamilyMember_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="UseParentOptions">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="ChangeHistory" TextAlignMode="AlignLocal">
+                <LayoutItem Id="ChangeHistory" TextAlignMode="AutoSize" />
+              </LayoutGroup>
+            </TabbedGroup>
+            <LayoutGroup Id="IMessage" TextAlignMode="UseParentOptions" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="WorkHistories" TextAlignMode="AlignLocal">
+              <LayoutItem Id="WorkHistories" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="Educations" TextAlignMode="AlignLocal">
+              <LayoutItem Id="Educations" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="WorkPermits" TextAlignMode="AlignLocal">
+              <LayoutItem Id="WorkPermits" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="FamilyMembers" TextAlignMode="AlignLocal">
+              <LayoutItem Id="FamilyMembers" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="FamilyMemberInApplications" TextAlignMode="AlignLocal">
+              <LayoutItem Id="FamilyMemberInApplications" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="EmployeeInApplications" TextAlignMode="AlignLocal">
+              <LayoutItem Id="EmployeeInApplications" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="TravelInformations" TextAlignMode="AlignLocal">
+              <LayoutItem Id="TravelInformations" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="AddressOfResidences" TextAlignMode="AlignLocal">
+              <LayoutItem Id="AddressOfResidences" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="Passports" TextAlignMode="AlignLocal">
+              <LayoutItem Id="Passports" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ILongProcessApplication_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="UseParentOptions">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="IApplication" TextAlignMode="UseParentOptions">
+                <LayoutGroup Id="IApplication_col1" TextAlignMode="UseParentOptions">
+                  <LayoutGroup Id="Auto539fc28c-4f58-4310-837b-c00883c98629" TextAlignMode="UseParentOptions">
+                    <LayoutGroup Id="Item3" TextAlignMode="UseParentOptions">
+                      <LayoutGroup Id="Auto167c9169-016d-460a-9535-08d484869c39" TextAlignMode="UseParentOptions">
+                        <LayoutGroup Id="Auto5ff9faf3-d563-44d8-be87-3a52bd1275d4" TextAlignMode="UseParentOptions">
+                          <LayoutGroup Id="Auto05fec32d-16bb-4514-a4a7-a3c8eb2fe3d9" TextAlignMode="UseParentOptions">
+                            <LayoutGroup Id="Auto3e19dd74-0802-4074-bbe2-ebfae26aa60b" TextAlignMode="UseParentOptions">
+                              <LayoutGroup Id="Auto12a1d5d9-16a7-4c1d-a5a1-a8f9797e1db2" TextAlignMode="UseParentOptions">
+                                <LayoutItem Id="BaseApplicationType" TextAlignMode="UseParentOptions" />
+                                <LayoutItem Id="NumberOfPerson" TextAlignMode="UseParentOptions" />
+                              </LayoutGroup>
+                              <LayoutGroup Id="Auto7a15d638-7303-4cff-9d85-af63008a42ef" TextAlignMode="UseParentOptions">
+                                <LayoutGroup Id="Autofbb2c820-7767-4b5a-9464-f282e4086bcf" TextAlignMode="UseParentOptions" />
+                                <LayoutGroup Id="Auto6293909b-7f21-4356-ba77-3e315c78e996" TextAlignMode="UseParentOptions">
+                                  <LayoutGroup Id="Auto54da12ae-9362-471c-a688-f6ce6e578cd3" TextAlignMode="UseParentOptions" />
+                                  <LayoutGroup Id="Auto14b5d228-567a-4c8e-83e5-cf8518264255" TextAlignMode="UseParentOptions">
+                                    <LayoutGroup Id="Autod41aca5a-8d68-4e66-8249-3892b846f10c" TextAlignMode="UseParentOptions" />
+                                    <LayoutGroup Id="Autof3a0f79b-0c89-4901-b591-b14ce13a0c8e" TextAlignMode="UseParentOptions">
+                                      <LayoutGroup Id="Autoeade9fe8-98a3-4839-a3a8-a01cf5cada58" TextAlignMode="UseParentOptions">
+                                        <LayoutItem Id="VisaCategory" TextAlignMode="UseParentOptions" />
+                                        <LayoutItem Id="BorderZonePeriod" TextAlignMode="UseParentOptions" />
+                                        <LayoutGroup Id="Auto694bd0d0-ba67-4f8d-9a15-c772c3d22310" TextAlignMode="UseParentOptions">
+                                          <LayoutGroup Id="Auto4756b667-73f5-455f-8282-3e781c4d88c2" TextAlignMode="UseParentOptions">
+                                            <LayoutItem Id="IsInvitationWithWorkPermit" TextAlignMode="UseParentOptions" />
+                                            <LayoutItem Id="IsWizaWithWorkPermit" TextAlignMode="UseParentOptions" />
+                                            <LayoutItem Id="ChooseBorderZoneType" TextAlignMode="UseParentOptions" />
+                                          </LayoutGroup>
+                                          <LayoutItem Id="BorderZoneForVisa" TextAlignMode="UseParentOptions" />
+                                        </LayoutGroup>
+                                      </LayoutGroup>
+                                    </LayoutGroup>
+                                  </LayoutGroup>
+                                </LayoutGroup>
+                              </LayoutGroup>
+                            </LayoutGroup>
+                          </LayoutGroup>
+                        </LayoutGroup>
+                      </LayoutGroup>
+                    </LayoutGroup>
+                    <LayoutGroup Id="Item5" TextAlignMode="UseParentOptions">
+                      <LayoutItem Id="AutoRegistration" TextAlignMode="UseParentOptions" />
+                      <LayoutItem Id="ManualApplicationNumber" TextAlignMode="UseParentOptions" />
+                      <LayoutItem Id="ManualApplicationDate" TextAlignMode="UseParentOptions" />
+                      <LayoutItem Id="Urgency" TextAlignMode="UseParentOptions" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <TabbedGroup Id="Item7">
+                    <LayoutGroup Id="PersonInApplication" TextAlignMode="AlignLocal">
+                      <LayoutItem Id="PersonInApplication" TextAlignMode="AutoSize" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Invitations" TextAlignMode="AlignLocal">
+                      <LayoutItem Id="ApplicationResult" TextAlignMode="AutoSize" />
+                    </LayoutGroup>
+                  </TabbedGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Item2" TextAlignMode="UseParentOptions">
+                <LayoutItem Id="DateForwardedToMonistery" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="MinisteriesDocumentDate" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="MinisteriesDocumentNumber" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="ProcessDate" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="ProcessNumber" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="ApplicationState" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="Cancelled" TextAlignMode="UseParentOptions" />
+              </LayoutGroup>
+              <LayoutGroup Id="Item6" TextAlignMode="UseParentOptions">
+                <LayoutItem Id="ChangeHistory" TextAlignMode="AutoSize" />
+              </LayoutGroup>
+            </TabbedGroup>
+            <LayoutGroup Id="IRegistration" TextAlignMode="UseParentOptions" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="Invitations" TextAlignMode="AlignLocal">
+              <LayoutItem Id="Invitations" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="PersonInApplication" TextAlignMode="AlignLocal">
+              <LayoutItem Id="PersonInApplication" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="ILongProcessApplication_ListView" IsActiveFilterEnabled="True" ActiveFilterString="" />
+    <DetailView Id="IPassport_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="UseParentOptions">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="Item2">
+                <LayoutItem Id="LastVisa" TextAlignMode="AutoSize" />
+              </LayoutGroup>
+              <LayoutGroup Id="Item4">
+                <LayoutGroup Id="PassportCopy" TextAlignMode="AlignLocal">
+                  <LayoutItem Id="PassportCopy" TextAlignMode="AutoSize" />
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="ChangeHistory" TextAlignMode="AlignLocal">
+                <LayoutItem Id="ChangeHistory" TextAlignMode="AutoSize" />
+              </LayoutGroup>
+            </TabbedGroup>
+            <LayoutGroup Id="IPassport" TextAlignMode="UseParentOptions">
+              <LayoutGroup Id="IPassport_col1" TextAlignMode="UseParentOptions">
+                <LayoutItem Id="PassportNumber" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="PassportType" TextAlignMode="UseParentOptions" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="Visas" TextAlignMode="AlignLocal">
+              <LayoutItem Id="Visas" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="PassportCopy" TextAlignMode="AlignLocal">
+              <LayoutItem Id="PassportCopy" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IPersonInApplication_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="AlignLocal">
+            <TabbedGroup Id="Item2">
+              <LayoutGroup Id="IPersonInApplication" TextAlignMode="UseParentOptions">
+                <LayoutGroup Id="IPersonInApplication_col1" TextAlignMode="AlignLocal">
+                  <LayoutGroup Id="Item5" TextAlignMode="UseParentOptions">
+                    <LayoutItem Id="Position" TextAlignMode="UseParentOptions" />
+                    <LayoutItem Id="Passport" TextAlignMode="UseParentOptions" />
+                    <LayoutItem Id="Visa" TextAlignMode="UseParentOptions" />
+                    <LayoutItem Id="VisaIssuedPlace" TextAlignMode="UseParentOptions" />
+                    <LayoutItem Id="Address" TextAlignMode="UseParentOptions" />
+                    <LayoutItem Id="AddressOfResidence" TextAlignMode="UseParentOptions" />
+                    <LayoutItem Id="EmployeeEntryDate" TextAlignMode="UseParentOptions" />
+                    <LayoutItem Id="FamilyMemberEntryDate" TextAlignMode="UseParentOptions" />
+                    <LayoutItem Id="CheckPoint" TextAlignMode="UseParentOptions" />
+                    <LayoutItem Id="PurposeOfTrave" TextAlignMode="UseParentOptions" />
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Item3" TextAlignMode="UseParentOptions">
+                <LayoutGroup Id="Item1" TextAlignMode="UseParentOptions">
+                  <LayoutItem Id="RegistrationDate" TextAlignMode="UseParentOptions" />
+                  <LayoutItem Id="RegistrationNumber" TextAlignMode="UseParentOptions" />
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="ChangeHistory_Group" TextAlignMode="AlignLocal">
+                <LayoutItem Id="ChangeHistory" ViewItem="ChangeHistory" />
+              </LayoutGroup>
+            </TabbedGroup>
+            <LayoutGroup Id="IPersonInApplication" TextAlignMode="UseParentOptions">
+              <LayoutGroup Id="IPersonInApplication_col1" TextAlignMode="UseParentOptions">
+                <LayoutItem Id="Passport" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="Visa" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="Address" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="AddressOfResidence" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="Employee" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="FamilyMember" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="Position" TextAlignMode="UseParentOptions" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IPersonInApplication_DetailView_Copy">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="AlignLocal">
+            <TabbedGroup Id="Item2">
+              <LayoutGroup Id="IPersonInApplication">
+                <LayoutGroup Id="IPersonInApplication_col1" TextAlignMode="AlignLocal" />
+              </LayoutGroup>
+            </TabbedGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="IPersonInApplication_ListView" IsActiveFilterEnabled="True" ActiveFilterString="" />
+    <ListView Id="IPersonInApplication_ListView_Import" IsActiveFilterEnabled="True" ActiveFilterString="" />
+    <ListView Id="IPersonInApplication_ListView_ReadOnly" IsActiveFilterEnabled="True" ActiveFilterString="" />
+    <DetailView Id="IPersonInResult_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="UseParentOptions">
+            <LayoutGroup Id="IPersonInResult" TextAlignMode="UseParentOptions" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="IRelation_LookupListView" IsActiveFilterEnabled="True" ActiveFilterString="" />
+    <DetailView Id="ISimpleProcessApplication_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="UseParentOptions">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="IApplication">
+                <LayoutGroup Id="IApplication_col1">
+                  <LayoutGroup Id="Auto67a48f82-e96c-4f5c-bdfb-6ed9faac9ca4">
+                    <LayoutGroup Id="Item3">
+                      <LayoutGroup Id="Auto90877775-347c-48ab-a09c-bf4caf98c0c3">
+                        <LayoutGroup Id="Autoc60e55ad-2529-44fd-8afa-3978058dee41" TextAlignMode="AlignLocal" />
+                      </LayoutGroup>
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Item7">
+                <LayoutItem Id="ChangeHistory" TextAlignMode="AutoSize" />
+              </LayoutGroup>
+            </TabbedGroup>
+            <LayoutGroup Id="IRegistration" TextAlignMode="UseParentOptions" />
+            <TabbedGroup Id="Tabs">
+              <LayoutGroup Id="PersonInApplication" TextAlignMode="AlignLocal">
+                <LayoutItem Id="PersonInApplication" TextAlignMode="AutoSize" />
+              </LayoutGroup>
+              <LayoutGroup Id="ApplicationResult" TextAlignMode="AlignLocal">
+                <LayoutItem Id="ApplicationResult" TextAlignMode="AutoSize" />
+              </LayoutGroup>
+            </TabbedGroup>
+            <LayoutGroup Id="IApplicationForBorderZonePermit" TextAlignMode="UseParentOptions" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="ApplicationResult" TextAlignMode="AlignLocal">
+              <LayoutItem Id="ApplicationResult" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="PersonInApplication" TextAlignMode="AlignLocal">
+              <LayoutItem Id="PersonInApplication" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="ISimpleProcessApplication_ListView" IsActiveFilterEnabled="True" ActiveFilterString="" />
+    <DetailView Id="IVisa_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="UseParentOptions">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="IVisa" TextAlignMode="UseParentOptions">
+                <LayoutGroup Id="IVisa_col1" TextAlignMode="UseParentOptions">
+                  <LayoutGroup Id="Item3" TextAlignMode="UseParentOptions" />
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Item2">
+                <LayoutItem Id="PersonInAppForVisaExtention" TextAlignMode="AutoSize" />
+              </LayoutGroup>
+              <LayoutGroup Id="Item4" TextAlignMode="AlignLocal">
+                <LayoutItem Id="VisaCopy" TextAlignMode="AutoSize" />
+              </LayoutGroup>
+              <LayoutGroup Id="ChangeHistory" TextAlignMode="AlignLocal">
+                <LayoutItem Id="ChangeHistory" TextAlignMode="AutoSize" />
+              </LayoutGroup>
+            </TabbedGroup>
+            <LayoutGroup Id="IVisa" TextAlignMode="UseParentOptions">
+              <LayoutGroup Id="IVisa_col1" TextAlignMode="UseParentOptions">
+                <LayoutItem Id="VisaNumber" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="VisaType" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="VisaCategory" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="VisaIssuedPlace" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="VisaIssuedDate" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="VisaStartDate" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="VisaEndDate" TextAlignMode="UseParentOptions" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="VisaCopy" TextAlignMode="AlignLocal">
+              <LayoutItem Id="VisaCopy" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IWorkHistory_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="UseParentOptions">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="ChangeHistory_Group">
+                <LayoutItem Id="ChangeHistory" TextAlignMode="AutoSize" />
+              </LayoutGroup>
+            </TabbedGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IWorkPermit_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="UseParentOptions">
+            <LayoutGroup Id="IWorkPermit" TextAlignMode="UseParentOptions">
+              <LayoutGroup Id="IWorkPermit_col1" TextAlignMode="UseParentOptions">
+                <LayoutItem Id="Employee" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="Passport" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="Position" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="StartDateOfWorkPermit" TextAlignMode="UseParentOptions" />
+                <LayoutItem Id="ExpiringDateOfWorkPermit" TextAlignMode="UseParentOptions" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IWorkPermitLetter_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="UseParentOptions">
+            <LayoutGroup Id="IWorkPermitLetter" TextAlignMode="UseParentOptions">
+              <TabbedGroup Id="Item2">
+                <LayoutGroup Id="WorkPermitCopy" TextAlignMode="AlignLocal">
+                  <LayoutItem Id="WorkPermitCopy" TextAlignMode="AutoSize" />
+                </LayoutGroup>
+              </TabbedGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="WorkPermits" TextAlignMode="AlignLocal">
+              <LayoutItem Id="WorkPermits" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="WorkPermitCopy" TextAlignMode="AlignLocal">
+              <LayoutItem Id="WorkPermitCopy" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

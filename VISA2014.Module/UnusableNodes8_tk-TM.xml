@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <ListView Id="Employee_Invitation_Variable">
+      <Columns Id="Columns">
+        <ColumnInfo Id="Person State" Caption="Adam ýagdaýy" />
+        <ColumnInfo Id="AppType" Caption="Ýütutma görnüşy" />
+      </Columns>
+    </ListView>
+    <ListView Id="Familymember_Invitation_Variable">
+      <Columns Id="Columns">
+        <ColumnInfo Id="AppType" Caption="Ýütutma görnüşy" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>

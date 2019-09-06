@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="DialogCancel" Caption="Отмена" />
+      <Action Id="Logoff" ToolTip="Выйти" Caption="Выйти" />
+      <Action Id="Logon" Caption="Войти" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Security.AuthenticationStandardLogonParameters">
+      <OwnMembers>
+        <Member Name="Password" Caption="Пароль" />
+        <Member Name="UserName" Caption="Имя пользователя" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ChangePasswordOnLogonParameters">
+      <OwnMembers>
+        <Member Name="NewPassword" Caption="Новый пароль" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Views>
+    <DetailView Id="AuthenticationStandardLogonParameters_DetailView" Caption="Войти">
+      <Items>
+        <PropertyEditor Id="UserName" Caption="Имя пользователя" />
+      </Items>
+    </DetailView>
+  </Views>
+</Application>

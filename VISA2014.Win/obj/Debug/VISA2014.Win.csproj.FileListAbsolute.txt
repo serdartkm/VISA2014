@@ -1,0 +1,474 @@
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\bin\Debug\Model.xafml
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\bin\Debug\Model_ru-RU.xafml
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\bin\Debug\Model_tk-TM.xafml
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\bin\Debug\Model_tr-TR.xafml
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\bin\Debug\Model_ru-RU_ru-ru.xafml
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\bin\Debug\Model_ru-RU_tk-tm.xafml
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\bin\Debug\Model_ru-RU_tr-tr.xafml
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\bin\Debug\Model_ru.xafml
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\bin\Debug\Model_tk.xafml
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\bin\Debug\VISA2014.Win.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\bin\Debug\VISA2014.Win.exe.manifest
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\bin\Debug\VISA2014.Win.application
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\bin\Debug\VISA2014.Win.exe
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\bin\Debug\VISA2014.Win.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\bin\Debug\DatabaseUserSettings.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\bin\Debug\LogicNP.CryptoLicensing.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\bin\Debug\VISA2014.Module.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\bin\Debug\VISA2014.Module.Win.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\bin\Debug\VISA2014.Module.Win.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\bin\Debug\VISA2014.Module.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\bin\Debug\DatabaseUserSettings.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\bin\Debug\LogicNP.CryptoLicensing.xml
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\bin\Debug\ru\VISA2014.Module.Win.resources.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\bin\Debug\ru\VISA2014.Module.resources.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\bin\Debug\ru-RU\VISA2014.Module.resources.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\bin\Debug\tk\VISA2014.Module.resources.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\bin\Debug\tk-TM\VISA2014.Module.resources.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\bin\Debug\tr-TR\VISA2014.Module.resources.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\obj\Debug\VISA2014.Win.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\obj\Debug\VISA2014.Win.Properties.Resources.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\obj\Debug\VISA2014.Win.VISA2014WindowsFormsApplication.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\obj\Debug\VISA2014.Win.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\obj\Debug\VISA2014.Win.exe.licenses
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\obj\Debug\VISA2014.Win.TrustInfo.xml
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\obj\Debug\VISA2014.Win.exe.manifest
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\obj\Debug\VISA2014.Win.application
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\obj\Debug\VISA2014.Win.exe
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\obj\Debug\VISA2014.Win.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\obj\Debug\LisenceKey.Form1.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\obj\Debug\LisenceKey.frmAbout.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\obj\Debug\LisenceKey.frmGenerate.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\obj\Debug\LisenceKey.frmRegistration.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\VISA2014\VISA2014.Win\bin\Debug\FoxLearn.License.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\Visa_Application_TM_QR_08.pdf
+D:\VISA2014\VISA2014.Win\bin\Debug\Model.xafml
+D:\VISA2014\VISA2014.Win\bin\Debug\Model_tk-TM.xafml
+D:\VISA2014\VISA2014.Win\bin\Debug\Model_tr-TR.xafml
+D:\VISA2014\VISA2014.Win\bin\Debug\Model_ru.xafml
+D:\VISA2014\VISA2014.Win\bin\Debug\Model_tk.xafml
+D:\VISA2014\VISA2014.Win\bin\Debug\Model_ru-RU.xafml
+D:\VISA2014\VISA2014.Win\bin\Debug\Model_ru-RU_ru-ru.xafml
+D:\VISA2014\VISA2014.Win\bin\Debug\Model_ru-RU_tk-tm.xafml
+D:\VISA2014\VISA2014.Win\bin\Debug\Model_ru-RU_tr-tr.xafml
+D:\VISA2014\VISA2014.Win\bin\Debug\Model_tk-TM_ru-ru.xafml
+D:\VISA2014\VISA2014.Win\bin\Debug\Model_tk-TM_ru-ru_ru-ru.xafml
+D:\VISA2014\VISA2014.Win\bin\Debug\Model_tk-TM_ru-ru_tk-tm.xafml
+D:\VISA2014\VISA2014.Win\bin\Debug\Model_tk-TM_ru-ru_tr-tr.xafml
+D:\VISA2014\VISA2014.Win\bin\Debug\Model_tk-TM_ru.xafml
+D:\VISA2014\VISA2014.Win\bin\Debug\Model_tk-TM_tk-tm.xafml
+D:\VISA2014\VISA2014.Win\bin\Debug\Model_tk-TM_tk.xafml
+D:\VISA2014\VISA2014.Win\bin\Debug\Model_tk-TM_tr-tr.xafml
+D:\VISA2014\VISA2014.Win\bin\Debug\Properties\Resources.resx
+D:\VISA2014\VISA2014.Win\bin\Debug\Properties\Resources.Designer.cs
+D:\VISA2014\VISA2014.Win\bin\Debug\VISA2014.Win.exe.config
+D:\VISA2014\VISA2014.Win\bin\Debug\VISA2014.Win.exe.manifest
+D:\VISA2014\VISA2014.Win\bin\Debug\VISA2014.Win.application
+D:\VISA2014\VISA2014.Win\bin\Debug\VISA2014.Win.exe
+D:\VISA2014\VISA2014.Win\bin\Debug\VISA2014.Win.pdb
+D:\VISA2014\VISA2014.Win\bin\Debug\DatabaseUserSettings.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.BonusSkins.v12.2.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.Data.v12.2.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.AuditTrail.v12.2.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.ConditionalAppearance.v12.2.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.FileAttachment.Win.v12.2.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.Images.v12.2.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.Reports.v12.2.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.Reports.Win.v12.2.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.ScriptRecorder.v12.2.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.ScriptRecorder.Win.v12.2.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.Security.v12.2.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.v12.2.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.Validation.v12.2.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.Validation.Win.v12.2.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.ViewVariantsModule.v12.2.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.Win.v12.2.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.Xpo.v12.2.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.Persistent.Base.v12.2.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.Persistent.BaseImpl.v12.2.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.Printing.v12.2.Core.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.Utils.v12.2.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.Xpo.v12.2.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.XtraBars.v12.2.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.XtraEditors.v12.2.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.XtraGrid.v12.2.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.XtraLayout.v12.2.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.XtraNavBar.v12.2.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.XtraPrinting.v12.2.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.XtraReports.v12.2.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.XtraReports.v12.2.Extensions.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.XtraRichEdit.v12.2.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\FoxLearn.License.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\LogicNP.CryptoLicensing.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\VISA2014.Module.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\VISA2014.Module.Win.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\Spire.Pdf.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\Spire.License.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\VISA2014.Module.Win.pdb
+D:\VISA2014\VISA2014.Win\bin\Debug\VISA2014.Module.pdb
+D:\VISA2014\VISA2014.Win\bin\Debug\DatabaseUserSettings.pdb
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.AuditTrail.v12.2.xml
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.ConditionalAppearance.v12.2.xml
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.FileAttachment.Win.v12.2.xml
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.Reports.v12.2.xml
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.Reports.Win.v12.2.xml
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.ScriptRecorder.v12.2.xml
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.ScriptRecorder.Win.v12.2.xml
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.Security.v12.2.xml
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.Validation.v12.2.xml
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.ViewVariantsModule.v12.2.xml
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.Xpo.v12.2.xml
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.Utils.v12.2.xml
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.Printing.v12.2.Core.xml
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.Data.v12.2.xml
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.v12.2.xml
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.Win.v12.2.xml
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.Persistent.Base.v12.2.xml
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.Persistent.BaseImpl.v12.2.xml
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.Xpo.v12.2.xml
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.XtraGrid.v12.2.xml
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.XtraBars.v12.2.xml
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.XtraEditors.v12.2.xml
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.XtraLayout.v12.2.xml
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.XtraNavBar.v12.2.xml
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.XtraPrinting.v12.2.xml
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.XtraReports.v12.2.xml
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.XtraReports.v12.2.Extensions.xml
+D:\VISA2014\VISA2014.Win\bin\Debug\DevExpress.XtraRichEdit.v12.2.xml
+D:\VISA2014\VISA2014.Win\bin\Debug\LogicNP.CryptoLicensing.xml
+D:\VISA2014\VISA2014.Win\bin\Debug\Spire.Pdf.xml
+D:\VISA2014\VISA2014.Win\bin\Debug\Spire.License.xml
+D:\VISA2014\VISA2014.Win\bin\Debug\ru\VISA2014.Module.Win.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ru\VISA2014.Module.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ru-RU\VISA2014.Module.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\tk\VISA2014.Module.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\tk-TM\VISA2014.Module.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\tr-TR\VISA2014.Module.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\de\DevExpress.ExpressApp.AuditTrail.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ja\DevExpress.ExpressApp.AuditTrail.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ru\DevExpress.ExpressApp.AuditTrail.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\de\DevExpress.ExpressApp.FileAttachment.Win.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\es\DevExpress.ExpressApp.FileAttachment.Win.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ja\DevExpress.ExpressApp.FileAttachment.Win.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ru\DevExpress.ExpressApp.FileAttachment.Win.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\de\DevExpress.ExpressApp.Reports.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\es\DevExpress.ExpressApp.Reports.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ja\DevExpress.ExpressApp.Reports.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ru\DevExpress.ExpressApp.Reports.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\de\DevExpress.ExpressApp.Reports.Win.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\es\DevExpress.ExpressApp.Reports.Win.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ja\DevExpress.ExpressApp.Reports.Win.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ru\DevExpress.ExpressApp.Reports.Win.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\de\DevExpress.ExpressApp.ScriptRecorder.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\es\DevExpress.ExpressApp.ScriptRecorder.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ja\DevExpress.ExpressApp.ScriptRecorder.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ru\DevExpress.ExpressApp.ScriptRecorder.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\de\DevExpress.ExpressApp.ScriptRecorder.Win.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\es\DevExpress.ExpressApp.ScriptRecorder.Win.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ja\DevExpress.ExpressApp.ScriptRecorder.Win.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ru\DevExpress.ExpressApp.ScriptRecorder.Win.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\de\DevExpress.ExpressApp.Security.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\es\DevExpress.ExpressApp.Security.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ja\DevExpress.ExpressApp.Security.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ru\DevExpress.ExpressApp.Security.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\de\DevExpress.ExpressApp.Validation.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\es\DevExpress.ExpressApp.Validation.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ja\DevExpress.ExpressApp.Validation.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ru\DevExpress.ExpressApp.Validation.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\es\DevExpress.ExpressApp.Validation.Win.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ja\DevExpress.ExpressApp.Validation.Win.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ru\DevExpress.ExpressApp.Validation.Win.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\de\DevExpress.ExpressApp.ViewVariantsModule.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\es\DevExpress.ExpressApp.ViewVariantsModule.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ja\DevExpress.ExpressApp.ViewVariantsModule.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ru\DevExpress.ExpressApp.ViewVariantsModule.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\de\DevExpress.Utils.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\es\DevExpress.Utils.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ja\DevExpress.Utils.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ru\DevExpress.Utils.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\de\DevExpress.Printing.v12.2.Core.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\es\DevExpress.Printing.v12.2.Core.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ja\DevExpress.Printing.v12.2.Core.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ru\DevExpress.Printing.v12.2.Core.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\de\DevExpress.Data.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\es\DevExpress.Data.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ja\DevExpress.Data.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ru\DevExpress.Data.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\de\DevExpress.ExpressApp.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\es\DevExpress.ExpressApp.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ja\DevExpress.ExpressApp.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ru\DevExpress.ExpressApp.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\de\DevExpress.ExpressApp.Win.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\es\DevExpress.ExpressApp.Win.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ja\DevExpress.ExpressApp.Win.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ru\DevExpress.ExpressApp.Win.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\de\DevExpress.Xpo.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\es\DevExpress.Xpo.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ja\DevExpress.Xpo.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ru\DevExpress.Xpo.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\de\DevExpress.XtraGrid.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\es\DevExpress.XtraGrid.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ja\DevExpress.XtraGrid.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ru\DevExpress.XtraGrid.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\de\DevExpress.XtraBars.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\es\DevExpress.XtraBars.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ja\DevExpress.XtraBars.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ru\DevExpress.XtraBars.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\de\DevExpress.XtraEditors.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\es\DevExpress.XtraEditors.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ja\DevExpress.XtraEditors.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ru\DevExpress.XtraEditors.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\de\DevExpress.XtraLayout.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\es\DevExpress.XtraLayout.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ja\DevExpress.XtraLayout.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ru\DevExpress.XtraLayout.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\de\DevExpress.XtraNavBar.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\es\DevExpress.XtraNavBar.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ja\DevExpress.XtraNavBar.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ru\DevExpress.XtraNavBar.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\de\DevExpress.XtraPrinting.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\es\DevExpress.XtraPrinting.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ja\DevExpress.XtraPrinting.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ru\DevExpress.XtraPrinting.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\de\DevExpress.XtraReports.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\es\DevExpress.XtraReports.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ja\DevExpress.XtraReports.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ru\DevExpress.XtraReports.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\de\DevExpress.XtraReports.v12.2.Extensions.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\es\DevExpress.XtraReports.v12.2.Extensions.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ja\DevExpress.XtraReports.v12.2.Extensions.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ru\DevExpress.XtraReports.v12.2.Extensions.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\de\DevExpress.XtraRichEdit.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\es\DevExpress.XtraRichEdit.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ja\DevExpress.XtraRichEdit.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\bin\Debug\ru\DevExpress.XtraRichEdit.v12.2.resources.dll
+D:\VISA2014\VISA2014.Win\obj\Debug\VISA2014.Win.csprojResolveAssemblyReference.cache
+D:\VISA2014\VISA2014.Win\obj\Debug\LisenceKey.Form1.resources
+D:\VISA2014\VISA2014.Win\obj\Debug\LisenceKey.frmAbout.resources
+D:\VISA2014\VISA2014.Win\obj\Debug\LisenceKey.frmGenerate.resources
+D:\VISA2014\VISA2014.Win\obj\Debug\LisenceKey.frmRegistration.resources
+D:\VISA2014\VISA2014.Win\obj\Debug\VISA2014.Win.frmSQLConnection.resources
+D:\VISA2014\VISA2014.Win\obj\Debug\VISA2014.Win.Properties.Resources.resources
+D:\VISA2014\VISA2014.Win\obj\Debug\VISA2014.Win.VISA2014WindowsFormsApplication.resources
+D:\VISA2014\VISA2014.Win\obj\Debug\VISA2014.Win.csproj.GenerateResource.Cache
+D:\VISA2014\VISA2014.Win\obj\Debug\VISA2014.Win.exe.licenses
+D:\VISA2014\VISA2014.Win\obj\Debug\VISA2014.Win.TrustInfo.xml
+D:\VISA2014\VISA2014.Win\obj\Debug\VISA2014.Win.exe.manifest
+D:\VISA2014\VISA2014.Win\obj\Debug\VISA2014.Win.application
+D:\VISA2014\VISA2014.Win\obj\Debug\VISA2014.Win.exe
+D:\VISA2014\VISA2014.Win\obj\Debug\VISA2014.Win.pdb
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\VISA2014.Win.exe.config
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\obj\Debug\VISA2014.Win.exe
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\obj\Debug\VISA2014.Win.pdb
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\Visa_Application_TM_QR_08.pdf
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\Model.xafml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\Model_tk-TM.xafml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\Model_tr-TR.xafml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\Model_ru.xafml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\Model_tk.xafml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\Model_ru-RU.xafml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\Model_ru-RU_ru-ru.xafml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\Model_ru-RU_tk-tm.xafml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\Model_ru-RU_tr-tr.xafml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\Model_tk-TM_ru-ru.xafml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\Model_tk-TM_ru-ru_ru-ru.xafml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\Model_tk-TM_ru-ru_tk-tm.xafml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\Model_tk-TM_ru-ru_tr-tr.xafml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\Model_tk-TM_ru.xafml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\Model_tk-TM_tk-tm.xafml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\Model_tk-TM_tk.xafml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\Model_tk-TM_tr-tr.xafml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\Properties\Resources.resx
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\Properties\Resources.Designer.cs
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\VISA2014.Win.exe.manifest
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\VISA2014.Win.application
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\VISA2014.Win.exe
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\VISA2014.Win.pdb
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DatabaseUserSettings.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.BonusSkins.v12.2.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.Data.v12.2.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.AuditTrail.v12.2.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.ConditionalAppearance.v12.2.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.FileAttachment.Win.v12.2.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.Images.v12.2.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.Reports.v12.2.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.Reports.Win.v12.2.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.ScriptRecorder.v12.2.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.ScriptRecorder.Win.v12.2.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.Security.v12.2.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.v12.2.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.Validation.v12.2.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.Validation.Win.v12.2.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.ViewVariantsModule.v12.2.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.Win.v12.2.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.Xpo.v12.2.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.Persistent.Base.v12.2.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.Persistent.BaseImpl.v12.2.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.Printing.v12.2.Core.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.Utils.v12.2.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.Xpo.v12.2.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.XtraBars.v12.2.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.XtraEditors.v12.2.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.XtraGrid.v12.2.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.XtraLayout.v12.2.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.XtraNavBar.v12.2.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.XtraPrinting.v12.2.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.XtraReports.v12.2.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.XtraReports.v12.2.Extensions.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.XtraRichEdit.v12.2.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\LogicNP.CryptoLicensing.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\VISA2014.Module.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\VISA2014.Module.Win.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\Spire.Pdf.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\Spire.License.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\VISA2014.Module.Win.pdb
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\VISA2014.Module.pdb
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DatabaseUserSettings.pdb
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.AuditTrail.v12.2.xml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.ConditionalAppearance.v12.2.xml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.FileAttachment.Win.v12.2.xml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.Reports.v12.2.xml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.Reports.Win.v12.2.xml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.ScriptRecorder.v12.2.xml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.ScriptRecorder.Win.v12.2.xml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.Security.v12.2.xml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.Validation.v12.2.xml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.ViewVariantsModule.v12.2.xml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.Xpo.v12.2.xml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.Utils.v12.2.xml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.Printing.v12.2.Core.xml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.Data.v12.2.xml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.v12.2.xml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.ExpressApp.Win.v12.2.xml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.Persistent.Base.v12.2.xml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.Persistent.BaseImpl.v12.2.xml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.Xpo.v12.2.xml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.XtraGrid.v12.2.xml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.XtraBars.v12.2.xml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.XtraEditors.v12.2.xml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.XtraLayout.v12.2.xml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.XtraNavBar.v12.2.xml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.XtraPrinting.v12.2.xml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.XtraReports.v12.2.xml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.XtraReports.v12.2.Extensions.xml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\DevExpress.XtraRichEdit.v12.2.xml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\LogicNP.CryptoLicensing.xml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\Spire.Pdf.xml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\Spire.License.xml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ru\VISA2014.Module.Win.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ru\VISA2014.Module.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ru-RU\VISA2014.Module.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\tk\VISA2014.Module.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\tk-TM\VISA2014.Module.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\tr-TR\VISA2014.Module.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\de\DevExpress.ExpressApp.AuditTrail.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ja\DevExpress.ExpressApp.AuditTrail.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ru\DevExpress.ExpressApp.AuditTrail.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\de\DevExpress.ExpressApp.FileAttachment.Win.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\es\DevExpress.ExpressApp.FileAttachment.Win.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ja\DevExpress.ExpressApp.FileAttachment.Win.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ru\DevExpress.ExpressApp.FileAttachment.Win.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\de\DevExpress.ExpressApp.Reports.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\es\DevExpress.ExpressApp.Reports.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ja\DevExpress.ExpressApp.Reports.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ru\DevExpress.ExpressApp.Reports.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\de\DevExpress.ExpressApp.Reports.Win.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\es\DevExpress.ExpressApp.Reports.Win.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ja\DevExpress.ExpressApp.Reports.Win.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ru\DevExpress.ExpressApp.Reports.Win.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\de\DevExpress.ExpressApp.ScriptRecorder.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\es\DevExpress.ExpressApp.ScriptRecorder.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ja\DevExpress.ExpressApp.ScriptRecorder.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ru\DevExpress.ExpressApp.ScriptRecorder.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\de\DevExpress.ExpressApp.ScriptRecorder.Win.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\es\DevExpress.ExpressApp.ScriptRecorder.Win.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ja\DevExpress.ExpressApp.ScriptRecorder.Win.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ru\DevExpress.ExpressApp.ScriptRecorder.Win.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\de\DevExpress.ExpressApp.Security.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\es\DevExpress.ExpressApp.Security.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ja\DevExpress.ExpressApp.Security.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ru\DevExpress.ExpressApp.Security.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\de\DevExpress.ExpressApp.Validation.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\es\DevExpress.ExpressApp.Validation.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ja\DevExpress.ExpressApp.Validation.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ru\DevExpress.ExpressApp.Validation.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\es\DevExpress.ExpressApp.Validation.Win.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ja\DevExpress.ExpressApp.Validation.Win.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ru\DevExpress.ExpressApp.Validation.Win.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\de\DevExpress.ExpressApp.ViewVariantsModule.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\es\DevExpress.ExpressApp.ViewVariantsModule.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ja\DevExpress.ExpressApp.ViewVariantsModule.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ru\DevExpress.ExpressApp.ViewVariantsModule.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\de\DevExpress.Utils.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\es\DevExpress.Utils.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ja\DevExpress.Utils.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ru\DevExpress.Utils.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\de\DevExpress.Printing.v12.2.Core.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\es\DevExpress.Printing.v12.2.Core.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ja\DevExpress.Printing.v12.2.Core.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ru\DevExpress.Printing.v12.2.Core.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\de\DevExpress.Data.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\es\DevExpress.Data.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ja\DevExpress.Data.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ru\DevExpress.Data.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\de\DevExpress.ExpressApp.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\es\DevExpress.ExpressApp.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ja\DevExpress.ExpressApp.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ru\DevExpress.ExpressApp.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\de\DevExpress.ExpressApp.Win.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\es\DevExpress.ExpressApp.Win.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ja\DevExpress.ExpressApp.Win.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ru\DevExpress.ExpressApp.Win.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\de\DevExpress.Xpo.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\es\DevExpress.Xpo.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ja\DevExpress.Xpo.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ru\DevExpress.Xpo.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\de\DevExpress.XtraGrid.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\es\DevExpress.XtraGrid.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ja\DevExpress.XtraGrid.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ru\DevExpress.XtraGrid.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\de\DevExpress.XtraBars.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\es\DevExpress.XtraBars.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ja\DevExpress.XtraBars.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ru\DevExpress.XtraBars.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\de\DevExpress.XtraEditors.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\es\DevExpress.XtraEditors.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ja\DevExpress.XtraEditors.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ru\DevExpress.XtraEditors.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\de\DevExpress.XtraLayout.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\es\DevExpress.XtraLayout.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ja\DevExpress.XtraLayout.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ru\DevExpress.XtraLayout.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\de\DevExpress.XtraNavBar.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\es\DevExpress.XtraNavBar.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ja\DevExpress.XtraNavBar.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ru\DevExpress.XtraNavBar.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\de\DevExpress.XtraPrinting.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\es\DevExpress.XtraPrinting.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ja\DevExpress.XtraPrinting.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ru\DevExpress.XtraPrinting.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\de\DevExpress.XtraReports.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\es\DevExpress.XtraReports.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ja\DevExpress.XtraReports.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ru\DevExpress.XtraReports.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\de\DevExpress.XtraReports.v12.2.Extensions.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\es\DevExpress.XtraReports.v12.2.Extensions.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ja\DevExpress.XtraReports.v12.2.Extensions.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ru\DevExpress.XtraReports.v12.2.Extensions.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\de\DevExpress.XtraRichEdit.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\es\DevExpress.XtraRichEdit.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ja\DevExpress.XtraRichEdit.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\bin\Debug\ru\DevExpress.XtraRichEdit.v12.2.resources.dll
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\obj\Debug\VISA2014.Win.csprojResolveAssemblyReference.cache
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\obj\Debug\LisenceKey.Form1.resources
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\obj\Debug\LisenceKey.frmAbout.resources
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\obj\Debug\LisenceKey.frmGenerate.resources
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\obj\Debug\LisenceKey.frmRegistration.resources
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\obj\Debug\VISA2014.Win.frmSQLConnection.resources
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\obj\Debug\VISA2014.Win.Properties.Resources.resources
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\obj\Debug\VISA2014.Win.VISA2014WindowsFormsApplication.resources
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\obj\Debug\VISA2014.Win.csproj.GenerateResource.Cache
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\obj\Debug\VISA2014.Win.exe.licenses
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\obj\Debug\VISA2014.Win.TrustInfo.xml
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\obj\Debug\VISA2014.Win.exe.manifest
+C:\Users\u13589\Documents\Visual Studio 2010\Projects\VISA2014-master\VISA2014.Win\obj\Debug\VISA2014.Win.application

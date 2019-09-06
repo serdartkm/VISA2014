@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="Cancel" Caption="Ýatyrmak" />
+      <Action Id="ChangePasswordByUser" Caption="Meniň parolumy üýtget" />
+      <Action Id="Delete" Caption="Posmak" />
+      <Action Id="Deny_TypePermissionMatrixItem" Caption="Rugsat berme">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="Create" Caption="Döret" />
+          <ChoiceActionItem Id="Delete" Caption="Posmak" />
+          <ChoiceActionItem Id="Deny All" Caption="Hiç birine rugsat berme" />
+          <ChoiceActionItem Id="Deny Modification" Caption="Düzetmäger rugsat berme" />
+          <ChoiceActionItem Id="Navigate" Caption="Geçmek" />
+          <ChoiceActionItem Id="Read" Caption="Okamak" />
+          <ChoiceActionItem Id="Write" Caption="Ýazmak" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="Diagnostic Info.View Info">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="View Info" Caption="Maglumaty görmek" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="DialogCancel" Caption="Ýatyrmak" />
+      <Action Id="FullTextSearch" Caption="Teüt boýunça fiterle" ShortCaption="Gözlemek" />
+      <Action Id="Grant_TypePermissionMatrixItem" Caption="Rugsat ber">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="Create" Caption="Döret" />
+          <ChoiceActionItem Id="Delete" Caption="Posmak" />
+          <ChoiceActionItem Id="Full Access" Caption="Doly rugsat" />
+          <ChoiceActionItem Id="Navigate" Caption="Geçmek" />
+          <ChoiceActionItem Id="Read" Caption="Okamak" />
+          <ChoiceActionItem Id="Read Only Access" Caption="Diňe okamak üçin rugsat" />
+          <ChoiceActionItem Id="Write" Caption="Ýazmak" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="ListViewShowObject" Caption="Açmak" />
+      <Action Id="Logoff" Caption="Çykmak" />
+      <Action Id="Logon" Caption="Girmek" />
+      <Action Id="MyDetails" Caption="Meniň maglumalarym" />
+      <Action Id="NavigateBack" Caption="Yza" ToolTip="Bir öňki görüntä geçmek" />
+      <Action Id="NavigateForward" Caption="Öňe" ToolTip="Indiki görntä geçmek" />
+      <Action Id="New" Caption="Täze" />
+      <Action Id="NextObject" Caption="Indiki setir" />
+      <Action Id="PreviousObject" Caption="Öňki setir" />
+      <Action Id="Refresh" Caption="Täzelemek" />
+      <Action Id="ResetPassword" Caption="Paroly üýtget" />
+      <Action Id="Save" Caption="Ýatda Saklamak" />
+      <Action Id="SaveAndClose" Caption="Ýatda Saklamak we Ýapmak" />
+      <Action Id="SaveAndNew" Caption="Ýatda Saklamak we Täze" />
+      <Action Id="ShowAllContexts" Caption="Barlamak" />
+      <Action Id="ShowNavigationItem" Caption="Ugrukdyrmek" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DatabaseUserSettings.BusinessObjects.XPUserSettings">
+      <OwnMembers>
+        <Member Name="UserName" Caption="Ulanyjy ady" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DatabaseUserSettings.BusinessObjects.XPUserSettingsAspect">
+      <OwnMembers>
+        <Member Name="Name" Caption="Ady" />
+        <Member Name="Owner" Caption="Eýesi" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.AuthenticationStandardLogonParameters">
+      <OwnMembers>
+        <Member Name="Password" Caption="Parol" />
+        <Member Name="UserName" Caption="Ulanyjy ady" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ChangePasswordOnLogonParameters">
+      <OwnMembers>
+        <Member Name="ConfirmPassword" Caption="Paroly tassyklamak" />
+        <Member Name="NewPassword" Caption="Täze parol" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ChangePasswordParameters">
+      <OwnMembers>
+        <Member Name="OldPassword" Caption="Köne parol" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ObjectAccessPermission">
+      <OwnMembers>
+        <Member Name="CreateAccess" Caption="Döretmek rugsady" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardCreationInfo">
+      <OwnMembers>
+        <Member Name="DashboardName" Caption="Ady" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.AuditDataItemPersistent">
+      <OwnMembers>
+        <Member Name="UserName" Caption="Ulanyjy ady" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleBaseProperties">
+      <OwnMembers>
+        <Member Name="Name" Caption="Ady" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleBaseProperties">
+      <OwnMembers>
+        <Member Name="Name" Caption="Ady" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DomainComponents.Common.IDCTreeNode">
+      <OwnMembers>
+        <Member Name="Name" Caption="Ady" />
+        <Member Name="Owner" Caption="Eýesi" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.BusinessObjects.AuditTrail">
+      <OwnMembers>
+        <Member Name="Name" Caption="Ady" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ModelAccessModifier">
+        <LocalizationItem Name="Deny" Value="Rugsat berme" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ObjectAccess">
+        <LocalizationItem Name="Create" Value="Döret" />
+        <LocalizationItem Name="Delete" Value="Posmak" />
+        <LocalizationItem Name="Navigate" Value="Geçmek" />
+        <LocalizationItem Name="Read" Value="Okamak" />
+        <LocalizationItem Name="Write" Value="Ýazmak" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ObjectAccessModifier">
+        <LocalizationItem Name="Deny" Value="Rugsat berme" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.SubType">
+        <LocalizationItem Name="ApplicationForBorderZonePermision" Value="Serhet ýakasyna rugsat almak üçin ýüztutma" />
+        <LocalizationItem Name="ApplicationForCameFromBusinessTrip" Value="Iş saparyndan gelendigi barada ýüztutma" />
+        <LocalizationItem Name="ApplicationForCancellingVisa" Value="Wizany ýatyrmak üçin ýüztutma" />
+        <LocalizationItem Name="ApplicationForCancellingVisaAndWorkpermit" Value="Wizany we iş rugsatnamasyny ýatyrmak üçin ýüztutma" />
+        <LocalizationItem Name="ApplicationForCancellingWorkPermit" Value="Iş rugsatnamany ýatyrmak üçin ýüztutma" />
+        <LocalizationItem Name="ApplicationForChagingInformation" Value="Maglumatyň üýtgändigi barada ýüztutma" />
+        <LocalizationItem Name="ApplicationForChangingInvitation" Value="Çakylygy üýtgetmek üçin rugsatnama" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="Messages">
+      <LocalizationItem Name="Create" Value="Döret" />
+      <LocalizationItem Name="Delete" Value="Posmak" />
+      <LocalizationItem Name="Navigate" Value="Geçmek" />
+      <LocalizationItem Name="Read" Value="Okamak" />
+      <LocalizationItem Name="Write" Value="Ýazmak" />
+    </LocalizationGroup>
+  </Localization>
+  <Validation>
+    <Contexts>
+      <ValidationContext Id="Save" Caption="Ýatda Saklamak" />
+    </Contexts>
+  </Validation>
+  <Views>
+    <DetailView Id="AuthenticationStandardLogonParameters_DetailView" Caption="Girmek" />
+    <ListView Id="Employee_Registration_Variable">
+      <Columns>
+        <ColumnInfo Id="LastStrikeOff.Application" Caption="Hasapdan Çykarmak üçin Ýüztutma" />
+      </Columns>
+    </ListView>
+    <ListView Id="FamilyMember_Registration_Variable_">
+      <Columns>
+        <ColumnInfo Id="LastStrikeOff.Application" Caption="Hasapdan Çykarmak üçin Ýüztutma" />
+      </Columns>
+    </ListView>
+    <DetailView Id="ResetPasswordParameters_DetailView" Caption="Paroly üýtget" />
+  </Views>
+</Application>

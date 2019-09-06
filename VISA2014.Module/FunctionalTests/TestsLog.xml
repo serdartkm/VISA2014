@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<Tests xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Date="03.05.2013">
+  <Test Name="ProcessVisa" ApplicationName="VISA2014.Win" Result="Passed" Elapsed="00:01:02.7910763" Started="03.05.2013 20:22:27" MachineName="VISA" IP="192.168.86.1" />
+</Tests>

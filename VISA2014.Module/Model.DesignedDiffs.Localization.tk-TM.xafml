@@ -1,0 +1,2634 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application ProtectedContentText="Goragly maglumat">
+  <ActionDesign>
+    <Actions>
+      <Action Id="Cancel" Caption="Ýatyrmak" />
+      <Action Id="ChangePasswordByUser" Caption="Meniň parolymy çalyş" />
+      <Action Id="Delete" Caption="Pozmak" />
+      <Action Id="Delete Item" Caption="Pozmak" />
+      <Action Id="Deny_TypePermissionMatrixItem">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="Create" Caption="Döretmek" />
+          <ChoiceActionItem Id="Delete" Caption="Pozmak" />
+          <ChoiceActionItem Id="Navigate" Caption="Gönükdirmek" />
+          <ChoiceActionItem Id="Read" Caption="Okamak" />
+          <ChoiceActionItem Id="Write" Caption="Ýazmak" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="DialogCancel" Caption="Ýatyrmak" />
+      <Action Id="FullTextSearch" Caption="Tekst boýunça seçmek" ToolTip="Text boýunça filtrle" />
+      <Action Id="Grant_TypePermissionMatrixItem" Caption="Ygtyýar bermek">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="Create" Caption="Döretmek" />
+          <ChoiceActionItem Id="Delete" Caption="Pozmak" />
+          <ChoiceActionItem Id="Full Access" Caption="Doly hukuk" />
+          <ChoiceActionItem Id="Navigate" Caption="Gönükdirmek" />
+          <ChoiceActionItem Id="Read" Caption="Okamak" />
+          <ChoiceActionItem Id="Read Only Access" Caption="Diňe okamaga ygtyýar" />
+          <ChoiceActionItem Id="Write" Caption="Ýazmak" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="Link" Caption="Birikmek" />
+      <Action Id="ListViewShowObject" Caption="Açmak" />
+      <Action Id="Logoff" Caption="Çykmak" />
+      <Action Id="Logon" Caption="Girmek" />
+      <Action Id="NavigateBack" Caption="Yza" />
+      <Action Id="NavigateForward" Caption="Öňe" />
+      <Action Id="New" Caption="Täze">
+        <DisableReasons>
+          <Reason Id="MasterObjectIsNew" Caption="Üýtgedilen obýekt täze" />
+        </DisableReasons>
+      </Action>
+      <Action Id="NextObject" Caption="Indiki setir" />
+      <Action Id="PreviousObject" Caption="Öňdäki setir" />
+      <Action Id="Refresh" Caption="Täzelemek" />
+      <Action Id="ResetPassword" Caption="Paroly üýtget" />
+      <Action Id="Save" Caption="Ýazmak" />
+      <Action Id="SaveAndClose" Caption="Ýazmak we Ýapmak" />
+      <Action Id="SaveAndNew" Caption="Ýazmak we Täze" />
+      <Action Id="SetFilter" Caption="Seçmek" />
+      <Action Id="ShowNavigationItem" Caption="Gönükdirmek" />
+    </Actions>
+    <DisableReasons>
+      <Reason Id="ByContext_RequireMultipleObjects" Caption="Azyndan bir obýekt saýlanmaly" />
+      <Reason Id="ByContext_RequireSingleObject" Caption="Bir obýektiň saýlanmagy zerur" />
+    </DisableReasons>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Editors.CriteriaProvider">
+      <OwnMembers>
+        <Member Name="FilterString" Caption="Seçmek üçin tekst" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.AuthenticationStandardLogonParameters">
+      <OwnMembers>
+        <Member Name="Password" Caption="Parol" />
+        <Member Name="UserName" Caption="Ulanyjy ady" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ChangePasswordOnLogonParameters" Caption="Ilkinji girişde paroly çalyşmaly">
+      <OwnMembers>
+        <Member Name="ConfirmPassword" Caption="Paroly tassyklamak" />
+        <Member Name="NewPassword" Caption="Täze parol" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ChangePasswordParameters" Caption="Parol parametirlerini üýtgetmeli">
+      <OwnMembers>
+        <Member Name="OldPassword" Caption="Köne parol" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ObjectAccessPermission">
+      <OwnMembers>
+        <Member Name="CreateAccess" Caption="Döretmek hukugy" />
+        <Member Name="DeleteAccess" Caption="Pozmak hukugy" />
+        <Member Name="IsEmpty" Caption="Boş" />
+        <Member Name="NavigateAccess" Caption="Gönükdirmek hukugy" />
+        <Member Name="ReadAccess" Caption="Okamak hukugy" />
+        <Member Name="WriteAccess" Caption="Ýazmak hukugy" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ResetPasswordParameters">
+      <OwnMembers>
+        <Member Name="Password" Caption="Parol" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.AboutInfo">
+      <OwnMembers>
+        <Member Name="Company" Caption="Kärhana" />
+        <Member Name="Description" Caption="Açyklama" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardCreationInfo">
+      <OwnMembers>
+        <Member Name="DashboardName" Caption="Ady" />
+        <Member Name="ViewItems" Caption="Görnüş" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardOrganizer">
+      <OwnMembers>
+        <Member Name="ViewItems" Caption="Görnüş" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardViewItemDescriptor">
+      <OwnMembers>
+        <Member Name="ModelView" Caption="Model görnüş" />
+        <Member Name="ViewDescription" Caption="Görnüş açyklama" />
+        <Member Name="ViewId" Caption="Görnüş id" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DiagnosticInfoObject">
+      <OwnMembers>
+        <Member Name="AsText" Caption="Tekst görnüşinde" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.StaticImageDashboardOrganizationItem">
+      <OwnMembers>
+        <Member Name="ImageName" Caption="Suratyň ady" />
+        <Member Name="Preview" Caption="Öňünden görmek" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.StaticTextDashboardOrganizationItem">
+      <OwnMembers>
+        <Member Name="Text" Caption="Tekst" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.ViewDashboardOrganizationItem" Caption="Görnüş">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Kriteria" />
+        <Member Name="ViewDescriptor" Caption="Görnüş" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.ContextValidationResult">
+      <OwnMembers>
+        <Member Name="State" Caption="Ýagdaýy" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.DisplayableValidationResultItem">
+      <OwnMembers>
+        <Member Name="ErrorMessage" Caption="Ýalňyşlyk barada duýduryş" />
+        <Member Name="State" Caption="Ýagdaýy" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.ValidationResults">
+      <OwnMembers>
+        <Member Name="Results" Caption="Netijeler" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.AuditTrail.BaseAuditedObjectWeakReference">
+      <OwnMembers>
+        <Member Name="DisplayName" Caption="Görünýän ady" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.AuditDataItemPersistent">
+      <OwnMembers>
+        <Member Name="Description" Caption="Açyklama" />
+        <Member Name="ModifiedOn" Caption="Düzedilen sene" />
+        <Member Name="NewValue" Caption="Täze ýazgy" />
+        <Member Name="OldValue" Caption="Köne ýazgy" />
+        <Member Name="OperationType" Caption="Iş görnüşi" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.ReportData" Caption="Hasabat">
+      <OwnMembers>
+        <Member Name="IsInplaceReport" Caption="Ýerinde görünýän hasabat" />
+        <Member Name="ReportName" Caption="Hasabatyň ady" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleBaseProperties">
+      <OwnMembers>
+        <Member Name="Name" Caption="Ady" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleCriteriaProperties">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Kriteria" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleObjectExistsProperties">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Kriteria" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleBaseProperties">
+      <OwnMembers>
+        <Member Name="Name" Caption="Ady" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleCriteriaProperties">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Kriteria" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleObjectExistsProperties">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Kriteria" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSetValidationResult">
+      <OwnMembers>
+        <Member Name="Results" Caption="Netijeler" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSetValidationResultItem">
+      <OwnMembers>
+        <Member Name="ErrorMessage" Caption="Ýalňyşlyk barada duýduryş" />
+        <Member Name="State" Caption="Ýagdaýy" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.BusinessObjects.AppConf">
+      <OwnMembers>
+        <Member Name="AddressExpireDay" Caption="Salgy möhletiniň tamamlanýan gün sany" />
+        <Member Name="FileLocation" Caption="Faýlyň ýerleşýän ýeri" />
+        <Member Name="InRussian" Caption="Rusça" />
+        <Member Name="InTurkmen" Caption="Türkmençe" />
+        <Member Name="Messge" Caption="Duýduryş" />
+        <Member Name="PassportExpireDay" Caption="Pasport möhltetiniň tamamlanmagyna gala gün" />
+        <Member Name="StartDate" Caption="Başlanýan sene" />
+        <Member Name="UseCompanyLogo" Caption="Kärhananyň logosy" />
+        <Member Name="VisaExpireDay" Caption="Wiza möhletiniň tamamlanmagyna galan gün" />
+        <Member Name="WorkPermitExpireDate" Caption="Iş rugsatnamanyň tamamlanýan sensi" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.BusinessObjects.ApplicationType" Caption="Ýütutma görnüşy">
+      <OwnMembers>
+        <Member Name="AddressOfResidence" Caption="Ýaşaýan salgysy" />
+        <Member Name="BorderZoneForPersonInApplication" Caption="Goşundyda serhet ýaka" />
+        <Member Name="BorderZonePeriodVisibility" Caption="Serhet ýaka möhleti görünmeli" />
+        <Member Name="DepartmentForRegistrationVisible" Caption="Hasaba alýan edara görünmeli" />
+        <Member Name="HasUrgency" Caption="Gyssaglylyk ulanylýar" />
+        <Member Name="Invitation" Caption="Çakylyk" />
+        <Member Name="InvitationToBeChanged" Caption="Çalyşylmaly çakylyk" />
+        <Member Name="IsAddressedToChiefOfOrganization" Caption="Edaranyň ýolbaşçysyna ýüzlenilýär" />
+        <Member Name="IsAddressedToOrganization" Caption="Edara ýüzlenilýär" />
+        <Member Name="IsAddressVisible" Caption="Salgy görünmeli" />
+        <Member Name="IsAplicableToMinistery" Caption="Ministrlige ýüzlenilmäge degişli" />
+        <Member Name="IsBorderZoneInLetterRequired" Caption="Hatda serhet ýaka zerur" />
+        <Member Name="IsBorderZoneRequired" Caption="Serhet ýaka zerur" />
+        <Member Name="IsLongProcessApplication" Caption="Ylalaşykly hat" />
+        <Member Name="IsVisaCategoryVisible" Caption="Wiza kategoriýasy görünmeli" />
+        <Member Name="IsVisaPeriodVisible" Caption="Wiza möhleti görünmeli" />
+        <Member Name="Position" Caption="Wezipe" />
+        <Member Name="PrefferedVisaCategoryVisibility" Caption="Islenilýän wiza kategoriýasy" />
+        <Member Name="PreviousPassportInAppLineVisible" Caption="Goşundyda köne pasport görünmeli" />
+        <Member Name="ProcessNumberVisible" Caption="Işlemde belgi görünmeli" />
+        <Member Name="RegistrationDataForPersonInApplication" Caption="Goşundyda hasaba goýuş maglumatlar" />
+        <Member Name="RegistrationNumberAndDateVisible" Caption="Hasaba alnan belgi we sene görnümeli" />
+        <Member Name="SigningPeronVisible" Caption="Hata gol çekýän görünmeli" />
+        <Member Name="VisaVisibleForPersonInApplication" Caption="Goşundydaky wiza" />
+        <Member Name="WorkPermitForPersonInLineVisible" Caption="Goşundyda iş rugsatnama görünmeli" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.BusinessObjects.ApplicationTypeForEmployee" Caption="Işgär üçin ýüztutma görnüşi">
+      <OwnMembers>
+        <Member Name="BaseApplicationType" Caption="Baş ýüztutma görnüşi" />
+        <Member Name="TypeOfApplicationForEmployee" Caption="Ýüztutmanyň görnüşi(işgär üçin)" />
+        <Member Name="TypeOfApplicationForEmployeeID" Caption="Işgär üçin ýüztutmanyň  ID belgisi" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.BusinessObjects.ApplicationTypeForFamilyMember" Caption="Maşgala agzasy üçin ýüztutmanyň görnüşi">
+      <OwnMembers>
+        <Member Name="BaseApplicationType" Caption="Baş ýüztutma görnüşi" />
+        <Member Name="TypeOfApplicationForFamilyMember" Caption="Ýüztutmanyň görnüşi (maşgala agzasy üçin)" />
+        <Member Name="TypeOfApplicationForFamilyMemberID" Caption="Maşgala agzasy üçin ýüztutmanyň  ID belgisi" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.BusinessObjects.AuditTrail" Caption="Maglumat üýtgedilmegi">
+      <OwnMembers>
+        <Member Name="ChangeHistory" Caption="Üýtgedilme taryhy" />
+        <Member Name="Passport" Caption="Pasport" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.BusinessObjects.BaseApplicationType" Caption="Baş ýüztutma görnüşi">
+      <OwnMembers>
+        <Member Name="ApplicationTypeForEmployees" Caption="Işgär üçin ýüztutma" />
+        <Member Name="ApplicationTypeForFamilyMembers" Caption="Maşgala agzasy üçin ýüztutma" />
+        <Member Name="IsLongProcessApp" Caption="Ylalaşylmaly hatlar" />
+        <Member Name="TypeOfBaseApplication" Caption="Baş ýüztutmanyň görnüşi" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.BusinessObjects.CheckPoint" Caption="Gümrük posty">
+      <OwnMembers>
+        <Member Name="TitleOfCheckPoint" Caption="Gümrük postunyň ady" />
+        <Member Name="TitleOfCheckPointL" Caption="Gümrük postunyň ady L" />
+        <Member Name="TitleOfCheckPointR" Caption="Gümrük postunyň ady R" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.BusinessObjects.DepartmentForRegistration" Caption="Hasaba alýan edara">
+      <OwnMembers>
+        <Member Name="DepartmentForRegistrationL" Caption="Hasaba alýan edara L" />
+        <Member Name="TitleOfDepartmentForRegistration" Caption="Hasaba alýan edaranyň ady" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.BusinessObjects.IsInvitationWithWorkPermit" Caption="Çakylyk rugsatnamalymy">
+      <OwnMembers>
+        <Member Name="InvitationAndWorkPermitRequired" Caption="Çakylyk we iş rugsatnamasy zerur" />
+        <Member Name="InvitationAndWorkPermitRequiredL" Caption="Çakylyk we iş rugsatnamasy zerur L" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.BusinessObjects.IsWizaWithWorkPermit" Caption="Wiza iş rugsatnamalymy">
+      <OwnMembers>
+        <Member Name="WizaAndWorkPermitRequired" Caption="Wiza we iş rugsatnama zerur" />
+        <Member Name="WizaAndWorkPermitRequiredL" Caption="Wiza we iş rugsatnama zerur L" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.BusinessObjects.PrefferedVisaCategory" Caption="Islenýän wiza kategoriýasy">
+      <OwnMembers>
+        <Member Name="PreferedVisaCategoryEnum" Caption="Islenýän wiza kategoriýasy Enum" />
+        <Member Name="PreferredVisaCategoryL" Caption="Islenýän wiza kategoriýasy  L" />
+        <Member Name="PreferredVisaCategoryR" Caption="Islenýän wiza kategoriýasy R" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.BusinessObjects.Proje" Caption="Taslama" />
+    <Class Name="VISA2014.Module.BusinessObjects.PurposeOfTravel" Caption="Gatnawuň maksady">
+      <OwnMembers>
+        <Member Name="PurposeOfTravelL" Caption="Gatnawuň maksady L" />
+        <Member Name="PurposeOfTravelR" Caption="Gatnawuň maksady R" />
+        <Member Name="TravelPurpose" Caption="Gatnawuň maksady" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IAddresses" Caption="Salgylar">
+      <OwnMembers>
+        <Member Name="AddressLine" Caption="Takyk salgysy" />
+        <Member Name="DocumentOfAddress" Caption="Salgy resminama görnüşi" />
+        <Member Name="ExpiringDateOfAddressDocument" Caption="Salgy resminamanyň möhletiniň tamamlanýan senesi" />
+        <Member Name="FullAdress" Caption="Doly salygy" />
+        <Member Name="Region" Caption="Welaýat" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IAddressOfResidence" Caption="IÝaşaýan salgysy">
+      <OwnMembers>
+        <Member Name="Address" Caption="Salgy" />
+        <Member Name="AddressState" Caption="Salgynyň ýagdaýy" />
+        <Member Name="ChangeHistory" Caption="Üýtgedilme taryhy" />
+        <Member Name="Person" Caption="Adam" />
+        <Member Name="ShowAddressStartDate" Caption="Salgysynyň başlanýan senesi" />
+        <Member Name="StartDateOfResidence" Caption="Ýaşamagya başlan senesi" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IAddressOnBusinessTrip" Caption="IIş saparyndaky salgysy">
+      <OwnMembers>
+        <Member Name="AddressOnTrip" Caption="Iş saparyndaky salgy" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IApplication" Caption="IÝüztutma">
+      <OwnMembers>
+        <Member Name="ApplicationAndASNumber" Caption="Ýüztutma we AS belgi" />
+        <Member Name="ApplicationFor" Caption="Ýüztutma kim üçin" />
+        <Member Name="ApplicationResult" Caption="Ýüztutmanyň netijesi" />
+        <Member Name="ApplicationState" Caption="Ýüztutmanyň ýagdaýy" />
+        <Member Name="ApplicationTypeForEmployee" Caption="Işgär üçin ýüztutma görnüşi" />
+        <Member Name="ApplicationTypeForFamilyMember" Caption="Maşgala agzasy üçin ýüztutmanyň görnüşi" />
+        <Member Name="AppliedMinistery" Caption="Ýüz tutlan ministrlik" />
+        <Member Name="AutoRegistration" Caption="Awtomatiki usulda belgi bermek" />
+        <Member Name="BaseApplicationType" Caption="Baş ýüztutma görnüşi" />
+        <Member Name="BusinessTripDestination" Caption="Iş saparyna barýan ýeri" />
+        <Member Name="ChangeHistory" Caption="Üýtgedilme taryhy" />
+        <Member Name="ChangeInformation" Caption="Maglumatyň üýtgemegi" />
+        <Member Name="ChooseBorderZoneType" Caption="Serhet ýaka görnüşini saýlamak" />
+        <Member Name="Contract" Caption="Şertnama" />
+        <Member Name="DateForwardedToMonistery" Caption="Ministrlige iberlen sene" />
+        <Member Name="DateOfDeparture" Caption="Iş saparynyň başlanýan senesi" />
+        <Member Name="DepartmentForRegistration" Caption="Hasaba alýan edara" />
+        <Member Name="DurationOfStay" Caption="Iş saparynyda bolmagynyň möhleti" />
+        <Member Name="EndOfBusinessTrip" Caption="Iş saparynyň tamamlanýan senesi" />
+        <Member Name="ForEmployee" Caption="Işgär üçin" />
+        <Member Name="ForFamilyMember" Caption="Maşgala agza üçin" />
+        <Member Name="InvitationToBeChanged" Caption="Çalyşylmaly çakylyk" />
+        <Member Name="IsInvitationWithWorkPermit" Caption="Çakylyk rugsatnamalymy" />
+        <Member Name="IsWizaWithWorkPermit" Caption="Wiza iş rugsatnamalymy" />
+        <Member Name="MinisteriesDocumentDate" Caption="Ministrligiň hat senesi" />
+        <Member Name="MinisteriesDocumentNumber" Caption="Ministrligiň hat belgisi" />
+        <Member Name="NewRegistrationLocation" Caption="Täze hasaba goýuljak ýer" />
+        <Member Name="NewRegistrationLocationInLetter" Caption="Hatda täze hasaba goýuljak ýer" />
+        <Member Name="NumberOfPerson" Caption="Adam sany" />
+        <Member Name="PersonInApplication" Caption="Ýüztutmadaky raýat" />
+        <Member Name="PrefferedVisaCategory" Caption="Islenýän wiza kategoriýasy" />
+        <Member Name="PreviousRegistrationLocation" Caption="Öňki hasapda duran ýeri" />
+        <Member Name="PreviousRegistrationLocationInLetter" Caption="Hatda öňki hasapda duran ýeri" />
+        <Member Name="ProcessDate" Caption="Işlenmäge başlanan sene" />
+        <Member Name="ProcessNumber" Caption="Işlenmäge başlanan belgi" />
+        <Member Name="SigningPerson" Caption="Gol çekýän ýolbaşçy" />
+        <Member Name="StrikeOffType" Caption="Hasapdan çykarmagyň görnüşi" />
+        <Member Name="SubType" Caption="Ýüztutmanyň görnüşi" />
+        <Member Name="Urgency" Caption="Gyssaglylygy" />
+        <Member Name="VisaCategory" Caption="Wiza kategoriýasy" />
+        <Member Name="VisaPeriod" Caption="Wiza möhleti" />
+        <Member Name="WorkPermit" Caption="Iş rugsatnamasy" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IApplicationForBorderZonePermit" Caption="ISerher ýaka üçin ýüztutma">
+      <OwnMembers>
+        <Member Name="BorderZoneCollection" Caption="Serhet ýakalar" />
+        <Member Name="BorderZoneForVisa" Caption="Wiza üçin serhet ýaka" />
+        <Member Name="BorderZonePeriod" Caption="Serhet ýaka möhleti" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IApplicationResult" Caption="IÝüztutmanyň netijesi">
+      <OwnMembers>
+        <Member Name="Application" Caption="Ýüztutma" />
+        <Member Name="CopyOfResult" Caption="Ýüztutmanyň netijesiniň göçürme nusgasy" />
+        <Member Name="DateOfExpire" Caption="Möhleti tamamlamýan sene" />
+        <Member Name="InvitationRemaningDays" Caption="Çakylygyň tamamlanmagyna galan gün" />
+        <Member Name="IssuedDate" Caption="Resmileşdirlen sene" />
+        <Member Name="Number" Caption="Belgi" />
+        <Member Name="PersonInResultLetter" Caption="Netije hatyndaky raýat" />
+        <Member Name="Result" Caption="Netije" />
+        <Member Name="VisaCategory" Caption="Wiza kategoriýasy" />
+        <Member Name="VisaEndDate" Caption="Wiza tamamlanýan sene" />
+        <Member Name="VisaPeriod" Caption="Wiza möhleti" />
+        <Member Name="VisaStartDate" Caption="Wiza başlanýan sene" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IApplicationSigningPerson">
+      <OwnMembers>
+        <Member Name="Company" Caption="Kärhana" />
+        <Member Name="Employee" Caption="Işgär" />
+        <Member Name="Position" Caption="Wezipe" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IAppliedMinistery">
+      <OwnMembers>
+        <Member Name="Contracts" Caption="Şertnamalar" />
+        <Member Name="formOfAddress" Caption="Ýüzlenmäniň görnüşi" />
+        <Member Name="MinistersFullName" Caption="Ministriň doly ady" />
+        <Member Name="MinistersPosition" Caption="Ministriň wezipesi" />
+        <Member Name="TitleOfMinistery" Caption="Ministrligiň ady" />
+        <Member Name="TitleOfMinisteryL" Caption="Ministrligiň ady L" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IBorderZone">
+      <OwnMembers>
+        <Member Name="BorderZoneCollection" Caption="Serhet ýakalar" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IBorderZoneForVisa">
+      <OwnMembers>
+        <Member Name="BorderZoneCollectionForVisa" Caption="Wiza üçin serhet ýakalary" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.ICompany" Caption="Kärhana">
+      <OwnMembers>
+        <Member Name="AddressOfCompany" Caption="Kärhananyň salgysy" />
+        <Member Name="ContractEndPeriod" Caption="Şertnanamanyň tamamlanýan senesi" />
+        <Member Name="ContractStartPeriod" Caption="Şertnamanyň başlanýan senesi" />
+        <Member Name="CurrentReprezentative" Caption="Häzirki wekil" />
+        <Member Name="DocSigningPerson" Caption="Ýüztutma gol çekýän ýolbaşçy" />
+        <Member Name="ForeignEmployeePercentage" Caption="Daşary ýurtly işgär göterimi" />
+        <Member Name="LocalEmployeePercentage" Caption="Ýerli işgär göterimi" />
+        <Member Name="NumberOfForeignEmployees" Caption="Daşary ýurtly işgär sany" />
+        <Member Name="NumberOfLocalEmployee" Caption="Ýerli işgär sany" />
+        <Member Name="PhoneOfNumber" Caption="Telefon belgisi" />
+        <Member Name="TaxRegistrationNumber" Caption="Kärhananyň salgyt belgisi" />
+        <Member Name="TitleOfCompany" Caption="Kärhananyň ady" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.ICompanyRepresentative" Caption="Kärhananyň wekili">
+      <OwnMembers>
+        <Member Name="Company" Caption="Kärhana" />
+        <Member Name="FullName" Caption="Doly ady" />
+        <Member Name="PassportDetails" Caption="Pasport maglumatlary" />
+        <Member Name="PhoneNumbers" Caption="Telefon belgileri" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IContract" Caption="Şertnama">
+      <OwnMembers>
+        <Member Name="AppliedMinistery" Caption="Ýüz tutlan ministrlik" />
+        <Member Name="ContentOfContract" Caption="Şertnamanyň mazmuny" />
+        <Member Name="NumberOfContract" Caption="Şertnamanyň belgisi" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.ICopy" Caption="Kopiýa">
+      <OwnMembers>
+        <Member Name="CopyOfDocument" Caption="Resminamanyň göçürme nusgasy" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.ICountries" Caption="Ýurtlar" ObjectCaptionFormat="{0:Ýurdyň ady}">
+      <OwnMembers>
+        <Member Name="CountryEnum" Caption="Ýurt Enum" />
+        <Member Name="NameOfCountry" Caption="Ýurduň ady" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IDepartment" Caption="Bölüm">
+      <OwnMembers>
+        <Member Name="TitleOfDepartment" Caption="Bölümiň ady" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IDocumentOfAddress" Caption="Salgy resminamalary">
+      <OwnMembers>
+        <Member Name="TypeOfDocument" Caption="Resminamanyň ady" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IEducation" Caption="IBilim">
+      <OwnMembers>
+        <Member Name="ChangeHistory" Caption="Üýtgedilme taryhy" />
+        <Member Name="Diplomgocurme" Caption="Diplom nusgasy" />
+        <Member Name="EducationCountry" Caption="Okan ýurdy" />
+        <Member Name="EducationEndDate" Caption="Okuwy tamamlan senesi" />
+        <Member Name="EducationInstitution" Caption="Okuw jaýy" />
+        <Member Name="EducationLevel" Caption="Bilim derejesi" />
+        <Member Name="EducationStartDate" Caption="Okuwa başlan senesi" />
+        <Member Name="HasEducationPeriod" Caption="Bilim seneleri" />
+        <Member Name="Person" Caption="Adam" />
+        <Member Name="Spcialty" Caption="Hünäri" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IEducationInstitution" Caption="Okan okuw jaýy">
+      <OwnMembers>
+        <Member Name="TitleOfIEducationInstitution" Caption="Okuw jaýynyň ady" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IEducationLevel" Caption="Bilim Derejersi">
+      <OwnMembers>
+        <Member Name="TitleOfEducationLevel" Caption="Bilim derejesiniň ady" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IEmployee" Caption="Işgär" />
+    <Class Name="VISA2014.Module.DC.IFamilyMember" Caption="Maşgala Agza" />
+    <Class Name="VISA2014.Module.DC.IGender" Caption="IJyns">
+      <OwnMembers>
+        <Member Name="MaritalStatuses" Caption="Maşgala ýagdaýlary" />
+        <Member Name="Relations" Caption="Garyndaşlyklar" />
+        <Member Name="TypeOfGender" Caption="Jynsyň görnüşi" />
+        <Member Name="TypeOfGenderL" Caption="Jynsyň görnüşi L" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.ILocationPermittedToWork" Caption="Işlemäge rugsat berilen ýer">
+      <OwnMembers>
+        <Member Name="NameOfLocation" Caption="Ýeriň ady" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.ILongProcessApplication" Caption="IYlalaşylýan ýüztutmalar" />
+    <Class Name="VISA2014.Module.DC.IMaritalStatus" Caption="IMarşgala ýagdaýy">
+      <OwnMembers>
+        <Member Name="Gender" Caption="Jynsy" />
+        <Member Name="Status" Caption="Ýagdaý" />
+        <Member Name="StatusL" Caption="Ýagdaý L" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IMessage" Caption="Duýdyryş">
+      <OwnMembers>
+        <Member Name="Message" Caption="Duýdyryş" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IPassport" Caption="IPasport">
+      <OwnMembers>
+        <Member Name="ChangeHistory" Caption="Üýtgedilme taryhy" />
+        <Member Name="Citizenship" Caption="Raýatlyk" />
+        <Member Name="LastVisa" Caption="Soňky wiza" />
+        <Member Name="PassportCopy" Caption="Pasport göçürmek nusgasy" />
+        <Member Name="PassportExpiringDate" Caption="Pasport möhleti tamamlanýan sene" />
+        <Member Name="PassportIssuedCountry" Caption="Pasport resmileşdirlen ýurt" />
+        <Member Name="PassportIssuedDate" Caption="Pasport resmileşdirlen sene" />
+        <Member Name="PassportIssuedPlace" Caption="Pasport resmileşdirlen ýeri" />
+        <Member Name="PassportNumber" Caption="Pasport belgisi" />
+        <Member Name="PassportState" Caption="Pasportuň ýagdaýy" />
+        <Member Name="PassportType" Caption="Pasport görnüşi" />
+        <Member Name="Person" Caption="Adam" />
+        <Member Name="PersonalNumber" Caption="Şahsy belgisi" />
+        <Member Name="PersonInApplication" Caption="Ýüztutmadaky raýat" />
+        <Member Name="VisaIsNotRequired" Caption="Wizadan boşadylan" />
+        <Member Name="Visas" Caption="Wizalar" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IPassportCopy">
+      <OwnMembers>
+        <Member Name="Education" Caption="Bilimi" />
+        <Member Name="Passport" Caption="Pasport" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IPassportIssuedPlace" Caption="IPasport resmileşdirlen ýeri">
+      <OwnMembers>
+        <Member Name="PlaceOfIssue" Caption="Resmileşdirlen ýeri" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IPassportType" Caption="IPasport görnüşi">
+      <OwnMembers>
+        <Member Name="TypeOfPassport" Caption="Pasportyň görnüşi" />
+        <Member Name="TypeOfPassportL" Caption="Pasportyň görnüşi L" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IPersonInApplication" Caption="IÝüztutmadaky raýat" ObjectCaptionFormat="{0:Ýüztutma}">
+      <OwnMembers>
+        <Member Name="Address" Caption="Salgy" />
+        <Member Name="AddressOfResidence" Caption="Ýaşaýan salgysy" />
+        <Member Name="AddressOnBusinessTrip" Caption="Iş saparyndaky salgysy" />
+        <Member Name="Application" Caption="Ýüztutma" />
+        <Member Name="ApplicationForChangingInvitation" Caption="Çakylygy çalyşmak üçin ýüztutma" />
+        <Member Name="ApplicationType" Caption="Ýütutma görnüşy" />
+        <Member Name="AppliedPerson" Caption="Ýüztutmadaky raýat" />
+        <Member Name="CheckPoint" Caption="Gümrük posty" />
+        <Member Name="ContractEndDate" Caption="Şertnamanyň tamamlanýan senesi" />
+        <Member Name="ContractStartDate" Caption="Şertnamanyň başlanýan senesi" />
+        <Member Name="Employee" Caption="Işgär" />
+        <Member Name="EmployeeEntryDate" Caption="Işgäriň giren senesi" />
+        <Member Name="FamilyMember" Caption="Maşgala agzasy" />
+        <Member Name="FamilyMemberEntryDate" Caption="Maşgala agzanyň giren senesi" />
+        <Member Name="Invitation" Caption="Çakylyk" />
+        <Member Name="NewVisa" Caption="Täze wiza" />
+        <Member Name="NewWorkPermit" Caption="Täze iş rugsatnama" />
+        <Member Name="Passport" Caption="Pasport" />
+        <Member Name="PassportNumberAndDateOfExpire" Caption="Pasport belgisi we möhleti" />
+        <Member Name="PersonInResult" Caption="Netijedäki adam" />
+        <Member Name="PersonState" Caption="Adam ýagdaýy" />
+        <Member Name="Position" Caption="Wezipe" />
+        <Member Name="PositionForReport" Caption="Ýüztutma üçin wezipe" />
+        <Member Name="PreviousPassport" Caption="Öňki pasport" />
+        <Member Name="PurposeOfTrave" Caption="GatnawyňMaksady" />
+        <Member Name="RegistrationDate" Caption="Hasaba alyş senesi" />
+        <Member Name="RegistrationNumber" Caption="Hasaba alyş belgisi" />
+        <Member Name="RejectionLet" Caption="Garşylyk haty" />
+        <Member Name="Visa" Caption="Wiza" />
+        <Member Name="VisaIssuedPlace" Caption="Wiza resmileşdirlen ýeri" />
+        <Member Name="WorkPermit" Caption="Iş rugsatnamasy" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IPersonInResult" Caption="Netijedäki kişi">
+      <OwnMembers>
+        <Member Name="Employee" Caption="Işgär" />
+        <Member Name="FamilyMember" Caption="Maşgala agza" />
+        <Member Name="Invitation" Caption="Çakylyk" />
+        <Member Name="Passport" Caption="Pasport" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IPersonn" Caption="Kişi">
+      <OwnMembers>
+        <Member Name="AddressOfResidences" Caption="Ýaşan salgylary" />
+        <Member Name="BirthCountry" Caption="Doglan ýurdy" />
+        <Member Name="BirthDate" Caption="Doglan senesi" />
+        <Member Name="BirthPlace" Caption="Doglan ýeri" />
+        <Member Name="ChangeHistory" Caption="Üýtgedilme taryhy" />
+        <Member Name="Contract" Caption="Şertnama" />
+        <Member Name="ContractNumber" Caption="Şertnama belgisi" />
+        <Member Name="CountPerson" Caption="Adam sany" />
+        <Member Name="Educations" Caption="Bilimi" />
+        <Member Name="Employee" Caption="Işgär" />
+        <Member Name="EmployeeInApplications" Caption="Işgär üçin ýüztutmalar" />
+        <Member Name="EmployeeRelation" Caption="Işgäriň garyndaşlygy" />
+        <Member Name="FamilyMemberInApplications" Caption="Maşgala agzasy üçin ýüztutmalar" />
+        <Member Name="FamilyMemberRelation" Caption="Maşgala agzanyň garyndaşlygy" />
+        <Member Name="FamilyMembers" Caption="Maşgala agzalary" />
+        <Member Name="FirstName" Caption="Ady" />
+        <Member Name="ForeignAddress" Caption="Daşary ýurtdaky salgysy" />
+        <Member Name="ForeignAddressCountry" Caption="Ýaşaýan daşary ýurdy" />
+        <Member Name="FullName" Caption="Doly ady" />
+        <Member Name="Gender" Caption="Gynsy" />
+        <Member Name="IDNumber" Caption="ID belgisi" />
+        <Member Name="IsEmployee" Caption="Işgär" />
+        <Member Name="IsFamilyMember" Caption="Maşgala agza" />
+        <Member Name="LastAddressOfResidence" Caption="Iň soňky salgysy" />
+        <Member Name="LastAppForVisaExtention" Caption="Wiza uzaltmak üçin soňky ýüztutma" />
+        <Member Name="LastEducation" Caption="Soňky bilimi" />
+        <Member Name="LastInvitation" Caption="Iň soňky çakylygy" />
+        <Member Name="LastName" Caption="Familyýasy" />
+        <Member Name="LastPassport" Caption="Iň soňky pasporty" />
+        <Member Name="LastPosition" Caption="Iň soňky wezipesi" />
+        <Member Name="LastRegistration" Caption="Iň soňky hasaba alyşy" />
+        <Member Name="LastStrikeOff" Caption="Iň soňky hasapdan çykarylşy" />
+        <Member Name="LastTravelInfo" Caption="Iň soňky gatnawy" />
+        <Member Name="LastVisa" Caption="Iň soňky wizasy" />
+        <Member Name="LastWorkPermit" Caption="Iň soňky iş rugsatnamasy" />
+        <Member Name="MaritalStatus" Caption="Maşgala ýagdaýy" />
+        <Member Name="MiddleName" Caption="Atasynyň ady" />
+        <Member Name="Passports" Caption="Pasportlary" />
+        <Member Name="Photo" Caption="Suraty" />
+        <Member Name="Proje" Caption="Taslama" />
+        <Member Name="RegistrationState" Caption="Hasaba alyşyň ýagdaýy" />
+        <Member Name="TravelInformations" Caption="Gatnaw amglumatlary" />
+        <Member Name="WorkHistories" Caption="Işlän wezipeleri" />
+        <Member Name="WorkPermits" Caption="Iş rugsatnamalary" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IPosition" Caption="IWezipe">
+      <OwnMembers>
+        <Member Name="Code" Caption="Kody" />
+        <Member Name="TitleOfPosition" Caption="Wezipäniň ady" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IRegion" Caption="IWelaýat">
+      <OwnMembers>
+        <Member Name="Cities" Caption="ŞäherlerWeEtraplar" />
+        <Member Name="NameOfRegion" Caption="Welaýatyň ady" />
+        <Member Name="NameOfRegionL" Caption="Welaýatyň ady L" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IRegistration">
+      <OwnMembers>
+        <Member Name="ManualApplicationDate" Caption="Elde ýüztutma senesi" />
+        <Member Name="ManualApplicationNumber" Caption="Elde ýüztutma belgisi" />
+        <Member Name="RegistrationDate" Caption="Hasaba alyş senesi" />
+        <Member Name="RegistrationNumber" Caption="Hasaba alyş belgisi" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IRelation" Caption="Garyndaşlygy">
+      <OwnMembers>
+        <Member Name="Gender" Caption="Jynsy" />
+        <Member Name="RelativeAs" Caption="Garyndaşlygy" />
+        <Member Name="RelativeAsL" Caption="Garyndaşlygy L" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IRemainingDays">
+      <OwnMembers>
+        <Member Name="RemainingDays" Caption="Galan gün sany" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IŞäherEtrap">
+      <OwnMembers>
+        <Member Name="CityType" Caption="Şäher görnüşi" />
+        <Member Name="Region" Caption="Welaýat" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.ISpeciality" Caption="Hünäri" />
+    <Class Name="VISA2014.Module.DC.ITravelInformation">
+      <OwnMembers>
+        <Member Name="ChangeHistory" Caption="Üýtgedilme taryhy" />
+        <Member Name="CheckPoint" Caption="Gümrük posty" />
+        <Member Name="Person" Caption="Adam" />
+        <Member Name="PurposeOfTravel" Caption="Gatnawuň maksady" />
+        <Member Name="TravelDate" Caption="Gatnaw senesi" />
+        <Member Name="TravelType" Caption="Gatnaw görnüşi" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IUrgency" Caption="Gyssaglygy" ObjectCaptionFormat="{0:Gyssaglylyk}">
+      <OwnMembers>
+        <Member Name="ApplicationUrgency" Caption="Ýüztutmanyň gyssaglygy" />
+        <Member Name="ApplicationUrgencyH" Caption="Ýüztutmanyň gyssaglygy H" />
+        <Member Name="ApplicationUrgencyL" Caption="Ýüztutmanyň gyssaglygy L" />
+        <Member Name="Priority" Caption="Wajyplygy" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IVisa" Caption="IWiza">
+      <OwnMembers>
+        <Member Name="ASNumber" Caption="Işlenen belgisi" />
+        <Member Name="BorderZone" Caption="Serhet ýaka" />
+        <Member Name="ChangeHistory" Caption="Üýtgedilme taryhy" />
+        <Member Name="HasBorderZonePermit" Caption="Serhet ýaka bar" />
+        <Member Name="Passport" Caption="Pasport" />
+        <Member Name="PersonInApplication" Caption="Ýüztutmadaky raýat" />
+        <Member Name="ProcessNumber" Caption="Işlelen belgisi" />
+        <Member Name="VisaCategory" Caption="Wiza kategoriýasy" />
+        <Member Name="VisaCopy" Caption="Wizanyň göçürme nusgasy" />
+        <Member Name="VisaEndDate" Caption="Wiza tamamlanýan sene" />
+        <Member Name="VisaIssuedDate" Caption="Wiza resmileşdirlen sene" />
+        <Member Name="VisaIssuedPlace" Caption="Wiza resmileşdirlen ýeri" />
+        <Member Name="VisaNumber" Caption="Wiza belgisi" />
+        <Member Name="VisaStartDate" Caption="Wiza başlanýan sene" />
+        <Member Name="VisaState" Caption="Wizanyň ýagdaýy" />
+        <Member Name="VisaType" Caption="Wiza görnüşi" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IVisaCategory" Caption="Wiza kategoriýasy">
+      <OwnMembers>
+        <Member Name="CategoryOfVisa" Caption="Wiza kategoriýasy" />
+        <Member Name="CategoryOfVisaL" Caption="Wiza kategoriýasy L" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IVisaIssuedPlace" Caption="Wiza resmişdirilen ýeri">
+      <OwnMembers>
+        <Member Name="FullDiscription" Caption="Doly suratlandyrmasy" />
+        <Member Name="IssuedPlaceOfVisa" Caption="Wiza resmileşdirlen ýeri" />
+        <Member Name="IssuedPlaceOfVisaL" Caption="Wiza resmileşdirlen ýeri L" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IVisaPeriod" Caption="Wiza möhleti">
+      <OwnMembers>
+        <Member Name="PeriodOfVisa" Caption="Wiza möhleti" />
+        <Member Name="PeriodOfVisaL" Caption="Wiza möhleti L" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IVisaType" Caption="Wiza görnüşi">
+      <OwnMembers>
+        <Member Name="TypeOfVisa" Caption="Wiza görnüşi" />
+        <Member Name="TypeOfVisaL" Caption="Wiza görnüşi L" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IWorkHistory" Caption="IIş taryhy">
+      <OwnMembers>
+        <Member Name="ChangeHistory" Caption="Üýtgedilme taryhy" />
+        <Member Name="Company" Caption="Kärhana" />
+        <Member Name="Department" Caption="Bölüm" />
+        <Member Name="Employee" Caption="Işgär" />
+        <Member Name="Position" Caption="Wezipe" />
+        <Member Name="StartDateOnThisPosition" Caption="Wezipä bellenen sene" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IWorkPermit" Caption="IIş rugsatnama">
+      <OwnMembers>
+        <Member Name="AppruvalNumber" Caption="Tassklanan belgi" />
+        <Member Name="ASNumber" Caption="Işlenen belgisi" />
+        <Member Name="ASNumberForLine" Caption="AS belgisi" />
+        <Member Name="ChangeHistory" Caption="Üýtgedilme taryhy" />
+        <Member Name="Employee" Caption="Işgär" />
+        <Member Name="ExpiringDateOfWorkPermit" Caption="Iş rugsatnamanyň tamamlanýan senesi" />
+        <Member Name="Passport" Caption="Pasport" />
+        <Member Name="PersonInApplication" Caption="Ýüztutmadaky raýat" />
+        <Member Name="Position" Caption="Wezipe" />
+        <Member Name="ProcessNumber" Caption="Işlelen belgisi" />
+        <Member Name="StartDateOfWorkPermit" Caption="Iş rugsatnamanyň başlanýan senesi" />
+        <Member Name="WorkPermitLetter" Caption="Iş rugsatnama haty" />
+        <Member Name="WorkPermitLocation" Caption="Işlemäge rugsat edilen ýerler" />
+        <Member Name="WorkPermitState" Caption="Iş rugsatnamanyň ýagdaýy" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IWorkPermitLetter">
+      <OwnMembers>
+        <Member Name="Date" Caption="Sene" />
+        <Member Name="Number" Caption="Belgi" />
+        <Member Name="WorkPermitCopy" Caption="Iş rugsatnamanyň göçürme nusgasy" />
+        <Member Name="WorkPermits" Caption="Iş rugsatnamalary" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <CreatableItems>
+    <CreatableItem ClassName="VISA2014.Module.BusinessObjects.AuditTrail" Caption="Maglumat üýtgedilmegi" />
+  </CreatableItems>
+  <Localization>
+    <LocalizationGroup Name="Captions">
+      <LocalizationItem Name="DetailView" Value="Giňişleýin görnüş" />
+      <LocalizationItem Name="ListView" Value="List Görnüş" />
+      <LocalizationItem Name="View" Value="Görnüş" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="DashboardOrganizationItems">
+      <LocalizationItem Name="ActionContainer" Value="Hereket kontaineri" />
+      <LocalizationItem Name="StaticImage" Value="Surat" />
+      <LocalizationItem Name="StaticText" Value="Tekst" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="DialogButtons">
+      <LocalizationItem Name="Abort" Value="&amp;Yzyna" />
+      <LocalizationItem Name="Add" Value="Goşmak" />
+      <LocalizationItem Name="Apply" Value="Uýgulamak" />
+      <LocalizationItem Name="Back" Value="&lt; Yza" />
+      <LocalizationItem Name="Cancel" Value="&amp;Ýatyrmak" />
+      <LocalizationItem Name="Clear" Value="&amp;Arassalamak" />
+      <LocalizationItem Name="Close" Value="Ýapmak" />
+      <LocalizationItem Name="Find" Value="Tapmak" />
+      <LocalizationItem Name="Ignore" Value="&amp;Üns berme" />
+      <LocalizationItem Name="Next" Value="Indiki &gt;" />
+      <LocalizationItem Name="No" Value="&amp;Ýok" />
+      <LocalizationItem Name="Remove" Value="Aýyrmak" />
+      <LocalizationItem Name="Retry" Value="&amp;Yza çekmek" />
+      <LocalizationItem Name="Yes" Value="&amp;Howwa" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DatabaseUserSettings.ImportUserSettingsBehavior">
+        <LocalizationItem Name="Overwrite" Value="Ustüne ýazmak" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Data.Filtering.Aggregate">
+        <LocalizationItem Name="Count" Value="Sanamak" />
+        <LocalizationItem Name="Exists" Value="Çykyşlar" />
+        <LocalizationItem Name="Single" Value="Bir" />
+        <LocalizationItem Name="Sum" Value="Jemi" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Editors.ViewItemVisibility">
+        <LocalizationItem Name="Hide" Value="Gizle" />
+        <LocalizationItem Name="Show" Value="Görkez" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ModelAccessModifier">
+        <LocalizationItem Name="Allow" Value="Rugsat ber" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ObjectAccess">
+        <LocalizationItem Name="Create" Value="Döretmek" />
+        <LocalizationItem Name="Delete" Value="Pozmak" />
+        <LocalizationItem Name="Navigate" Value="Gönükdirmek" />
+        <LocalizationItem Name="Read" Value="Okamak" />
+        <LocalizationItem Name="Write" Value="Ýazmak" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ObjectAccessModifier">
+        <LocalizationItem Name="Allow" Value="Rugsat ber" />
+        <LocalizationItem Name="None" Value="Hiç biri" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Templates.ActionsToolbarVisibility">
+        <LocalizationItem Name="Hide" Value="Gizle" />
+        <LocalizationItem Name="Show" Value="Görkez" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Validation.AllContextsView.IsValid">
+        <LocalizationItem Name="Invalid" Value="Geçersiz" />
+        <LocalizationItem Name="Valid" Value="Geçerli" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.ValidationState">
+        <LocalizationItem Name="Invalid" Value="Geçersiz" />
+        <LocalizationItem Name="Valid" Value="Geçerli" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.BusinessObjects.CheckPointEn" Value="Giriş nokadyt En" />
+      <LocalizationGroup Name="VISA2014.Module.BusinessObjects.IsWPForWizaRequired">
+        <LocalizationItem Name="OnlyWiza" Value="Diňe wiza" />
+        <LocalizationItem Name="WizaAndWorkPermit" Value="Wiza we iş rugsatnama" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.BusinessObjects.TravelPurposeEn">
+        <LocalizationItem Name="BusinessTrip" Value="Iş sapary" />
+        <LocalizationItem Name="FamilyMember" Value="Maşgala agza" />
+        <LocalizationItem Name="Quit" Value="Işden boşamagy" />
+        <LocalizationItem Name="Vacation" Value="Dynç alyş" />
+        <LocalizationItem Name="Visit" Value="Myhmançylyga" />
+        <LocalizationItem Name="Work" Value="Işlemek üçin" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.BusinessObjects.WPForInvitationRequired">
+        <LocalizationItem Name="InvitationAndWorkPermit" Value="Çakylyk we iş rugsatnama" />
+        <LocalizationItem Name="OnlyInvitation" Value="Diňe çakylyk" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.AddressStateEnum" Value="Salgy ýagdaýy Enum">
+        <LocalizationItem Name="Expired" Value="Möhleti geçen" />
+        <LocalizationItem Name="Expiring" Value="Möhleti azalan" />
+        <LocalizationItem Name="None" Value="Hiç biri" />
+        <LocalizationItem Name="Previous" Value="Öňki" />
+        <LocalizationItem Name="Valid" Value="Güýjünde" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.ApplicationForEnum" Value="Ýüztutma kim üçin  Enum">
+        <LocalizationItem Name="Employee" Value="Işgär" />
+        <LocalizationItem Name="FamilyMember" Value="Maşgala agza" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.ApplicationResultEnum" Value="Ýüztutmanyň netijesi Enum">
+        <LocalizationItem Name="Invitation" Value="Çakylyk" />
+        <LocalizationItem Name="Rejection" Value="Garşylyk" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.ApplicationStateEnum" Value="Ýuztutmanyň ýagdaýyEnum">
+        <LocalizationItem Name="Cancelled" Value="Ýatyrlan" />
+        <LocalizationItem Name="CategoryChanged" Value="Kategoriýasy üýtgedilen" />
+        <LocalizationItem Name="Expired" Value="Möhleti geçen" />
+        <LocalizationItem Name="Expiring" Value="Möhleti azalan" />
+        <LocalizationItem Name="Extended" Value="Uzaldylan" />
+        <LocalizationItem Name="FromMinistery" Value="Ministrlikden çykan" />
+        <LocalizationItem Name="InvitationIssuedWorkPermitNot" Value="Çakylyk resmileşdirlen iş  rugsatnama resmileşdirilmedik" />
+        <LocalizationItem Name="None" Value="Hiç biri" />
+        <LocalizationItem Name="Office" Value="Ofisde" />
+        <LocalizationItem Name="OnProcess" Value="Işlenýär" />
+        <LocalizationItem Name="Previous" Value="Öňki" />
+        <LocalizationItem Name="Processed" Value="Işlenen" />
+        <LocalizationItem Name="Rejected" Value="Garşylyk birdirlen" />
+        <LocalizationItem Name="ToMinistery" Value="Ministrlige iberlen" />
+        <LocalizationItem Name="Transfered" Value="Geçirlen" />
+        <LocalizationItem Name="Valid" Value="Güýjünde" />
+        <LocalizationItem Name="VisaExtended" Value="Uzaldylan" />
+        <LocalizationItem Name="VisaExtendedWorkPermitNot" Value="Wiza uzaldylan iş rugsatnama uzaldykmadyk" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.AppType" Value="Ýüztutmanyň görnüşi">
+        <LocalizationItem Name="BorderZone" Value="Serhet ýaka" />
+        <LocalizationItem Name="BuzinessTrip" Value="Iş sapary" />
+        <LocalizationItem Name="Invitation" Value="Çakylyk" />
+        <LocalizationItem Name="Others" Value="Beýlekiler" />
+        <LocalizationItem Name="Registration" Value="Hasaba almak" />
+        <LocalizationItem Name="Visa" Value="Wiza" />
+        <LocalizationItem Name="WorkPermit" Value="Iş rugsatnama" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.AppUrgency" Value="Ýüztutma gyssaglylygy" />
+      <LocalizationGroup Name="VISA2014.Module.DC.ChangeInfoEnum" Value="Ütgemek maglumaty  Enum">
+        <LocalizationItem Name="Address" Value="Salgy" />
+        <LocalizationItem Name="Passport" Value="Pasport" />
+        <LocalizationItem Name="VisaCategory" Value="Wiza kategoriýasy" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.ChooseBorderZoneTypeEnum" Value="Serhet ýaka görnüşini seç Enum">
+        <LocalizationItem Name="BorderZoneForApplication" Value="Serhet ýaka rugsat bolmaly" />
+        <LocalizationItem Name="BorderZoneIsNotRequired" Value="Serhet ýaka rugsat zerur däl" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.CityTypeEnum" Value="Şäher görnüşi Enum" />
+      <LocalizationGroup Name="VISA2014.Module.DC.CountryEnum" Value="Ýurt Enum" />
+      <LocalizationGroup Name="VISA2014.Module.DC.GenderEnum" Value="Gynsy Enum" />
+      <LocalizationGroup Name="VISA2014.Module.DC.InvitationStateEnum" Value="Çakylyk ýagdaýy Enum">
+        <LocalizationItem Name="Changed" Value="çalyşyldy" />
+        <LocalizationItem Name="Expired" Value="Möhleti geçen" />
+        <LocalizationItem Name="None" Value="Hiç biri" />
+        <LocalizationItem Name="Rejected" Value="Garşylykly" />
+        <LocalizationItem Name="Used" Value="Ulanylan" />
+        <LocalizationItem Name="Valid" Value="Güýjünde" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.MaritalStatus" Value="Maşgala ýagdaýy" />
+      <LocalizationGroup Name="VISA2014.Module.DC.PassportStateEnum" Value="Pasport ýagdaýy Enum">
+        <LocalizationItem Name="Expired" Value="Möhleti geçen" />
+        <LocalizationItem Name="Expiring" Value="Möhleti azalan" />
+        <LocalizationItem Name="None" Value="Hiç biri" />
+        <LocalizationItem Name="Previous" Value="Öňki" />
+        <LocalizationItem Name="Valid" Value="Güýjünde" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.PassportTypeEnum" Value="pasport görnüşi  Enum">
+        <LocalizationItem Name="Diplomatic" Value="Diplomatik" />
+        <LocalizationItem Name="Ordinary" Value="Adaty" />
+        <LocalizationItem Name="Service" Value="Gulluk" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.PreferedVisaCategoryEnum" Value="Islenýän wiza kategoriýasy Enum">
+        <LocalizationItem Name="MultyToOnce" Value="  K&gt;&gt;1" />
+        <LocalizationItem Name="MultyToThree" Value="K&gt;&gt;3" />
+        <LocalizationItem Name="MultyToTwice" Value="K&gt;&gt;2" />
+        <LocalizationItem Name="OnceToMulty" Value="1&gt;&gt;K" />
+        <LocalizationItem Name="OnceToThree" Value="1&gt;&gt;3" />
+        <LocalizationItem Name="OnceToTwice" Value="1&gt;&gt;2" />
+        <LocalizationItem Name="ThreeToMulty" Value="3&gt;&gt;K" />
+        <LocalizationItem Name="ThreeToOnce" Value="3&gt;&gt;1" />
+        <LocalizationItem Name="ThreeToTwo" Value="3&gt;&gt;2" />
+        <LocalizationItem Name="TwoToMulty" Value="2&gt;&gt;K" />
+        <LocalizationItem Name="TwoToOnce" Value="2&gt;&gt;1" />
+        <LocalizationItem Name="TwoToThree" Value="2&gt;&gt;3" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.RegionEnum" Value="Welaýat Enum" />
+      <LocalizationGroup Name="VISA2014.Module.DC.RegistrationStateEnum" Value="Hasaba alyş ýagdaýy  Enum">
+        <LocalizationItem Name="CANCELLED" Value="YATYRLAN" />
+        <LocalizationItem Name="CLOSED" Value="YAPYLAN" />
+        <LocalizationItem Name="DO_NOT_REQUIRE" Value="HA_ZERUR_DAL" />
+        <LocalizationItem Name="EXITVISA" Value="CYKYS_WISA" />
+        <LocalizationItem Name="HA_OFFICE" Value="HA_OFISDE" />
+        <LocalizationItem Name="HA_ONPROCESS" Value="HA_ISLENYAR" />
+        <LocalizationItem Name="HAS_NO_VISA" Value="VISASYZ" />
+        <LocalizationItem Name="HC_OFFICE" Value="HC_OFISDE" />
+        <LocalizationItem Name="HC_ONPROCESS" Value="HC_ISLENYAR" />
+        <LocalizationItem Name="NEED_REGISTRATION" Value="HASABA_ALMALY" />
+        <LocalizationItem Name="NEED_STRIKE_OFF" Value="HASAPDAN_CYKARMALY" />
+        <LocalizationItem Name="NONE" Value="HICBIRI" />
+        <LocalizationItem Name="NOT_REGISTERED" Value="HASABA_ALYNMADYK" />
+        <LocalizationItem Name="ONPROCESS" Value="ISLENYAR" />
+        <LocalizationItem Name="OUTSIDE_C" Value="Y_DASYNDA" />
+        <LocalizationItem Name="REG_NOT_REQUIRED" Value="HA_BOSADYLAN" />
+        <LocalizationItem Name="REGISTERED" Value="HASABA_ALYNAN" />
+        <LocalizationItem Name="STRIKED_OFF" Value="HASAPDAN_CYKARYLAN" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.RelationEnum" Value="Garyndaşlyk  Enum">
+        <LocalizationItem Name="None" Value="Hiç biri" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.StrikeOffTypeEnum" Value="Hasapdan çykarmagyň sebäbi Enum">
+        <LocalizationItem Name="ChangingRegistrationLocation" Value="Hasaba duran ýeriniň üýtgemegi" />
+        <LocalizationItem Name="LeavingTheCountry" Value="Türkmenistandan gitmegi" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.SubType" Value="Ýüztutmanyň görnüşi">
+        <LocalizationItem Name="ApplicationForBorderZonePermision" Value="Serhet ýaka barmaga rugsat" />
+        <LocalizationItem Name="ApplicationForCameFromBusinessTrip" Value="Iş saparyndan gelmegi" />
+        <LocalizationItem Name="ApplicationForCancellingVisaAndWorkpermit" Value="Wizany we iş rugsatnamany ýatyrmak" />
+        <LocalizationItem Name="ApplicationForChagingInformation" Value="Maglumatyň üýtgemegi" />
+        <LocalizationItem Name="ApplicationForChangingInvitation" Value="Çakylygy çalyşmak" />
+        <LocalizationItem Name="ApplicationForChangingPassport" Value="Wizany täze pasporta geçirmek" />
+        <LocalizationItem Name="ApplicationForChangingVisaCategory" Value="Wiza kategoriýasyny üýtgetmek" />
+        <LocalizationItem Name="ApplicationForExtendingWorkPermitLocation" Value="Iş rugsatnama täze iş ýerini goşmak" />
+        <LocalizationItem Name="ApplicationForGoBusinessTrip" Value="Iş saparyna gitmegi" />
+        <LocalizationItem Name="ApplicationForInvitation" Value="Çakylyk almak" />
+        <LocalizationItem Name="ApplicationForRegisteringToANewLocation" Value="Täze ýere hasaba goýmak" />
+        <LocalizationItem Name="ApplicationForRegistrationExtention" Value="Hasaba alyşy uzaltmak" />
+        <LocalizationItem Name="ApplicationForRegistrationUpOnArrival" Value="Türkmenistana gemegi bilen hasaba almak" />
+        <LocalizationItem Name="ApplicationForSevicePasport" Value="Gulluk pasportly raýaty çagyrmak" />
+        <LocalizationItem Name="ApplicationForStrikeOffRegister" Value="Hasapdan çykarmak" />
+        <LocalizationItem Name="ApplicationForVisaExtention" Value="Wiza möhletini uzaltmak" />
+        <LocalizationItem Name="None" Value="Hiç biri" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.TravelTypeEnum" Value="Syýahatyň maksady Enum">
+        <LocalizationItem Name="Entry" Value="Giriş" />
+        <LocalizationItem Name="Exit" Value="Çykyş" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.VisaCategoryEnum" Value="Visa Kategoriýasy Enum" />
+      <LocalizationGroup Name="VISA2014.Module.DC.VisaIssuedPlacesEnum" Value="Wiza resmileşdirilen ýeri Enum" />
+      <LocalizationGroup Name="VISA2014.Module.DC.VisaState">
+        <LocalizationItem Name="VISA_CAN_OFFICE" Value="WZ_ÝAT_OFFISDE" />
+        <LocalizationItem Name="VISA_CANCELLED" Value="WZ_ÝATYLYLDY" />
+        <LocalizationItem Name="VISA_EXPIRED" Value="WZ_MÖH_GEÇEN" />
+        <LocalizationItem Name="VISA_EXT_FROM_MINISTERY" Value="WZ_UZT_MINISTRLIKDEN" />
+        <LocalizationItem Name="VISA_EXT_OFFICE" Value="WZ_UZT_OFISDE" />
+        <LocalizationItem Name="VISA_EXT_ONPROCESS" Value="WZ_UZT_IŞLENÝÄR" />
+        <LocalizationItem Name="VISA_EXT_REJECTED" Value="WZ_UZT_GARŞYLYK" />
+        <LocalizationItem Name="VISA_EXT_TO_MINISTERY" Value="WZ_UZT_MINISTRLIGE" />
+        <LocalizationItem Name="VISA_EXTENDED" Value="WZ_UZALTYLDY" />
+        <LocalizationItem Name="VISA_NO" Value="WZ_ÝOK" />
+        <LocalizationItem Name="VISA_NONE" Value="WZ_ANYKLAMALY" />
+        <LocalizationItem Name="VISA_VALID" Value="WZ_GÜÝJÜNDE" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.WorkPermitStateEnum" Value="Iş rugsatnamanyň ýagdaýy Enum">
+        <LocalizationItem Name="AP_COMPLETE" Value="GOŞ_TAMAMLANDY" />
+        <LocalizationItem Name="AP_OFFICE" Value="GOŞ_OFİSDE" />
+        <LocalizationItem Name="AP_ONPROCESS" Value="GOŞ_İŞLENÝÄR" />
+        <LocalizationItem Name="CANCELLED" Value="RUG_ÝATYRYLDY" />
+        <LocalizationItem Name="EXPIRED" Value="RUG_MÖH_TAMAM" />
+        <LocalizationItem Name="Extended" Value="RUG_UZALDYLDY" />
+        <LocalizationItem Name="FROM_MINISTERY" Value="RUG_MIN_ÇYKDY" />
+        <LocalizationItem Name="NO_WORKPERMIT" Value="RUG_ÝOK" />
+        <LocalizationItem Name="TO_MINISTERY" Value="RUG_MIN_GITDI" />
+        <LocalizationItem Name="UNKNOWN" Value="RUG_ANYKLAMALY" />
+        <LocalizationItem Name="VALID" Value="RUG_GÜÝJÜNDE" />
+        <LocalizationItem Name="VC_OFFICE" Value="RUG_ÝATR_OFISDE" />
+        <LocalizationItem Name="VC_ONPROCESS" Value="RUG_ÝATR_IŞLENÝÄR" />
+        <LocalizationItem Name="VE_OFFICE" Value="RUG_UZT_OFİSDE" />
+        <LocalizationItem Name="VE_ONPROCESS" Value="RUG_UZT_İŞLENÝÄR" />
+        <LocalizationItem Name="VE_REJECTED" Value="RUG_UZT_GARŞY" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="Messages">
+      <LocalizationItem Name="Create" Value="Döretmek" />
+      <LocalizationItem Name="Delete" Value="Pozmak" />
+      <LocalizationItem Name="Navigate" Value="Gönükdirmek" />
+      <LocalizationItem Name="Read" Value="Okamak" />
+      <LocalizationItem Name="Write" Value="Ýazmak" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Namespaces">
+      <LocalizationItem Name="DevExpress.Persistent.Validation" Value="Barlamak" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Texts">
+      <LocalizationItem Name="Warning" Value="Duýduryş" />
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems>
+    <Items>
+      <Item Id="@01c2f835-4d77-4692-8d40-d2af5b78d556" Caption="Işgär">
+        <Items>
+          <Item Id="@079d7bee-78cb-41f5-bd16-7e67f69c39e7" Caption="Işgär" />
+        </Items>
+      </Item>
+      <Item Id="@21095bcc-6b05-4b78-be7b-9503c2294cb4" Caption="Çakylyk  netijeleri">
+        <Items>
+          <Item Id="@f6e4a349-d3a8-444d-9344-91bd4128d08d" Caption="Netijedäki adamlar" />
+        </Items>
+      </Item>
+      <Item Id="@5128c41d-c356-4e2e-a89f-ac755d27d281" Caption="Kärhana">
+        <Items>
+          <Item Id="@7d2225bf-2848-41c0-8377-c7128dc4b85e" Caption="Kärhananyň maglumatlary" />
+          <Item Id="@bc90b80f-708e-4913-bcad-ed4c2d30132f" Caption="Şertnamalar" />
+          <Item Id="@b3e59a60-25e6-469b-8faa-4de971ba0141" Caption="Wekil" />
+          <Item Id="@5fca9502-ab19-4fe4-946e-d7ad93e6c031" Caption="Wezipeler" />
+          <Item Id="@aadbc579-3b62-43b1-95ef-7fbda01fec13" Caption="Bölümler" />
+        </Items>
+      </Item>
+      <Item Id="@a888ed85-f5f9-4f16-9d93-541e1b03905a" Caption="Ýüztutma">
+        <Items>
+          <Item Id="@df61ff93-d1b4-4a38-9bed-39339ba3d873" Caption="Ministrlikler bilen ylalaşylýan ýüztutmalar" />
+          <Item Id="@9d99c219-90e5-404e-b3ed-f78a9c330bb0" Caption="Ylalaşyk zerur bolmadyk ýüztutmalar" />
+          <Item Id="@dddc6172-96ff-4b9c-bb60-d45624d59110" Caption="Ýüztutmadaky raýatlar" />
+        </Items>
+      </Item>
+      <Item Id="@a9a6d967-2bac-48df-838a-05963d9ed8dd" Caption="visa" />
+      <Item Id="@c316144e-abb5-43eb-9181-29560ba6a64c" Caption="Maşgala agza">
+        <Items>
+          <Item Id="@33911403-6897-4d89-8f27-d7f51c9b80a3" Caption="Maşgala agza" />
+        </Items>
+      </Item>
+      <Item Id="@e5959fdc-21cd-411a-a7f7-93a39cd28773" Caption="Iş rugsatnama">
+        <Items>
+          <Item Id="@f129e3e7-5243-4a80-b88b-45c74df74a05" Caption="Iş rugsatnama haty">
+            <Items>
+              <Item Id="@8293765b-e186-439b-9492-22dc45bc755c" Caption="Iş rugsatnama" />
+            </Items>
+          </Item>
+        </Items>
+      </Item>
+      <Item Id="Configuration" Caption="Konfigurasiýa">
+        <Items>
+          <Item Id="@1c2a0b10-cc2c-43ba-b4c2-febfd1ba9735" Caption="Adam">
+            <Items>
+              <Item Id="@53ee9333-da23-473f-882d-fd3e6b292ec2" Caption="Hünäri" />
+              <Item Id="@9ecdb6e0-48ff-4b37-8c01-5a4eb399c0cc" Caption="Okan okuw jaýy" />
+              <Item Id="@f9a6475e-888c-451d-bb45-7eba7025768d" Caption="Garyndaşlygy" />
+            </Items>
+          </Item>
+          <Item Id="@859f1934-22c0-4388-873e-507dcb03ea43" Caption="Ýüztutma">
+            <Items>
+              <Item Id="@22932f86-f501-4814-9182-b2c81e0b7c05" Caption="Gyssaglygy" />
+            </Items>
+          </Item>
+          <Item Id="@97870d99-4067-49dc-a575-736da117e932" Caption="Pasport" />
+          <Item Id="@a7bb2154-a6da-4250-a1f6-f0c5157ca104" Caption="Kompyuter Kody" />
+          <Item Id="@aa929aba-30b4-4493-a798-e91947f1060c" Caption="Ýerler">
+            <Items>
+              <Item Id="@96539292-fa82-4248-a764-cfe60ca8abb5" Caption="Ýurtlar" />
+            </Items>
+          </Item>
+          <Item Id="@f058b89b-d0cf-4460-bdc7-46e28f9f8d12" Caption="Wiza">
+            <Items>
+              <Item Id="@38a92bc2-985a-4013-aaf2-15d5b3e9e87a" Caption="Wiza kategoriýasy" />
+              <Item Id="@63df7fcb-ffb5-43b3-9c42-e16848625861" Caption="Wiza möhleti" />
+              <Item Id="@70c8e43d-1781-42a1-9db1-a70147b5aa82" Caption="Wiza görnüşi" />
+              <Item Id="@df93a465-bc4c-4d96-87ae-a1646453e31c" Caption="Wiza resmişdirilen ýeri" />
+            </Items>
+          </Item>
+        </Items>
+      </Item>
+      <Item Id="Default">
+        <Items>
+          <Item Id="Proje_ListView" Caption="Taslama" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Validation>
+    <Contexts>
+      <ValidationContext Id="Save" Caption="Ýazmak" />
+    </Contexts>
+    <Rules>
+      <RuleCriteria Id="Address in Line" CustomMessageTemplate="Salgysyny görkezmeli" />
+      <RuleCriteria Id="Address Of Residence  in Line" CustomMessageTemplate="Ýaşaýan salgysyny görkezmeli" />
+      <RuleCriteria Id="AddressOnBusinessTrip" Name="Iş saparynda boljak salgysy" />
+      <RuleCriteria Id="BorderZoneForVisaRule1" CustomMessageTemplate="Serhet ýaka görkezilmeli" />
+      <RuleCriteria Id="DateOfExpire" Name="Möhleti tamamlanýan sene" CustomMessageTemplate="Tamamlanýan möhletini görmezmeli" />
+      <RuleCriteria Id="EducationValidation" CustomMessageTemplate="Bilimini ýazmaly" />
+      <RuleCriteria Id="Employee in Line" Name="Işgär" CustomMessageTemplate="Işgäri görkezmeli" />
+      <RuleCriteria Id="EmployeeWithout Position" Name="Wezipesiz işgär" CustomMessageTemplate="Wezipesini görkezmeli" />
+      <RuleCriteria Id="Family Member in Line" Name="Maşgala agzasy" CustomMessageTemplate="Maşgala agzasyny görkezmeli" />
+      <RuleCriteria Id="ForiegnAddress" Name="Daşary ýurtdaky salgysy" CustomMessageTemplate="Daşary ýurtdaky salgysyny ýazmaly" />
+      <RuleCriteria Id="ForiegnAddress1" Name="Daşary ýurtdaky salgysy 1" CustomMessageTemplate="Daşary ýurtdaky salgysyny görkezmeli" />
+      <RuleCriteria Id="ForiegnAddressÇountry1" CustomMessageTemplate="Daşary ýurtdaky salgysyny görkezmeli" Name="Ýaşaýan daşary ýurdy" />
+      <RuleCriteria Id="ForiegnAddressЗountry" CustomMessageTemplate="Daşary ýurtdaky salgysyny ýazmaly" Name="Ýaşaýan daşary ýurdy" />
+      <RuleCombinationOfPropertiesIsUnique Id="FullName" Name="Doly ady" />
+      <RuleCriteria Id="IssuedDate" Name="Resmileşdirilen sene" CustomMessageTemplate="Resmileşdirilen senesini görkezmeli" />
+      <RuleCriteria Id="Passport in Line" Name="Parport" CustomMessageTemplate="Pasportyny görkezmeli" />
+      <RuleCombinationOfPropertiesIsUnique Id="PassportNumber" MessageTemplateCombinationOfPropertiesMustBeUnique="Bu pasport öň ýazylan" Name="Pasport belgisi" />
+      <RuleCriteria Id="PersonЗontraзt" Name="Şahsy şertnama" CustomMessageTemplate="Şertnamany saýlamaly" />
+      <RuleCriteria Id="Position in Line" Name="Wezipe" CustomMessageTemplate="Wezipäni görkezmeli" />
+      <RuleCriteria Id="Previous Passport  in Line" Name="Öňki pasporty" CustomMessageTemplate="Öňki pasportyny görkezmeli" />
+      <RuleCriteria Id="Purpose Of Travel  in Line" Name="Syýahatyň maksady" />
+      <RuleCriteria Id="ResultNumber" Name="Netije belgisi" CustomMessageTemplate="Belgini ýazmaly" />
+      <RuleCriteria Id="Visa Issued Place  in Line" Name="Wiza resmileşdirilen ýeri" />
+      <RuleCriteria Id="VisaCategory" Name="Wiza kategoriýasy" CustomMessageTemplate="Wiza kategoriýasyny görkezmeli" />
+      <RuleCriteria Id="VisaEndDate" Name="Wiza tamamlanýan sene" CustomMessageTemplate="Wiza tamamlanýan senäni görkezmeli" />
+      <RuleCriteria Id="VisaEndDate1" Name="Wiza tamamlanýan sene" CustomMessageTemplate="Wiza tamamlanýan sene başlanýan we resmileşdirilen seneden uly bolmaly" />
+      <RuleCombinationOfPropertiesIsUnique Id="VisaNumber" Name="Wiza belgisi" />
+      <RuleCriteria Id="VisaPeriod" CustomMessageTemplate="Wiza möhletini görkezmeli" />
+      <RuleCriteria Id="VisaStartDate" Name="Wizanyň başlanýan senesi" CustomMessageTemplate="Wiza başlanýan senäni görkezmeli" />
+      <RuleCriteria Id="Work Permit  in Line" Name="Iş rugsatnamasy" />
+      <RuleCriteria Id="WorPermitExpireDate" Name="Iş rugsatnamanyň tamamlanýan senesi" CustomMessageTemplate="Tamamlanýan sene başlanýan seneden uly bolmaly" />
+    </Rules>
+  </Validation>
+  <Views>
+    <DetailView Id="AboutInfo_DetailView" Caption="Barada" />
+    <DetailView Id="ActionContainerDashboardOrganizationItem_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="ActionContainerDescriptor_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <ListView Id="All">
+      <Columns>
+        <ColumnInfo Id="BorderZoneCollection" Caption="Serhet ýakalar" />
+        <ColumnInfo Id="RelationShipInLetterFM" Caption="Relation Ship In Letter FM" />
+      </Columns>
+    </ListView>
+    <DetailView Id="AppConf_DetailView">
+      <Items>
+        <PropertyEditor Id="StartDate" Caption="Başlanýan sene" />
+        <PropertyEditor Id="UseCompanyLogo" Caption="Kärhananyň logosy" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <ListView Id="AppConf_ListView">
+      <Columns>
+        <ColumnInfo Id="Messge" Caption="Duýduryş" />
+        <ColumnInfo Id="FileLocation" Caption="Faýlyň ýerleşýän ýeri" />
+      </Columns>
+    </ListView>
+    <ListView Id="AppForEmp" Caption="Işgär üçin ýüztutma" />
+    <ListView Id="ApplicationForChangingEmployeesInvitation" Caption="2_Çakylygy çalyşmak" />
+    <ListView Id="ApplicationForEmployee" Caption="Işgär">
+      <Filters>
+        <Filter Id="@eb4f6c62-84fa-4525-aef9-c4ba42bf9a4e" Caption="1_Çakylyk üçin ýüztutma" />
+        <Filter Id="@aa0f64c1-bed4-4af2-80c8-5ace8e602181" Caption="2_Çakylyk çalyşmak üçin ýüztutma" />
+      </Filters>
+    </ListView>
+    <ListView Id="ApplicationForEmployeesInvitation" Caption="1_Çakylyk">
+      <Filters>
+        <Filter Id="@8bdcdfa8-02e3-4da5-933f-9afd308fcd3f" Caption="1_Hemmesi" />
+        <Filter Id="@8bdcdfa8-02e3-4da5-933f-9afd308fcd3f_Copy" Caption="2_Ofisdäkiler" />
+        <Filter Id="@8bdcdfa8-02e3-4da5-933f-9afd308fcd3f_Copy_Copy" Caption="3_&gt;&gt; Ministrlik" />
+        <Filter Id="@8bdcdfa8-02e3-4da5-933f-9afd308fcd3f_Copy_Copy_Copy" Caption="4_Ministrlik &gt;&gt;" />
+        <Filter Id="@8bdcdfa8-02e3-4da5-933f-9afd308fcd3f_Copy_Copy_Copy_Copy" Caption="5_Işlenýär" />
+        <Filter Id="@8bdcdfa8-02e3-4da5-933f-9afd308fcd3f_Copy_Copy_Copy_Copy_Copy" Caption="6_Işlenen" />
+        <Filter Id="@8bdcdfa8-02e3-4da5-933f-9afd308fcd3f_Copy_Copy_Copy_Copy_Copy_Copy" Caption="7_Garşylyklar" />
+        <Filter Id="@8bdcdfa8-02e3-4da5-933f-9afd308fcd3f_Copy_Copy_Copy_Copy_Copy_Copy_Copy" Caption="8_Ýatyrylan" />
+      </Filters>
+    </ListView>
+    <ListView Id="ApplicationForFamilymember" Caption="Maşgala agza">
+      <Filters>
+        <Filter Id="@262d0ceb-1e82-4bc2-802c-ec464d48e689" Caption="1_Çakylyk üçin ýüztutma" />
+        <Filter Id="@2d4c51f9-f5dd-46f5-bedb-9a5b31c7e546" Caption="2_Çakylyk çalyşmak üçin ýüztutma" />
+      </Filters>
+    </ListView>
+    <ListView Id="ApplicationForFamilyMember" Caption="Maşgala agza üçin ýüztutma" />
+    <ListView Id="ApplicationReasultReadonly" Caption="ApplicationReasultReadonly" />
+    <DetailView Id="ApplicationType_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ApplicationType" Caption="Ýütutma görnüşy" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ApplicationTypeForEmployee_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ApplicationTypeForEmployee" Caption="Işgär üçin ýüztutmanyň görnüşleri" />
+            <LayoutGroup Id="ApplicationType" Caption="Ýütutma görnüşy" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ApplicationTypeForFamilyMember_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ApplicationTypeForFamilyMember" Caption="Maşgala agzalary üçin ýüztutmanyň görnüşleri" />
+            <LayoutGroup Id="ApplicationType" Caption="Ýütutma görnüşy" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="AuditDataItemPersistent_DetailView">
+      <Items>
+        <PropertyEditor Id="Description" Caption="Açyklama" />
+        <PropertyEditor Id="ModifiedOn" Caption="Düzedilen sene" />
+        <PropertyEditor Id="NewValue" Caption="Täze ýazgy" />
+        <PropertyEditor Id="OldValue" Caption="Köne ýazgy" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <ListView Id="AuditedObjectWeakReference_AuditDataItems_ListView">
+      <Columns>
+        <ColumnInfo Id="OperationType" Caption="Iş görnüşi" />
+      </Columns>
+    </ListView>
+    <DetailView Id="AuditedObjectWeakReference_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="AuditTrail_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy">
+          <LayoutGroup Id="ChangeHistory_Group" Caption="Üýtgedilme taryhy" ToolTip="" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="AuthenticationStandardLogonParameters_DetailView" Caption="Girmek">
+      <Items>
+        <StaticText Id="LogonText" Text="Hoş geldiňiz! Ulanyjy adyňyzy we parolyňyzy ýazyň." />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="BaseApplicationType_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="BaseApplicationType" Caption="ÝüztutmaGörnüşi" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BaseAuditedObjectWeakReference_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <ListView Id="BaseAuditedObjectWeakReference_ListView">
+      <Columns>
+        <ColumnInfo Id="DisplayName" Caption="Görünýän ady" />
+      </Columns>
+    </ListView>
+    <DetailView Id="Bellik_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="ChangePasswordOnLogonParameters_DetailView" Caption="Ilkinji girişde paroly çalyşmaly">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="ChangePasswordParameters_DetailView" Caption="Paroly çalyşmak">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="CheckPoint_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="CheckPoint" Caption="Gümrük posty" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ContextValidationResult_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <ListView Id="ContextValidationResult_DisplayableValidationResultItems_ListView">
+      <Columns>
+        <ColumnInfo Id="ErrorMessage" Caption="Ýalňyşlyk barada duýduryş" />
+      </Columns>
+    </ListView>
+    <DetailView Id="CriteriaProvider_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="DashboardCreationInfo_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="DashboardCreationInfo">
+              <LayoutGroup Id="ViewItems" Caption="Görnüş" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="DashboardOrganizationItem_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="DashboardOrganizer_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="DashboardViewItemDescriptor_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="DepartmentForRegistration_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="DiagnosticInfoObject_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="DisplayableValidationResultItem_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="EditModelPermission_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <ListView Id="Emp_Adress_Variable" Caption="Hemmesi" />
+    <ListView Id="Employee_Invitation_Variable" Caption="Hasaba almak">
+      <Columns>
+        <ColumnInfo Id="Visaperiod" Caption="Wiza möhleti" />
+        <ColumnInfo Id="InvitationNumber" Caption="Çakylyk belgisi" />
+        <ColumnInfo Id="InvitRemaningDays" Caption="Çakylygyň möhlet gün sany" />
+      </Columns>
+    </ListView>
+    <ListView Id="Employee_Registration_Variable" Caption="Hasaba almak">
+      <Columns>
+        <ColumnInfo Id="LastRegistration.Application" Caption="Hasaba almak üçin ýüztutma" />
+      </Columns>
+    </ListView>
+    <ListView Id="Employee_WorkPermit_Variable" Caption="Hasaba almak">
+      <Columns>
+        <ColumnInfo Id="LastWorkPermit.ASNumberForLine" Caption="AS belgisi" />
+      </Columns>
+    </ListView>
+    <ListView Id="EmpPassport_Variable" Caption="Işgär" />
+    <ListView Id="EmpPersonal_Variable_PersonalData" Caption="Hemmesi" />
+    <ListView Id="FamilyMember_Adress_Variable_" Caption="Hemmesi" />
+    <ListView Id="Familymember_Invitation_Variable" Caption="Hasaba almak">
+      <Columns>
+        <ColumnInfo Id="Visaperiod" Caption="Wiza möhleti" />
+        <ColumnInfo Id="InvitationNumber" Caption="Çakylyk belgisi" />
+        <ColumnInfo Id="InvitRemaningDays" Caption="Çakylygyň möhlet gün sany" />
+      </Columns>
+    </ListView>
+    <ListView Id="FamilyMember_Invitation_Variable_" Caption="Hasaba almak">
+      <Columns>
+        <ColumnInfo Id="VisaCategory" Caption="Wiza kategoriýasy" />
+        <ColumnInfo Id="Visaperiod" Caption="Wiza möhleti" />
+      </Columns>
+    </ListView>
+    <ListView Id="FamilyMember_PersonalData_Variable" Caption="Maşgala agza" />
+    <ListView Id="FamilyMember_Registration_Variable_" Caption="Hasaba almak">
+      <Columns>
+        <ColumnInfo Id="LastRegistration.Application" Caption="Hasaba almak üçin ýüztutma" />
+      </Columns>
+    </ListView>
+    <ListView Id="FamilyMemberInvitation_Variable" Caption="Çakylyk" />
+    <ListView Id="FamilyMemberPassport_Variable_" Caption="Pasport" />
+    <DetailView Id="FileData_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="GoşmaçaIşlemägeRugsatÝeri_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IAddresses_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IAddresses" Caption="Salgylar" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IAddressOfResidence_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IAddressOfResidence">
+              <LayoutGroup Id="Item1">
+                <TabbedGroup Id="Item4">
+                  <LayoutGroup Id="ChangeHistory_Group" Caption="Üýtgedilme taryhy" />
+                </TabbedGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="IAddressOfResidence_ListView">
+      <Columns>
+        <ColumnInfo Id="RemainingDays" Caption="Galan gün sany" />
+      </Columns>
+    </ListView>
+    <DetailView Id="IAddressOnBusinessTrip_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IApplication_DetailView">
+      <Items>
+        <PropertyEditor Id="Cancelled" Caption="Ýatyrlan" />
+        <PropertyEditor Id="IsComplete" Caption="Iş tamamlanan" />
+        <PropertyEditor Id="Rejected" Caption="Garşylyk bildirlen" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy">
+          <LayoutGroup Id="SimpleEditors" Caption="SimpleEditors">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="IApplication" Caption="IÝüztutma">
+                <LayoutGroup Id="IApplication_col1" Caption="IApplication_col1">
+                  <LayoutGroup Id="Item3" Caption=" ">
+                    <LayoutGroup Id="Autof6a688cd-06d7-42d1-a5d0-1023ffc8940e" Caption="Autof6a688cd-06d7-42d1-a5d0-1023ffc8940e(17)">
+                      <LayoutGroup Id="Auto58fc8379-3bc8-4e44-ac79-b2fd2f938f28" Caption="Auto58fc8379-3bc8-4e44-ac79-b2fd2f938f28(21)">
+                        <LayoutGroup Id="Auto4df90b3c-58e8-41ed-a5ab-a846e5fa12fa" Caption="Auto4df90b3c-58e8-41ed-a5ab-a846e5fa12fa(22)">
+                          <LayoutGroup Id="Auto07b39620-6303-4947-bd63-177a2150bd59" Caption="Auto07b39620-6303-4947-bd63-177a2150bd59(22)">
+                            <LayoutGroup Id="Auto367cb76c-3808-4df8-bd96-5bba7b0c847e" Caption="Auto367cb76c-3808-4df8-bd96-5bba7b0c847e(23)">
+                              <LayoutGroup Id="Autobf06562e-9be1-4eeb-9a3f-365c44e2ebd9" Caption="Autobf06562e-9be1-4eeb-9a3f-365c44e2ebd9(87)" />
+                              <LayoutGroup Id="Auto734c4ca6-bd6f-48f0-829c-ee8acde67079" Caption="Auto734c4ca6-bd6f-48f0-829c-ee8acde67079(90)">
+                                <LayoutGroup Id="Autobb63a76b-4c51-4764-b8bc-73d697bd90b4" Caption="Autobb63a76b-4c51-4764-b8bc-73d697bd90b4(91)" />
+                                <LayoutGroup Id="Auto55dd5746-4991-4b01-99b4-b97aef418b3e" Caption="Auto55dd5746-4991-4b01-99b4-b97aef418b3e(94)">
+                                  <LayoutGroup Id="Autob1613b79-1bd5-495f-a5dd-35f31ffd9d57" Caption="Autob1613b79-1bd5-495f-a5dd-35f31ffd9d57(96)" />
+                                </LayoutGroup>
+                              </LayoutGroup>
+                            </LayoutGroup>
+                          </LayoutGroup>
+                          <LayoutGroup Id="Autoa48ac16b-59c9-44ee-9655-eb25e9a6943f" Caption="Autoa48ac16b-59c9-44ee-9655-eb25e9a6943f(29)">
+                            <LayoutGroup Id="Autof5ae22e5-09a3-4186-bdb4-15f2ea5252c6" Caption="Autof5ae22e5-09a3-4186-bdb4-15f2ea5252c6(110)" />
+                          </LayoutGroup>
+                        </LayoutGroup>
+                      </LayoutGroup>
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <TabbedGroup Id="Item9">
+                    <LayoutGroup Id="PersonInApplication" Caption="Ýüztutmadaky raýat" />
+                    <LayoutGroup Id="Invitations" Caption="Çakylyklar" />
+                    <LayoutGroup Id="Item8" Caption="Iş rugsatnamalary" />
+                  </TabbedGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Item2" Caption="Ýagdaýy">
+                <LayoutGroup Id="Item4" Caption=" " />
+              </LayoutGroup>
+              <LayoutGroup Id="Item5" Caption="Vocabulary">
+                <LayoutGroup Id="Auto6cc30289-b44c-46b0-868a-a07fd07c6b7e" Caption="Auto6cc30289-b44c-46b0-868a-a07fd07c6b7e(55)" />
+                <LayoutGroup Id="Auto43aa509e-9866-45f0-838c-ae398ad746a4" Caption="Auto43aa509e-9866-45f0-838c-ae398ad746a4(50)" />
+              </LayoutGroup>
+            </TabbedGroup>
+            <LayoutGroup Id="IApplicationForBorderZonePermit" Caption="IApplicationForBorderZonePermit" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IApplicationForBorderZonePermit_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IApplicationResult_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy">
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="IApplicationResult" Caption="Ýüztutmanyň netijesi" />
+              <LayoutGroup Id="Item2">
+                <LayoutGroup Id="CopyOfResult" Caption="Ýüztutmanyň netijesiniň göçürme nusgasy" />
+              </LayoutGroup>
+            </TabbedGroup>
+            <LayoutGroup Id="IApplicationResult" Caption="IÝüztutmanyň netijesi" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IApplicationSigningPerson_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IAppliedMinistery_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IBorderZone_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IBorderZoneForVisa_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="ICompany_DetailView">
+      <Items>
+        <PropertyEditor Id="ForeignEmployeePercentage" Caption="Daşary ýurtly göterim gatnaşygy" />
+        <PropertyEditor Id="LocalEmployeePercentage" Caption="Ýerli işgär göterim gatnaşygy" />
+        <PropertyEditor Id="NumberOfForeignEmployees" Caption="Daşary ýurtly işgär sany (rugsatnamaly)" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy">
+          <LayoutGroup Id="SimpleEditors" Caption="SimpleEditors">
+            <LayoutGroup Id="ICompany_col1" Caption="ICompany_col1">
+              <LayoutGroup Id="Item3" Caption="Kärhana">
+                <LayoutGroup Id="Auto8c7cac59-a11e-4509-841c-90d8ce6f5d97" Caption="Auto8c7cac59-a11e-4509-841c-90d8ce6f5d97(5)">
+                  <LayoutGroup Id="Auto2e83d73d-2711-4811-9729-3813dd2eba06" Caption="Auto2e83d73d-2711-4811-9729-3813dd2eba06(6)">
+                    <LayoutGroup Id="Autod85bf26c-c4a8-4e01-9b3d-0d3f6bb3b1a3" Caption="Autod85bf26c-c4a8-4e01-9b3d-0d3f6bb3b1a3(5)">
+                      <LayoutGroup Id="Auto09ab633f-fb02-40a3-a76c-253721dea918" Caption="Auto09ab633f-fb02-40a3-a76c-253721dea918(6)" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="ICompany_ListView">
+      <Columns>
+        <ColumnInfo Id="TitleOfCompany" Caption="Kärhananyň ady" />
+        <ColumnInfo Id="PhoneOfNumber" Caption="Telefon belgisi" />
+      </Columns>
+    </ListView>
+    <DetailView Id="ICompanyRepresentative_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IContract_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="ICopy_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="ICountries_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ICountries" Caption="Ýurtlar" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IDCTreeNode_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IdentitiDocCopied_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IDepartment_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IDocumentOfAddress_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IEducation_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy">
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="Item2" Caption="Diplomunyň göçürme nusgasy">
+                <LayoutGroup Id="DiplomaCopy_Group" Caption="Diplomunyň göçürme nusgasy" />
+              </LayoutGroup>
+              <LayoutGroup Id="ChangeHistory" Caption="Üýtgedilme taryhy" />
+            </TabbedGroup>
+            <LayoutGroup Id="IEducation" Caption="IBilim" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IEducationInstitution_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IEducationLevel_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IEmployee_DetailView">
+      <Items>
+        <PropertyEditor Id="AddressOfResidences" Caption="Ýaşaýan salgysy" />
+        <PropertyEditor Id="BirthCountry" Caption="Doglan ýurdy" />
+        <PropertyEditor Id="BirthDate" Caption="Doglan senesi" />
+        <PropertyEditor Id="BirthPlace" Caption="Doglan ýeri" />
+        <PropertyEditor Id="Contract" Caption="Şertnama" />
+        <PropertyEditor Id="Educations" Caption="Bilimi" />
+        <PropertyEditor Id="EmployeeInApplications" Caption="Işgär üçin ýüztutmalar" />
+        <PropertyEditor Id="EmployeeRelation" Caption="Işgäriň garyndaşlygy" />
+        <PropertyEditor Id="FamilyMemberInApplications" Caption="Maşgala agza üçin ýüztutmalar" />
+        <PropertyEditor Id="FamilyMemberRelation" Caption="Maşgala agzanyň garyndaşlygy" />
+        <PropertyEditor Id="FamilyMembers" Caption="Maşgala agzalary" />
+        <PropertyEditor Id="FirstName" Caption="Ady" />
+        <PropertyEditor Id="ForeignAddress" Caption="Daşary ýurtdaky salgysy" />
+        <PropertyEditor Id="ForeignAddressCountry" Caption="Ýaşaýan daşary ýurdy" />
+        <PropertyEditor Id="FullName" Caption="Doly ady" />
+        <PropertyEditor Id="Gender" Caption="Gynsy" />
+        <PropertyEditor Id="IsEmployee" Caption="Işgär" />
+        <PropertyEditor Id="IsFamilyMember" Caption="Maşgala agza" />
+        <PropertyEditor Id="LastAddressOfResidence" Caption="Iň soňky salgysy" />
+        <PropertyEditor Id="LastInvitation" Caption="Iň soňky çakylygy" />
+        <PropertyEditor Id="LastName" Caption="Familiýasy" />
+        <PropertyEditor Id="LastPassport" Caption="Iň soňky pasporty" />
+        <PropertyEditor Id="LastPosition" Caption="Iň soňky wezipesi" />
+        <PropertyEditor Id="LastRegistration" Caption="Iň soňky hasaba alyşy" />
+        <PropertyEditor Id="LastStrikeOff" Caption="Iň soňky hasapdan çykarylşy" />
+        <PropertyEditor Id="LastTravelInfo" Caption="Iň soňky gatnawy" />
+        <PropertyEditor Id="LastVisa" Caption="Iň soňky wizasy" />
+        <PropertyEditor Id="LastWorkPermit" Caption="Iň soňky iş rugsatnamasy" />
+        <PropertyEditor Id="MaritalStatus" Caption="Maşgala ýagdaýy" />
+        <PropertyEditor Id="MiddleName" Caption="Atasynyň ady" />
+        <PropertyEditor Id="Passports" Caption="Pasportary" />
+        <PropertyEditor Id="Photo" Caption="Suraty" />
+        <PropertyEditor Id="RegistrationState" Caption="Hasaba alyş ýagdaýy" />
+        <PropertyEditor Id="TravelInformations" Caption="Gatnaw maglumatlary" />
+        <PropertyEditor Id="WorkHistories" Caption="Iş taryhy" />
+        <PropertyEditor Id="WorkPermits" Caption="Iş rugsatnamalary" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy">
+          <LayoutGroup Id="SimpleEditors" Caption="SimpleEditors">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="IPersonn" Caption="Işgär">
+                <LayoutGroup Id="IPersonn_col1" Caption="IPersonn_col1">
+                  <LayoutGroup Id="IPersonn" Caption="IPersonn">
+                    <LayoutGroup Id="IPersonn_col1" Caption="IPersonn_col1" />
+                    <LayoutGroup Id="IPersonn_col2" Caption="IPersonn_col2">
+                      <LayoutGroup Id="Auto4faed0ad-89a4-4f4d-a5cd-b993e5c8dba6" Caption="Auto4faed0ad-89a4-4f4d-a5cd-b993e5c8dba6(21)" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <TabbedGroup Id="Tabs">
+                    <LayoutGroup Id="FamilyProofDocCopy" Caption="Family Proof Doc Copy" />
+                    <LayoutGroup Id="WorkHistories" Caption="Iş taryhy" />
+                    <LayoutGroup Id="Educations" Caption="Bilimi" />
+                    <LayoutGroup Id="WorkPermits" Caption="Iş rugsatnamalary" />
+                    <LayoutGroup Id="FamilyMembers" Caption="Maşgala agzalary" />
+                    <LayoutGroup Id="FamilyMemberInApplications" Caption="Maşgala agza üçin ýüztutmalar" />
+                    <LayoutGroup Id="EmployeeInApplications" Caption="Ýüztutmadaky işgärler" />
+                    <LayoutGroup Id="FamilyMemberInResult" Caption="Family Member In Result" />
+                    <LayoutGroup Id="TravelInformations" Caption="Türkmenisdana giriş we çykyş maglumatlary" />
+                    <LayoutGroup Id="AddressOfResidences" Caption="Türkmenistandaky salgysy" />
+                    <LayoutGroup Id="EmployeeInResult" Caption="Employee In Result" />
+                    <LayoutGroup Id="Passports" Caption="Pasportlar" />
+                    <LayoutGroup Id="ChangeHistory" Caption="Üýtgedilme taryhy" />
+                    <LayoutGroup Id="SpidKepilnama" Caption="Spid Kepilnama" />
+                  </TabbedGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Item2" Caption="AddInfo" />
+              <LayoutGroup Id="ChangeHistory" Caption="Üýtgedilme taryhy" />
+            </TabbedGroup>
+            <LayoutGroup Id="IMessage" Caption="Duýdyryş" />
+            <LayoutGroup Id="IPersonn" Caption="IPersonn">
+              <LayoutGroup Id="IPersonn_col1" Caption="IPersonn_col1" />
+              <LayoutGroup Id="IPersonn_col2" Caption="IPersonn_col2" />
+            </LayoutGroup>
+            <LayoutGroup Id="IEmployee" Caption="Işgär" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="FamilyMemberInApplications" Caption="Maşgala agza üçin ýüztutmalar" />
+            <LayoutGroup Id="EmployeeInApplications" Caption="Ýüztutmadaky işgärler" />
+            <LayoutGroup Id="TravelInformations" Caption="Türkmenisdana giriş we çykyş maglumatlary" />
+            <LayoutGroup Id="AddressOfResidences" Caption="Türkmenistandaky salgysy" />
+            <LayoutGroup Id="EmployeeInResult" Caption="Employee In Result" />
+            <LayoutGroup Id="Passports" Caption="Pasportlar" />
+            <LayoutGroup Id="ChangeHistory" Caption="Üýtgedilme taryhy" />
+            <LayoutGroup Id="SpidKepilnama" Caption="Spid Kepilnama" />
+            <LayoutGroup Id="Educations" Caption="Bilimi" />
+            <LayoutGroup Id="FamilyMemberInResult" Caption="Family Member In Result" />
+            <LayoutGroup Id="FamilyMembers" Caption="Maşgala agzalary" />
+            <LayoutGroup Id="FamilyProofDocCopy" Caption="Family Proof Doc Copy" />
+            <LayoutGroup Id="WorkHistories" Caption="Iş taryhy" />
+            <LayoutGroup Id="WorkPermits" Caption="Iş rugsatnamalary" />
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="IEmployee_ListView_Visa">
+      <Columns>
+        <ColumnInfo Id="LastVisa.RemainingDays" Caption="Visa Galan Gün" />
+      </Columns>
+      <Filters>
+        <Filter Id="@0e0e525f-dfe5-4ddc-aa46-6d95e30884f3" Caption="IS_RUGSATNAMA" />
+        <Filter Id="@46673a9a-8fed-4ff5-ac8e-b8c00e2c460f" Caption="HASABA ALYS" />
+        <Filter Id="@5447882a-67d0-42b6-81d4-bef0fa1133c1" Caption="ÇAKYLYK" />
+        <Filter Id="@69d9fadc-5540-4d01-b969-063a4742fea3" Caption="WIZA" />
+        <Filter Id="@e7411a72-3af5-4b3e-a4ec-df7358b59d71" Caption="HEMMESI" />
+      </Filters>
+    </ListView>
+    <DetailView Id="IFamilyMember_DetailView">
+      <Items>
+        <PropertyEditor Id="AddressOfResidences" Caption="Ýaşan salgylary" />
+        <PropertyEditor Id="BirthCountry" Caption="Doglan ýurdy" />
+        <PropertyEditor Id="BirthDate" Caption="Doglan senesi" />
+        <PropertyEditor Id="BirthPlace" Caption="Doglan ýeri" />
+        <PropertyEditor Id="Educations" Caption="Bilimi" />
+        <PropertyEditor Id="Employee" Caption="Işgär" />
+        <PropertyEditor Id="EmployeeInApplications" Caption="Işgär üçin ýüztutmalar" />
+        <PropertyEditor Id="EmployeeRelation" Caption="Işgäriň garyndaşlygy" />
+        <PropertyEditor Id="FamilyMemberInApplications" Caption="Maşgala agza üçin ýüztutmalar" />
+        <PropertyEditor Id="FamilyMemberRelation" Caption="Maşgala agzanyň garyndaşlygy" />
+        <PropertyEditor Id="FamilyMembers" Caption="Maşgala agzalary" />
+        <PropertyEditor Id="FirstName" Caption="Ady" />
+        <PropertyEditor Id="ForeignAddress" Caption="Daşary ýurtdaky salgysy" />
+        <PropertyEditor Id="ForeignAddressCountry" Caption="Ýaşaýan daşary ýurdy" />
+        <PropertyEditor Id="FullName" Caption="Doly ady" />
+        <PropertyEditor Id="Gender" Caption="Jynsy" />
+        <PropertyEditor Id="IsEmployee" Caption="Işgär" />
+        <PropertyEditor Id="IsFamilyMember" Caption="Maşgala agza" />
+        <PropertyEditor Id="LastAddressOfResidence" Caption="Iň soňky ýaşan salgysy" />
+        <PropertyEditor Id="LastInvitation" Caption="Iň soňky çakylygy" />
+        <PropertyEditor Id="LastName" Caption="Familiýasy" />
+        <PropertyEditor Id="LastPassport" Caption="Iň soňky pasporty" />
+        <PropertyEditor Id="LastPosition" Caption="Iň soňky wezipesi" />
+        <PropertyEditor Id="LastRegistration" Caption="Iň soňky hasaba alyşy" />
+        <PropertyEditor Id="LastStrikeOff" Caption="Iň soňky hasapdan çykarylyşy" />
+        <PropertyEditor Id="LastTravelInfo" Caption="Iň soňky gatnawy" />
+        <PropertyEditor Id="LastVisa" Caption="Iň soňky wizasy" />
+        <PropertyEditor Id="LastWorkPermit" Caption="Iň soňky iş rugsatnamasy" />
+        <PropertyEditor Id="MaritalStatus" Caption="Maşgala ýagdaýy" />
+        <PropertyEditor Id="MiddleName" Caption="Atasynyň ady" />
+        <PropertyEditor Id="Passports" Caption="Pasportlary" />
+        <PropertyEditor Id="Photo" Caption="Suraty" />
+        <PropertyEditor Id="RegistrationState" Caption="Hasaba alyş ýagdaýy" />
+        <PropertyEditor Id="TravelInformations" Caption="Gatnaw maglumatlary" />
+        <PropertyEditor Id="WorkHistories" Caption="Işlän wezipeleri" />
+        <PropertyEditor Id="WorkPermits" Caption="Iş rugsatnamalary" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy">
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="IPersonn" Caption="Maşgala agza" />
+              <LayoutGroup Id="ChangeHistory" Caption="Üýtgedilme taryhy" />
+            </TabbedGroup>
+            <LayoutGroup Id="IMessage" Caption="Duýdyryş" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="WorkHistories" Caption="Iş taryhy" />
+            <LayoutGroup Id="Educations" Caption="Bilimi" />
+            <LayoutGroup Id="WorkPermits" Caption="Iş rugsatnamalary" />
+            <LayoutGroup Id="FamilyMembers" Caption="Maşgala agzalary" />
+            <LayoutGroup Id="FamilyMemberInApplications" Caption="Ýüztutmadaky maşgala agzalary" />
+            <LayoutGroup Id="EmployeeInApplications" Caption="Ýüztutmadaky işgärler" />
+            <LayoutGroup Id="TravelInformations" Caption="Türkmenisdana giriş we çykyş maglumatlary" />
+            <LayoutGroup Id="AddressOfResidences" Caption="Türkmenistandaky salgysy" />
+            <LayoutGroup Id="Passports" Caption="Pasportlar" />
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="IFamilyMember_ListView">
+      <Columns>
+        <ColumnInfo Id="CountPerson" Caption="Adam sany" />
+      </Columns>
+    </ListView>
+    <ListView Id="IFamilyMember_ListView_Import">
+      <Columns>
+        <ColumnInfo Id="CountPerson" Caption="Adam sany" />
+      </Columns>
+    </ListView>
+    <ListView Id="IFamilyMember_ListView_Visa_" Caption="Wiza">
+      <Filters>
+        <Filter Id="@056d787b-d10b-4eec-867b-afee29f42e70" Caption="HEMMESI" />
+        <Filter Id="@16bf73a8-ed06-4cfa-9d32-e39287677905" Caption="HASABA ALYŞ" />
+        <Filter Id="@ab3f72d6-6f98-462b-9821-820b0abda796" Caption="WIZA" />
+      </Filters>
+    </ListView>
+    <DetailView Id="IGender_DetailView" Caption="IJyns">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IGender" Caption="IJyns" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="IGender_Relations_ListView">
+      <Columns>
+        <ColumnInfo Id="RelativeAs" Caption="Garyndaşlygy" />
+        <ColumnInfo Id="RelativeAsL" Caption="Garyndaşlygy L" />
+      </Columns>
+    </ListView>
+    <DetailView Id="ILocationPermittedToWork_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="ILongProcessApplication_DetailView">
+      <Items>
+        <PropertyEditor Id="ApplicationAndASNumber" Caption="Ýüztutma we AS belgi" />
+        <PropertyEditor Id="ManualApplicationDate" Caption="Ýüztutma senesi" />
+        <PropertyEditor Id="ManualApplicationNumber" Caption="Ýüztutma belgisi" />
+        <PropertyEditor Id="NumberOfPages" Caption="Sahypa sany" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy">
+          <LayoutGroup Id="SimpleEditors" Caption="SimpleEditors">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="IApplication" Caption="IÝüztutma">
+                <LayoutGroup Id="IApplication_col1" Caption="IApplication_col1">
+                  <LayoutGroup Id="Auto539fc28c-4f58-4310-837b-c00883c98629" Caption="Auto539fc28c-4f58-4310-837b-c00883c98629(6)">
+                    <LayoutGroup Id="Item3" Caption="Ýüztutma">
+                      <LayoutGroup Id="Auto167c9169-016d-460a-9535-08d484869c39" Caption="Auto167c9169-016d-460a-9535-08d484869c39(7)">
+                        <LayoutGroup Id="Auto5ff9faf3-d563-44d8-be87-3a52bd1275d4" Caption="Auto5ff9faf3-d563-44d8-be87-3a52bd1275d4(11)">
+                          <LayoutGroup Id="Auto05fec32d-16bb-4514-a4a7-a3c8eb2fe3d9" Caption="Auto05fec32d-16bb-4514-a4a7-a3c8eb2fe3d9(15)">
+                            <LayoutGroup Id="Auto3e19dd74-0802-4074-bbe2-ebfae26aa60b" Caption="Auto3e19dd74-0802-4074-bbe2-ebfae26aa60b(16)">
+                              <LayoutGroup Id="Auto12a1d5d9-16a7-4c1d-a5a1-a8f9797e1db2" Caption="Auto12a1d5d9-16a7-4c1d-a5a1-a8f9797e1db2(17)" />
+                              <LayoutGroup Id="Auto7a15d638-7303-4cff-9d85-af63008a42ef" Caption="Auto7a15d638-7303-4cff-9d85-af63008a42ef(20)">
+                                <LayoutGroup Id="Autofbb2c820-7767-4b5a-9464-f282e4086bcf" Caption="Autofbb2c820-7767-4b5a-9464-f282e4086bcf(21)" />
+                                <LayoutGroup Id="Auto6293909b-7f21-4356-ba77-3e315c78e996" Caption="Auto6293909b-7f21-4356-ba77-3e315c78e996(24)">
+                                  <LayoutGroup Id="Auto54da12ae-9362-471c-a688-f6ce6e578cd3" Caption="Auto54da12ae-9362-471c-a688-f6ce6e578cd3(25)" />
+                                  <LayoutGroup Id="Auto14b5d228-567a-4c8e-83e5-cf8518264255" Caption="Auto14b5d228-567a-4c8e-83e5-cf8518264255(28)">
+                                    <LayoutGroup Id="Autod41aca5a-8d68-4e66-8249-3892b846f10c" Caption="Autod41aca5a-8d68-4e66-8249-3892b846f10c(29)" />
+                                    <LayoutGroup Id="Autof3a0f79b-0c89-4901-b591-b14ce13a0c8e" Caption="Autof3a0f79b-0c89-4901-b591-b14ce13a0c8e(32)">
+                                      <LayoutGroup Id="Autoeade9fe8-98a3-4839-a3a8-a01cf5cada58" Caption="Autoeade9fe8-98a3-4839-a3a8-a01cf5cada58(33)">
+                                        <LayoutGroup Id="Auto694bd0d0-ba67-4f8d-9a15-c772c3d22310" Caption="Auto694bd0d0-ba67-4f8d-9a15-c772c3d22310(35)">
+                                          <LayoutGroup Id="Auto4756b667-73f5-455f-8282-3e781c4d88c2" Caption="Auto4756b667-73f5-455f-8282-3e781c4d88c2(30)" />
+                                        </LayoutGroup>
+                                      </LayoutGroup>
+                                    </LayoutGroup>
+                                  </LayoutGroup>
+                                </LayoutGroup>
+                              </LayoutGroup>
+                            </LayoutGroup>
+                          </LayoutGroup>
+                        </LayoutGroup>
+                      </LayoutGroup>
+                    </LayoutGroup>
+                    <LayoutGroup Id="Item5" Caption="Registration &amp; Urgency" />
+                  </LayoutGroup>
+                  <TabbedGroup Id="Item7">
+                    <LayoutGroup Id="PersonInApplication" Caption="Ýüztutmadaky raýat" />
+                    <LayoutGroup Id="Invitations" Caption="Ýüztutmanyň netijesi" />
+                  </TabbedGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Item2" Caption="Ýagdaýy" />
+              <LayoutGroup Id="Item6" Caption="Üýtgedilme taryhy" />
+            </TabbedGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="ILongProcessApplication_ListView" Caption="IYlalaşylýan ýüztutmalar" />
+    <DetailView Id="IMaritalStatus_DetailView" Caption="IMarşgala ýagdaýy">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IMessage_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IPassport_DetailView" Caption="IPasport">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy">
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="Item4" Caption="Pasport göçürmek nusgasy">
+                <LayoutGroup Id="PassportCopy" Caption="Pasport göçürmek nusgasy" />
+              </LayoutGroup>
+              <LayoutGroup Id="ChangeHistory" Caption="Üýtgedilme taryhy" />
+            </TabbedGroup>
+            <LayoutGroup Id="IPassport" Caption="IPasport" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="IPassport_ListView">
+      <Columns>
+        <ColumnInfo Id="RemainingDays" Caption="PASP_GALAN_GÜN" />
+      </Columns>
+    </ListView>
+    <ListView Id="IPassport_Visas_ListView" Caption="IWiza">
+      <Columns>
+        <ColumnInfo Id="HasBorderZonePermit" Caption="Serhet ýaka bar" />
+      </Columns>
+    </ListView>
+    <DetailView Id="IPassportCopy_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IPassportIssuedPlace_DetailView" Caption="IPasport resmileşdirlen ýeri">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IPassportType_DetailView" Caption="IPasport görnüşi">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IPersonInApplication_DetailView" ObjectCaptionFormat="{0:Application}">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy">
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="Item2">
+              <LayoutGroup Id="IPersonInApplication" Caption="IÝüztutmadaky raýat" />
+              <LayoutGroup Id="Item3" Caption="Goşmaça maglumat" />
+              <LayoutGroup Id="ChangeHistory_Group" Caption="Üýtgedilme taryhy" />
+            </TabbedGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IPersonInApplication_DetailView_Copy">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy">
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="Item2">
+              <LayoutGroup Id="IPersonInApplication" Caption="IÝüztutmadaky raýat" />
+              <LayoutGroup Id="Item3" Caption="Goşmaça maglumat" />
+            </TabbedGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IPersonInResult_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy">
+          <LayoutGroup Id="SimpleEditors" Caption="SimpleEditors">
+            <LayoutGroup Id="IPersonInResult" Caption="IPersonInResult" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IPersonn_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IPersonn" Caption="Kişi" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IPlural_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IPluralBorderZone_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IPluralFamilyMember_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IPluralForeignCitizen_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IPluralInvitation_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IPluralInvitationAndWorkPermit_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IPluralRugsat_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IPluralWiza_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IPluralWizaAndWorkPermit_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IPosition_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IPosition" Caption="IWezipe" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="IRegion_Cities_ListView">
+      <Columns>
+        <ColumnInfo Id="CityType" Caption="Şäher görnüşi" />
+      </Columns>
+    </ListView>
+    <DetailView Id="IRegion_DetailView" Caption="IWelaýat">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRegion" Caption="IWelaýat" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRegistration_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRelation_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRelation" Caption="Garyndaşlygy" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRemainingDays_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleBaseProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleCollectionPropertyProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleCombinationOfPropertiesIsUniqueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleCriteriaProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleFromBoolPropertyProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleIsReferencedProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleObjectExistsProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRulePropertyValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleRangeProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleRegularExpressionProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleRequiredFieldProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleSearchObjectProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleStringComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleSupportsCollectionAggregatesProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleUniqueValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleValueComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IŞäherEtrap_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="ISimpleProcessApplication_DetailView">
+      <Items>
+        <PropertyEditor Id="ManualApplicationDate" Caption="Ýüztutma senesi" />
+        <PropertyEditor Id="ManualApplicationNumber" Caption="Ýüztutma belgisi" />
+        <PropertyEditor Id="NumberOfPages" Caption="Sahypa sany" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy">
+          <LayoutGroup Id="SimpleEditors" Caption="SimpleEditors">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="IApplication" Caption="IÝüztutma">
+                <LayoutGroup Id="IApplication_col1" Caption="IApplication_col1">
+                  <LayoutGroup Id="Auto67a48f82-e96c-4f5c-bdfb-6ed9faac9ca4" Caption="Auto67a48f82-e96c-4f5c-bdfb-6ed9faac9ca4(6)">
+                    <LayoutGroup Id="Item3" Caption="Ýüztutma">
+                      <LayoutGroup Id="Auto90877775-347c-48ab-a09c-bf4caf98c0c3" Caption="Auto90877775-347c-48ab-a09c-bf4caf98c0c3(7)">
+                        <LayoutGroup Id="Autoc60e55ad-2529-44fd-8afa-3978058dee41" Caption="Autoc60e55ad-2529-44fd-8afa-3978058dee41(8)" />
+                      </LayoutGroup>
+                      <LayoutGroup Id="Auto9c7739fa-9010-4596-83d7-6c612f2582e9" Caption="Auto9c7739fa-9010-4596-83d7-6c612f2582e9(18)">
+                        <LayoutGroup Id="Auto052a155d-c377-48a9-9039-0dd62dea87e1" Caption="Auto052a155d-c377-48a9-9039-0dd62dea87e1(12)" />
+                        <LayoutGroup Id="Auto898d4b2d-b643-424c-932b-da4367c056a4" Caption="Auto898d4b2d-b643-424c-932b-da4367c056a4(20)" />
+                        <LayoutGroup Id="Auto6d194474-828b-4cec-826d-c1466991db54" Caption="Auto6d194474-828b-4cec-826d-c1466991db54(23)">
+                          <LayoutGroup Id="Auto1a792563-cdbe-43a9-b079-fc7fe062ca3c" Caption="Auto1a792563-cdbe-43a9-b079-fc7fe062ca3c(24)" />
+                          <LayoutGroup Id="Auto4d439017-ae07-463f-bf07-85ff4ae1e65a" Caption="Auto4d439017-ae07-463f-bf07-85ff4ae1e65a(25)">
+                            <LayoutGroup Id="Autob4434854-d9be-4628-90df-bf7e40d078a9" Caption="Autob4434854-d9be-4628-90df-bf7e40d078a9(32)" />
+                          </LayoutGroup>
+                          <LayoutGroup Id="Auto69916b03-945e-445a-b98c-30c13ba20b43" Caption="Auto69916b03-945e-445a-b98c-30c13ba20b43(28)" />
+                        </LayoutGroup>
+                      </LayoutGroup>
+                    </LayoutGroup>
+                    <LayoutGroup Id="Autofede930a-3b5f-401f-90e0-50cb26ae4c72" Caption="Autofede930a-3b5f-401f-90e0-50cb26ae4c72(33)">
+                      <LayoutGroup Id="Item5" Caption="Registration &amp;&amp; Urgency" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Item2" Caption="Ýagdaýy" />
+              <LayoutGroup Id="Item7" Caption="Üýtgedilme taryhy" />
+            </TabbedGroup>
+            <TabbedGroup Id="Tabs">
+              <LayoutGroup Id="PersonInApplication" Caption="Ýüztutmadaky raýat" />
+              <LayoutGroup Id="ApplicationResult" Caption="Ýüztutmanyň netijesi" />
+            </TabbedGroup>
+            <LayoutGroup Id="IApplicationForBorderZonePermit" Caption="IApplicationForBorderZonePermit" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IsInvitationWithWorkPermit_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IşlemägeRugsatEdilenYer_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="ISpeciality_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IsWizaWithWorkPermit_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="ITravelInformation_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ITravelInformation">
+              <TabbedGroup Id="Item2">
+                <LayoutGroup Id="ChangeHistory_Group" Caption="Üýtgedilme taryhy" />
+              </TabbedGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IUrgency_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IUrgency" Caption="Gyssaglygy" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IVisa_DetailView">
+      <Items>
+        <PropertyEditor Id="ASNumber" Caption="Işlenen belgisi" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy">
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="ChangeHistory" Caption="Üýtgedilme taryhy" />
+            </TabbedGroup>
+            <LayoutGroup Id="IVisa" Caption="IWiza" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="IVisa_ListView">
+      <Columns>
+        <ColumnInfo Id="RemainingDays" Caption="Wiza Galan Gün" />
+      </Columns>
+    </ListView>
+    <DetailView Id="IVisaCategory_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IVisaIssuedPlace_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IVisaPeriod_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IVisaType_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IVisibility_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IWorkHistory_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy">
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="ChangeHistory_Group" Caption="Üýtgedilme taryhy" />
+            </TabbedGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IWorkPermit_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy">
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="Item2">
+              <LayoutGroup Id="ChangeHistory_Group" Caption="Üýtgedilme taryhy" />
+            </TabbedGroup>
+            <LayoutGroup Id="IWorkPermit" Caption="IIş rugsatnama" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="IWorkPermit_ListView">
+      <Columns>
+        <ColumnInfo Id="RemainingDays" Caption="RUG GALAN GÜN" />
+      </Columns>
+    </ListView>
+    <ListView Id="IWorkPermit_ListView_ReadOnly">
+      <Filters>
+        <Filter Id="@2cac9138-7eb9-4a1f-8175-de1a75150d57" Caption="HEMMESI" />
+        <Filter Id="@f872e00a-2c7d-45c5-a583-caf82e1d3c62" Caption="HEREKET EDÝÄNLER" />
+      </Filters>
+    </ListView>
+    <DetailView Id="IWorkPermitLetter_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IWorkPermitLetter">
+              <TabbedGroup Id="Item2">
+                <LayoutGroup Id="WorkPermitCopy" Caption="Iş rugsatnamanyň göçürme nusgasy" />
+              </TabbedGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IWorkPermitLocation_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="ObjectAccessPermission_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <ListView Id="PersonInResultReadonly" Caption="PersonInResultReadonly">
+      <Filters>
+        <Filter Id="@6ac04bbb-aa1e-4369-b8e6-f2476634b977" Caption="HEMMESI" />
+        <Filter Id="@79e06bd1-0bfe-4719-bbf8-204b3c3d3437" Caption="GUYJUNDE" />
+        <Filter Id="@85549613-2c73-4425-aeab-4f1ee05eff9a" Caption="ULANYLAN" />
+        <Filter Id="@92ba6204-f822-4de1-98e4-36a651fb8d20" Caption="MOHLETI GECEN" />
+      </Filters>
+    </ListView>
+    <DetailView Id="PrefferedVisaCategory_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="Proje_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="PurposeOfTravel_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="ReportData_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="ResetPasswordParameters_DetailView" Caption="Paroly üýtget">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleBaseProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleCombinationOfPropertiesIsUniqueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleCriteriaProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleFromBoolPropertyProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleIsReferencedProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleObjectExistsProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RulePropertyValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleRangeProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleRegularExpressionProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleRequiredFieldProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleSearchObjectProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleSetValidationResult_ByTarget_Error_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleSetValidationResult_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <ListView Id="RuleSetValidationResultItem_ByTarget_ListView">
+      <Columns>
+        <ColumnInfo Id="ErrorMessage" Caption="Açyklama" />
+      </Columns>
+    </ListView>
+    <DetailView Id="RuleSetValidationResultItem_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleSetValidationResultItemAggregate_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleStringComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleUniqueValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleValueComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="StaticImageDashboardOrganizationItem_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="StaticTextDashboardOrganizationItem_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="Taşaron_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="UserCode_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="ValidationResults_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="ValidationResults_Error_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="ValidationResults_Passed_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="ViewDashboardOrganizationItem_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="XPManageUserSettingsParameter_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="XPUserSettings_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="XPUserSettingsAspect_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Esasy" />
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

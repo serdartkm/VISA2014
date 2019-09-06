@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel Id="BOModel">
+    <Class Name="VISA2014.Module.DC.IPersonInResult">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="ExpectedDateOfArrival" Caption="Gelmegine garaşylýan sene" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Validation Id="Validation">
+    <Rules Id="Rules">
+      <RuleCriteria Id="Employee In Result" Name="Netijedäki işgär" CustomMessageTemplate="Işgäri saýlamaly" />
+      <RuleCriteria Id="Family Member In Result" Name="Netijedäki maşgala agza" CustomMessageTemplate="Maşgala agzasyny saýlamaly" />
+    </Rules>
+  </Validation>
+</Application>

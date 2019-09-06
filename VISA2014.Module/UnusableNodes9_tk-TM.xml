@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <ListView Id="Employee_Invitation_Variable">
+      <Columns Id="Columns">
+        <ColumnInfo Id="@c0a9db47-fa52-4cde-b8e6-214a8337da23" Caption="Çakylygyň ýagdaýy" />
+      </Columns>
+    </ListView>
+  </Views>
+  <BOModel Id="BOModel">
+    <Class Name="VISA2014.Module.DC.IPersonn">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="InvitationState" Caption="Çakylygyň ýagdaýy" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+</Application>

@@ -1,0 +1,942 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel>
+    <Class Name="VISA2014.Module.BusinessObjects.AppConf">
+      <OwnMembers>
+        <Member Name="AddressExpireDay" Caption="Осталось дней (адресс)" />
+        <Member Name="PassportExpireDay" Caption="Осталось дней (паспорт)" />
+        <Member Name="StartDate" Caption="Дата началы" />
+        <Member Name="VisaExpireDay" Caption="Осталось дней (виза)" />
+        <Member Name="WorkPermitExpireDate" Caption="Дата истечения(труд.разр.)" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.BusinessObjects.ApplicationType" Caption="Тип обращения">
+      <OwnMembers>
+        <Member Name="AddressOfResidence" Caption="Адрес проживания (В Туркменистане)" />
+        <Member Name="Invitation" Caption="Приглашение" />
+        <Member Name="InvitationToBeChanged" Caption="Приглашение для переоформления" />
+        <Member Name="Position" Caption="Должность" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.BusinessObjects.ApplicationTypeForEmployee" Caption="Тип обращения для работника">
+      <OwnMembers>
+        <Member Name="BaseApplicationType" Caption="Başvuru türü" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.BusinessObjects.ApplicationTypeForFamilyMember" Caption="Тип обращения для члена семъи">
+      <OwnMembers>
+        <Member Name="BaseApplicationType" Caption="Başvuru türü" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.BusinessObjects.BaseApplicationType" Caption="Başvuru türü">
+      <OwnMembers>
+        <Member Name="ApplicationTypeForEmployees" Caption="Обращение для работника" />
+        <Member Name="ApplicationTypeForFamilyMembers" Caption="Обращение для члена семъи" />
+        <Member Name="TypeOfBaseApplication" Caption="Вид работы" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.BusinessObjects.CheckPoint" Caption="Контроль пропускные пункты">
+      <OwnMembers>
+        <Member Name="TitleOfCheckPoint" Caption="Название КПП" />
+        <Member Name="TitleOfCheckPointL" Caption="Названик КПП L" />
+        <Member Name="TitleOfCheckPointR" Caption="Названик КПП R" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.BusinessObjects.DepartmentForRegistration" Caption="Обращенное ведомство">
+      <OwnMembers>
+        <Member Name="DepartmentForRegistrationL" Caption="Название обращенного ведомства L" />
+        <Member Name="TitleOfDepartmentForRegistration" Caption="Название обращенного ведомства" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.BusinessObjects.IsInvitationWithWorkPermit" Caption="Требуется ли трудовое разрешение">
+      <OwnMembers>
+        <Member Name="InvitationAndWorkPermitRequired" Caption="Трудовое разрешение требуется" />
+        <Member Name="InvitationAndWorkPermitRequiredL" Caption="Трудовое разрешение требуется L" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.BusinessObjects.IsWizaWithWorkPermit" Caption="Требуется ли трудовое разрешение">
+      <OwnMembers>
+        <Member Name="WizaAndWorkPermitRequired" Caption="Трудовое разрешение требуется" />
+        <Member Name="WizaAndWorkPermitRequiredL" Caption="Трудовое разрешение требуется L" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.BusinessObjects.PrefferedVisaCategory" Caption="Предпочитаемая категория визы">
+      <OwnMembers>
+        <Member Name="PreferredVisaCategoryL" Caption="Предпочитаемая категория визы L" />
+        <Member Name="PreferredVisaCategoryR" Caption="Предпочитаемая категория визы R" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.BusinessObjects.PurposeOfTravel" Caption="Цель поездки">
+      <OwnMembers>
+        <Member Name="PurposeOfTravelL" Caption="Цель поездки  L" />
+        <Member Name="PurposeOfTravelR" Caption="Цель поездки R" />
+        <Member Name="TravelPurpose" Caption="Цель поездки" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IAddresses">
+      <OwnMembers>
+        <Member Name="AddressLine" Caption="Точный адрес" />
+        <Member Name="DocumentOfAddress" Caption="Вид документа для проживания" />
+        <Member Name="ExpiringDateOfAddressDocument" Caption="Дата истечения срока (докум. для проживания)" />
+        <Member Name="FullAdress" Caption="Полный адрес" />
+        <Member Name="Region" Caption="Велаят" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IAddressOfResidence">
+      <OwnMembers>
+        <Member Name="Address" Caption="Адрес" />
+        <Member Name="AddressState" Caption="Состояние адреса" />
+        <Member Name="StartDateOfResidence" Caption="Дата началы проживания" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IAddressOnBusinessTrip">
+      <OwnMembers>
+        <Member Name="AddressOnTrip" Caption="Адрес во время командировки" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IApplication">
+      <OwnMembers>
+        <Member Name="ApplicationFor" Caption="Обращение для" />
+        <Member Name="ApplicationResult" Caption="Результат обращения" />
+        <Member Name="ApplicationState" Caption="Состояние обращения" />
+        <Member Name="ApplicationTypeForEmployee" Caption="Тип обращения для работника" />
+        <Member Name="ApplicationTypeForFamilyMember" Caption="Тип обращения для члена семъи" />
+        <Member Name="AppliedMinistery" Caption="Başvurulan bakanlık" />
+        <Member Name="AutoRegistration" Caption="Otomatik numara bermek" />
+        <Member Name="BaseApplicationType" Caption="Başvuru türü" />
+        <Member Name="ChangeInformation" Caption="Тип измененной информации" />
+        <Member Name="ChooseBorderZoneType" Caption="Выберите пограничную зону" />
+        <Member Name="Contract" Caption="Контракт" />
+        <Member Name="DateForwardedToMonistery" Caption="Дата направления в министерство" />
+        <Member Name="DepartmentForRegistration" Caption="Обращенное ведомство" />
+        <Member Name="ForEmployee" Caption="Для работника" />
+        <Member Name="ForFamilyMember" Caption="Для члена семъи" />
+        <Member Name="InvitationToBeChanged" Caption="Приглашение для переоформления" />
+        <Member Name="IsInvitationWithWorkPermit" Caption="Требуется ли трудовое разрешение" />
+        <Member Name="IsWizaWithWorkPermit" Caption="Требуется ли трудовое разрешение" />
+        <Member Name="MinisteriesDocumentDate" Caption="Дата документа министерства" />
+        <Member Name="MinisteriesDocumentNumber" Caption=" № документа министерства" />
+        <Member Name="NewRegistrationLocation" Caption="Новое место для регистрации" />
+        <Member Name="NumberOfPerson" Caption="Количество лиц в обращении" />
+        <Member Name="PersonInApplication" Caption="Лицо в обращении" />
+        <Member Name="PrefferedVisaCategory" Caption="Предпочитаемая категория визы" />
+        <Member Name="PreviousRegistrationLocation" Caption="Прежднее место для регистрации" />
+        <Member Name="ProcessDate" Caption="Дата процесса" />
+        <Member Name="ProcessNumber" Caption="Номер процесса" />
+        <Member Name="SigningPerson" Caption="Подписывающее лицо" />
+        <Member Name="StrikeOffType" Caption="Тип снятия с учета" />
+        <Member Name="SubType" Caption="Тип обращения" />
+        <Member Name="Urgency" Caption="Вид срочности" />
+        <Member Name="VisaCategory" Caption="Категория визы" />
+        <Member Name="VisaPeriod" Caption="Срок визы" />
+        <Member Name="WorkPermit" Caption="Трудовое разрешение" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IApplicationForBorderZonePermit">
+      <OwnMembers>
+        <Member Name="BorderZoneForVisa" Caption="Пограничная зона в визе" />
+        <Member Name="BorderZonePeriod" Caption="Срок разрешения в пограничную зону" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IApplicationResult">
+      <OwnMembers>
+        <Member Name="Application" Caption="Обращение" />
+        <Member Name="CopyOfResult" Caption="Копия результата обращения " />
+        <Member Name="DateOfExpire" Caption="Дата истечения срока" />
+        <Member Name="InvitationRemaningDays" Caption="Осталось дней (приглашение)" />
+        <Member Name="IssuedDate" Caption="Дата оформления" />
+        <Member Name="Number" Caption="Номер" />
+        <Member Name="PersonInResultLetter" Caption="Лицо в результате" />
+        <Member Name="Result" Caption="Результат" />
+        <Member Name="VisaCategory" Caption="Категория визы" />
+        <Member Name="VisaEndDate" Caption="Дата окончания визы" />
+        <Member Name="VisaPeriod" Caption="Срок визы" />
+        <Member Name="VisaStartDate" Caption="Дата началы визы" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IApplicationSigningPerson">
+      <OwnMembers>
+        <Member Name="Company" Caption="Фирма" />
+        <Member Name="Employee" Caption="Работник" />
+        <Member Name="Position" Caption="Должность" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IAppliedMinistery">
+      <OwnMembers>
+        <Member Name="Contracts" Caption="Контракты" />
+        <Member Name="formOfAddress" Caption="Способ обращения" />
+        <Member Name="MinistersFullName" Caption="Полное имя министра" />
+        <Member Name="MinistersPosition" Caption="Должность министра" />
+        <Member Name="TitleOfMinistery" Caption="Название министерства" />
+        <Member Name="TitleOfMinisteryL" Caption="Название министерства L" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.ICompany">
+      <OwnMembers>
+        <Member Name="AddressOfCompany" Caption="Адрес фирмы" />
+        <Member Name="CurrentReprezentative" Caption="Представитель фирмы" />
+        <Member Name="DocSigningPerson" Caption="Лицо подписывающий обращение" />
+        <Member Name="logo" Caption="Лого" />
+        <Member Name="NumberOfLocalEmployee" Caption="Количество местных сотрудников" />
+        <Member Name="PhoneOfNumber" Caption="Номер телефона" />
+        <Member Name="TaxRegistrationNumber" Caption="Номер регистрации в налоговой службе" />
+        <Member Name="TitleOfCompany" Caption="Название фирмы" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.ICompanyRepresentative">
+      <OwnMembers>
+        <Member Name="Company" Caption="Фирма" />
+        <Member Name="FullName" Caption="Полное имя" />
+        <Member Name="PassportDetails" Caption="Паспортные данные" />
+        <Member Name="PhoneNumbers" Caption="Номер телефона" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IContract">
+      <OwnMembers>
+        <Member Name="AppliedMinistery" Caption="Başvurulan bakanlık" />
+        <Member Name="ContentOfContract" Caption="Содержание контракта" />
+        <Member Name="NumberOfContract" Caption="Номер контракта" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.ICopy">
+      <OwnMembers>
+        <Member Name="CopyOfDocument" Caption="Копия документа" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.ICountries">
+      <OwnMembers>
+        <Member Name="NameOfCountry" Caption="Название страны" />
+        <Member Name="NameOfCountryL" Caption="Название страны L" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IDepartment">
+      <OwnMembers>
+        <Member Name="TitleOfDepartment" Caption="Название отдела" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IDocumentOfAddress">
+      <OwnMembers>
+        <Member Name="TypeOfDocument" Caption="Тип документа" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IEducation">
+      <OwnMembers>
+        <Member Name="EducationCountry" Caption="Страна образования" />
+        <Member Name="EducationEndDate" Caption="Дата окончания образования" />
+        <Member Name="EducationInstitution" Caption="Учебное заведение" />
+        <Member Name="EducationLevel" Caption="Уровень образования" />
+        <Member Name="EducationStartDate" Caption="Дата началы образования" />
+        <Member Name="Spcialty" Caption="Специальность" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IEducationInstitution">
+      <OwnMembers>
+        <Member Name="TitleOfIEducationInstitution" Caption="Название учебного заведения" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IEducationLevel">
+      <OwnMembers>
+        <Member Name="TitleOfEducationLevel" Caption="Название уровня образования" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IGender">
+      <OwnMembers>
+        <Member Name="MaritalStatuses" Caption="Семейное положение" />
+        <Member Name="Relations" Caption="Родства" />
+        <Member Name="TypeOfGender" Caption="Пол" />
+        <Member Name="TypeOfGenderL" Caption="Пол L" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.ILocationPermittedToWork">
+      <OwnMembers>
+        <Member Name="NameOfLocation" Caption="Название места" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IMaritalStatus">
+      <OwnMembers>
+        <Member Name="Gender" Caption="Пол" />
+        <Member Name="Status" Caption="Состояние" />
+        <Member Name="StatusL" Caption="Состояние L" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IPassport">
+      <OwnMembers>
+        <Member Name="Citizenship" Caption="Гражданство" />
+        <Member Name="LastVisa" Caption="Последняя виза" />
+        <Member Name="PassportCopy" Caption="Копия паспорта" />
+        <Member Name="PassportExpiringDate" Caption="Дата истечения срока паспорта" />
+        <Member Name="PassportIssuedCountry" Caption="Страна оформления паспорта" />
+        <Member Name="PassportIssuedDate" Caption="Дата оформления паспорта" />
+        <Member Name="PassportIssuedPlace" Caption="Место оформления паспорта" />
+        <Member Name="PassportNumber" Caption="Номер паспорта" />
+        <Member Name="PassportState" Caption="Состояние паспорта" />
+        <Member Name="PassportType" Caption="Тип паспорта" />
+        <Member Name="PersonalNumber" Caption="Личный номер" />
+        <Member Name="PersonInApplication" Caption="Лицо в обращении" />
+        <Member Name="VisaIsNotRequired" Caption="Виза не требуется" />
+        <Member Name="Visas" Caption="Визы" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IPassportIssuedPlace">
+      <OwnMembers>
+        <Member Name="PlaceOfIssue" Caption="Место оформления" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IPassportType">
+      <OwnMembers>
+        <Member Name="TypeOfPassport" Caption="Тип паспорта" />
+        <Member Name="TypeOfPassportL" Caption="Тип паспорта L" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IPersonInApplication">
+      <OwnMembers>
+        <Member Name="Address" Caption="Адрес" />
+        <Member Name="AddressOfResidence" Caption="Адрес проживания (В Туркменистане)" />
+        <Member Name="Application" Caption="Обращение" />
+        <Member Name="ApplicationType" Caption="Тип обращения" />
+        <Member Name="CheckPoint" Caption="Контроль пропускные пункты" />
+        <Member Name="Employee" Caption="Работник" />
+        <Member Name="EmployeeEntryDate" Caption="Дата въезда" />
+        <Member Name="FamilyMember" Caption="Член семъи" />
+        <Member Name="FamilyMemberEntryDate" Caption="Дата въезда" />
+        <Member Name="Invitation" Caption="Приглашение" />
+        <Member Name="NewVisa" Caption="Новая виза" />
+        <Member Name="NewWorkPermit" Caption="Новое трудовое разрешение" />
+        <Member Name="Passport" Caption="Паспорт" />
+        <Member Name="PersonState" Caption="Состояник" />
+        <Member Name="Position" Caption="Должность" />
+        <Member Name="PreviousPassport" Caption="Преждний паспорт" />
+        <Member Name="PurposeOfTrave" Caption="Цель поездки" />
+        <Member Name="RegistrationDate" Caption="Kaydetme tarih" />
+        <Member Name="RegistrationNumber" Caption="Kaydetme numara" />
+        <Member Name="RejectionLet" Caption="Отказное писъмо" />
+        <Member Name="Visa" Caption="Виза" />
+        <Member Name="VisaIssuedPlace" Caption="Место оформления визы" />
+        <Member Name="WorkPermit" Caption="Трудовое разрешение" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IPersonInResult">
+      <OwnMembers>
+        <Member Name="Invitation" Caption="Приглашение" />
+        <Member Name="Passport" Caption="Паспорт" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IPersonn">
+      <OwnMembers>
+        <Member Name="AddressOfResidences" Caption="Адрес проживания" />
+        <Member Name="BirthCountry" Caption="Страна рождения" />
+        <Member Name="BirthDate" Caption="Дата рождения" />
+        <Member Name="BirthPlace" Caption="Место рождения" />
+        <Member Name="Educations" Caption="Образование" />
+        <Member Name="Employee" Caption="Работник" />
+        <Member Name="EmployeeInApplications" Caption="Обращения для работника" />
+        <Member Name="EmployeeRelation" Caption="Родства сотрудника" />
+        <Member Name="FamilyMemberInApplications" Caption="Обращения для члена семъи" />
+        <Member Name="FamilyMemberRelation" Caption="Родства члена семъи" />
+        <Member Name="FamilyMembers" Caption="Члены семъи" />
+        <Member Name="FirstName" Caption="Имя" />
+        <Member Name="ForeignAddress" Caption="Адрес проживания за границей" />
+        <Member Name="ForeignAddressCountry" Caption="Страна проживания заграницей" />
+        <Member Name="FullName" Caption="Полное имя" />
+        <Member Name="Gender" Caption="Пол" />
+        <Member Name="IsEmployee" Caption="Сотрудник" />
+        <Member Name="IsFamilyMember" Caption="Член семъи" />
+        <Member Name="LastAddressOfResidence" Caption="Последний адрес проживания" />
+        <Member Name="LastInvitation" Caption="Последнее приглашение" />
+        <Member Name="LastName" Caption="Фамилия" />
+        <Member Name="LastPassport" Caption="Последний паспорт" />
+        <Member Name="LastPosition" Caption="Последняя должность" />
+        <Member Name="LastRegistration" Caption="Последняя регистрация" />
+        <Member Name="LastStrikeOff" Caption="Последнее снятие с учета" />
+        <Member Name="LastTravelInfo" Caption="Последняя поездка" />
+        <Member Name="LastVisa" Caption="Последняя виза" />
+        <Member Name="LastWorkPermit" Caption="Последнее трудовое разрешение" />
+        <Member Name="MaritalStatus" Caption="Семейное положение" />
+        <Member Name="MiddleName" Caption="Отчетсов" />
+        <Member Name="Passports" Caption="Паспорта" />
+        <Member Name="Photo" Caption="Фотография" />
+        <Member Name="RegistrationState" Caption="Состояние регистрации" />
+        <Member Name="TravelInformations" Caption="Поездки" />
+        <Member Name="WorkHistories" Caption="Трудовая история" />
+        <Member Name="WorkPermits" Caption="Трудовые разрешения" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IPosition">
+      <OwnMembers>
+        <Member Name="Code" Caption="Код долности" />
+        <Member Name="TitleOfPosition" Caption="Наименование должности" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IRegion">
+      <OwnMembers>
+        <Member Name="Cities" Caption="Города" />
+        <Member Name="NameOfRegion" Caption="Название велаята" />
+        <Member Name="NameOfRegionL" Caption="Название велаята L" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IRegistration" Caption="IKaydetmek">
+      <OwnMembers>
+        <Member Name="ManualApplicationDate" Caption="El ile tarih bermek" />
+        <Member Name="ManualApplicationNumber" Caption="Eli le numara berlem" />
+        <Member Name="RegistrationDate" Caption="Kaydetme tarih" />
+        <Member Name="RegistrationNumber" Caption="Kaydetme numara" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IRelation" Caption="IAkrabalık">
+      <OwnMembers>
+        <Member Name="Gender" Caption="Пол" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IŞäherEtrap">
+      <OwnMembers>
+        <Member Name="CityType" Caption="Тип города" />
+        <Member Name="Region" Caption="Велаят" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.ITravelInformation">
+      <OwnMembers>
+        <Member Name="CheckPoint" Caption="Контроль пропускные пункты" />
+        <Member Name="PurposeOfTravel" Caption="Цель поездки" />
+        <Member Name="TravelDate" Caption="Дата поездки" />
+        <Member Name="TravelType" Caption="Тип поездки" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IUrgency">
+      <OwnMembers>
+        <Member Name="ApplicationUrgency" Caption="Срочность обращения" />
+        <Member Name="ApplicationUrgencyH" Caption="Срочность обращения H" />
+        <Member Name="ApplicationUrgencyL" Caption="Срочность обращения  L" />
+        <Member Name="Priority" Caption="Приоритет" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IVisa">
+      <OwnMembers>
+        <Member Name="ASNumber" Caption="Номер прцесса" />
+        <Member Name="BorderZone" Caption="Пограничная зона" />
+        <Member Name="HasBorderZonePermit" Caption="Имеется разрешение для посещения погр. зоны" />
+        <Member Name="Passport" Caption="Паспорт" />
+        <Member Name="PersonInApplication" Caption="Лицо в обращении" />
+        <Member Name="ProcessNumber" Caption="Номер процесса" />
+        <Member Name="VisaCategory" Caption="Категория визы" />
+        <Member Name="VisaCopy" Caption="Копия визы" />
+        <Member Name="VisaEndDate" Caption="Дата окончания визы" />
+        <Member Name="VisaIssuedDate" Caption="Дата оформления визы" />
+        <Member Name="VisaIssuedPlace" Caption="Место оформления визы" />
+        <Member Name="VisaNumber" Caption="Номер визы" />
+        <Member Name="VisaStartDate" Caption="Дата началы визы" />
+        <Member Name="VisaState" Caption="Состояние визы" />
+        <Member Name="VisaType" Caption="Тип визы" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IVisaCategory">
+      <OwnMembers>
+        <Member Name="CategoryOfVisa" Caption="Категория визы" />
+        <Member Name="CategoryOfVisaL" Caption="Категория визы L" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IVisaIssuedPlace">
+      <OwnMembers>
+        <Member Name="FullDiscription" Caption="Полное описание" />
+        <Member Name="IssuedPlaceOfVisa" Caption="Место оформления визы" />
+        <Member Name="IssuedPlaceOfVisaL" Caption="Место оформления визы L" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IVisaPeriod">
+      <OwnMembers>
+        <Member Name="PeriodOfVisa" Caption="Срок визы" />
+        <Member Name="PeriodOfVisaL" Caption="Срок визы L" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IVisaType">
+      <OwnMembers>
+        <Member Name="TypeOfVisa" Caption="Тип визы" />
+        <Member Name="TypeOfVisaL" Caption="Тип визы L" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IWorkHistory">
+      <OwnMembers>
+        <Member Name="Company" Caption="Фирма" />
+        <Member Name="Department" Caption="Отдел" />
+        <Member Name="Employee" Caption="Работник" />
+        <Member Name="Position" Caption="Должность" />
+        <Member Name="StartDateOnThisPosition" Caption="Дата началы работы на должности" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IWorkPermit">
+      <OwnMembers>
+        <Member Name="AppruvalNumber" Caption="Номер труд. разрешения" />
+        <Member Name="ASNumber" Caption="Номер прцесса" />
+        <Member Name="Employee" Caption="Работник" />
+        <Member Name="ExpiringDateOfWorkPermit" Caption="Дата окончание труд. разрешения" />
+        <Member Name="Passport" Caption="Паспорт" />
+        <Member Name="PersonInApplication" Caption="Лицо в обращении" />
+        <Member Name="Position" Caption="Должность" />
+        <Member Name="ProcessNumber" Caption="Номер процесса" />
+        <Member Name="StartDateOfWorkPermit" Caption="Дата началы труд. разрешения" />
+        <Member Name="WorkPermitLetter" Caption="Писъмо труд. разрешения" />
+        <Member Name="WorkPermitLocation" Caption="Место работы в труд. разрешении" />
+        <Member Name="WorkPermitState" Caption="Состояние трудового разрешения" />
+      </OwnMembers>
+    </Class>
+    <Class Name="VISA2014.Module.DC.IWorkPermitLetter">
+      <OwnMembers>
+        <Member Name="Date" Caption="Дата" />
+        <Member Name="Number" Caption="Номер" />
+        <Member Name="WorkPermitCopy" Caption="Копия трудового разрешения" />
+        <Member Name="WorkPermits" Caption="Трудовые разрешения" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="VISA2014.Module.DC.ApplicationForEnum">
+        <LocalizationItem Name="Employee" Value="Работник" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.ApplicationResultEnum">
+        <LocalizationItem Name="Invitation" Value="Приглашение" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.ApplicationStateEnum">
+        <LocalizationItem Name="Cancelled" Value="İptal edilen" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.AppType">
+        <LocalizationItem Name="BorderZone" Value="Пограничная зона" />
+        <LocalizationItem Name="BuzinessTrip" Value="Командировка" />
+        <LocalizationItem Name="Invitation" Value="Приглашение" />
+        <LocalizationItem Name="Others" Value="Другие" />
+        <LocalizationItem Name="Registration" Value="Регистрация" />
+        <LocalizationItem Name="Visa" Value="Виза" />
+        <LocalizationItem Name="WorkPermit" Value="Трудовое разрешение" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.AppUrgency">
+        <LocalizationItem Name="Adaty" Value="Обычный" />
+        <LocalizationItem Name="Gyssagtly" Value="Срочный" />
+        <LocalizationItem Name="ÖränGyssagly" Value="Весъма срочный" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.ChangeInfoEnum">
+        <LocalizationItem Name="Address" Value="Адрес" />
+        <LocalizationItem Name="Passport" Value="Паспорт" />
+        <LocalizationItem Name="VisaCategory" Value="Категория визы" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.ChooseBorderZoneTypeEnum">
+        <LocalizationItem Name="BorderZoneForApplication" Value="Требуется  пограничная зона" />
+        <LocalizationItem Name="BorderZoneIsNotRequired" Value="Не требуется пограничная зона" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.CityTypeEnum">
+        <LocalizationItem Name="Etrap" Value="Етрап" />
+        <LocalizationItem Name="Şäher" Value="Город" />
+        <LocalizationItem Name="Şäherçe" Value="Поселок" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.GenderEnum">
+        <LocalizationItem Name="Aýal" Value="Ж" />
+        <LocalizationItem Name="Erkek" Value="М" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.InvitationStateEnum">
+        <LocalizationItem Name="Expired" Value="Истекший" />
+        <LocalizationItem Name="None" Value="Никакой" />
+        <LocalizationItem Name="Used" Value="Использованный" />
+        <LocalizationItem Name="Valid" Value="Действующий" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.MaritalStatus" Value="Семейное положение">
+        <LocalizationItem Name="Aýrylşan" Value="Разведенный" />
+        <LocalizationItem Name="Çaga" Value="Ребенок" />
+        <LocalizationItem Name="DurmuşaÇykan" Value="Замужем" />
+        <LocalizationItem Name="DurmuşaÇykmadyk" Value="Не замужем" />
+        <LocalizationItem Name="Öýlenen" Value="Женат" />
+        <LocalizationItem Name="Sallah" Value="Холост" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.PassportStateEnum">
+        <LocalizationItem Name="Expired" Value="Истекший" />
+        <LocalizationItem Name="Expiring" Value="Истекающий" />
+        <LocalizationItem Name="None" Value="Никакой" />
+        <LocalizationItem Name="Previous" Value="Преждний" />
+        <LocalizationItem Name="Valid" Value="Действуюший" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.PassportTypeEnum">
+        <LocalizationItem Name="Diplomatic" Value="Дипломатический" />
+        <LocalizationItem Name="Ordinary" Value="Обычный" />
+        <LocalizationItem Name="Service" Value="Служебный" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.PreferedVisaCategoryEnum">
+        <LocalizationItem Name="MultyToOnce" Value="M &gt;&gt; 1" />
+        <LocalizationItem Name="MultyToThree" Value="М&gt;&gt;3" />
+        <LocalizationItem Name="MultyToTwice" Value="M&gt;&gt;2" />
+        <LocalizationItem Name="OnceToMulty" Value="1&gt;&gt;M" />
+        <LocalizationItem Name="OnceToThree" Value="1&gt;&gt;3" />
+        <LocalizationItem Name="OnceToTwice" Value="1&gt;&gt;2" />
+        <LocalizationItem Name="ThreeToMulty" Value="3&gt;&gt;M" />
+        <LocalizationItem Name="ThreeToOnce" Value="3&gt;&gt;1" />
+        <LocalizationItem Name="ThreeToTwo" Value="3&gt;&gt;2" />
+        <LocalizationItem Name="TwoToMulty" Value="2&gt;&gt;M" />
+        <LocalizationItem Name="TwoToOnce" Value="2&gt;&gt;1" />
+        <LocalizationItem Name="TwoToThree" Value="2&gt;&gt;3" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.RegionEnum">
+        <LocalizationItem Name="AhalWelaýaty" Value="Ахалский велаят" />
+        <LocalizationItem Name="AşgabatŞäheri" Value="Город Ашхабат" />
+        <LocalizationItem Name="BalkanWelaýaty" Value="Валканский велаят" />
+        <LocalizationItem Name="DaşoguzWelaýaty" Value="Дашогузский велаят" />
+        <LocalizationItem Name="LebapWelaýaty" Value="Лебапкий велаят" />
+        <LocalizationItem Name="MaryWelaýaty" Value="Марыйский велаят" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.RelationEnum">
+        <LocalizationItem Name="Adamsy" Value="Муж" />
+        <LocalizationItem Name="Agtygy" Value="Внук" />
+        <LocalizationItem Name="Atasy" Value="Дедушка" />
+        <LocalizationItem Name="AýalDogany" Value="Сестра" />
+        <LocalizationItem Name="Aýaly" Value="Жена" />
+        <LocalizationItem Name="Ejesi" Value="Мать" />
+        <LocalizationItem Name="Enesi" Value="Бабушка" />
+        <LocalizationItem Name="ErkekDogany" Value="Брат" />
+        <LocalizationItem Name="Gyzy" Value="Дочь" />
+        <LocalizationItem Name="Kakasy" Value="Отец" />
+        <LocalizationItem Name="None" Value="Никакой" />
+        <LocalizationItem Name="Ogly" Value="Сын" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.StrikeOffTypeEnum">
+        <LocalizationItem Name="ChangingRegistrationLocation" Value="Изменение места регистрации" />
+        <LocalizationItem Name="LeavingTheCountry" Value="Уход из Туркменистана" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.SubType" Value="Тип обращения">
+        <LocalizationItem Name="ApplicationForBorderZonePermision" Value="Для разрешения в пограничную зону" />
+        <LocalizationItem Name="ApplicationForCameFromBusinessTrip" Value="О прибытии с командировки" />
+        <LocalizationItem Name="ApplicationForCancellingVisaAndWorkpermit" Value="Об аннулировании визы и трудового разрешения" />
+        <LocalizationItem Name="ApplicationForChagingInformation" Value="Об изменении данных" />
+        <LocalizationItem Name="ApplicationForChangingInvitation" Value="О Переоформлении приглашения" />
+        <LocalizationItem Name="ApplicationForChangingPassport" Value="О Переносе визы на новый паспорт" />
+        <LocalizationItem Name="ApplicationForChangingVisaCategory" Value="Об изменении катергории визы" />
+        <LocalizationItem Name="ApplicationForExtendingWorkPermitLocation" Value="О внесении доп. месты работу в труд. разрешение" />
+        <LocalizationItem Name="ApplicationForGoBusinessTrip" Value="Об убытии в командировку" />
+        <LocalizationItem Name="ApplicationForInvitation" Value="Для получения приглашения" />
+        <LocalizationItem Name="ApplicationForRegisteringToANewLocation" Value="О регистрации на новое место проживания" />
+        <LocalizationItem Name="ApplicationForRegistrationExtention" Value="О продлении регистрации" />
+        <LocalizationItem Name="ApplicationForRegistrationUpOnArrival" Value="О регистрации по прибытии в Туркменистан" />
+        <LocalizationItem Name="ApplicationForSevicePasport" Value="О приглащении со служебным паспортом" />
+        <LocalizationItem Name="ApplicationForStrikeOffRegister" Value="О снятии с учета" />
+        <LocalizationItem Name="ApplicationForVisaExtention" Value="О продлении срока визы" />
+        <LocalizationItem Name="None" Value="Никакой" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.TravelTypeEnum">
+        <LocalizationItem Name="Entry" Value="Въезд" />
+        <LocalizationItem Name="Exit" Value="Выезд" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.VisaCategoryEnum">
+        <LocalizationItem Name="BirGezeklik" Value="Отнократный" />
+        <LocalizationItem Name="IkiGezeklik" Value="Двухкратный" />
+        <LocalizationItem Name="KöpGezeklik" Value="Многократный" />
+        <LocalizationItem Name="ÜçGezeklik" Value="Трехкратный" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.VisaIssuedPlacesEnum">
+        <LocalizationItem Name="DaşaryÝurtda" Value="За границей" />
+        <LocalizationItem Name="Türkmenistanda" Value="В Туркменистане" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="VISA2014.Module.DC.WorkPermitStateEnum">
+        <LocalizationItem Name="Extended" Value="Продленный" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems>
+    <Items>
+      <Item Id="@01c2f835-4d77-4692-8d40-d2af5b78d556" Caption="Работник">
+        <Items>
+          <Item Id="@079d7bee-78cb-41f5-bd16-7e67f69c39e7" Caption="Работник" />
+        </Items>
+      </Item>
+      <Item Id="@5128c41d-c356-4e2e-a89f-ac755d27d281" Caption="Фирма">
+        <Items>
+          <Item Id="@7d2225bf-2848-41c0-8377-c7128dc4b85e" Caption="Информация о фирме" />
+          <Item Id="@bc90b80f-708e-4913-bcad-ed4c2d30132f" Caption="Контракты" />
+          <Item Id="@b3e59a60-25e6-469b-8faa-4de971ba0141" Caption="Представитель" />
+          <Item Id="@5fca9502-ab19-4fe4-946e-d7ad93e6c031" Caption="Должность" />
+          <Item Id="@aadbc579-3b62-43b1-95ef-7fbda01fec13" Caption="Отдел" />
+        </Items>
+      </Item>
+      <Item Id="@a888ed85-f5f9-4f16-9d93-541e1b03905a" Caption="Обращение">
+        <Items>
+          <Item Id="@df61ff93-d1b4-4a38-9bed-39339ba3d873" Caption="Обращение требующий согласвание с министерством" />
+          <Item Id="@9d99c219-90e5-404e-b3ed-f78a9c330bb0" Caption="Обрещение не требующий согласование" />
+          <Item Id="@dddc6172-96ff-4b9c-bb60-d45624d59110" Caption="Лицо в обращении" />
+        </Items>
+      </Item>
+      <Item Id="@c316144e-abb5-43eb-9181-29560ba6a64c" Caption="Член семъи">
+        <Items>
+          <Item Id="@33911403-6897-4d89-8f27-d7f51c9b80a3" Caption="Член семъи" />
+        </Items>
+      </Item>
+      <Item Id="@e5959fdc-21cd-411a-a7f7-93a39cd28773" Caption="Трудовое разрешение">
+        <Items>
+          <Item Id="@f129e3e7-5243-4a80-b88b-45c74df74a05" Caption="Писъмо труд. разрешения">
+            <Items>
+              <Item Id="@8293765b-e186-439b-9492-22dc45bc755c" Caption="Трудовое разрешение" />
+            </Items>
+          </Item>
+        </Items>
+      </Item>
+      <Item Id="Configuration" Caption="Кофигурация">
+        <Items>
+          <Item Id="@859f1934-22c0-4388-873e-507dcb03ea43" Caption="Обращение" />
+          <Item Id="@97870d99-4067-49dc-a575-736da117e932" Caption="Паспорт" />
+          <Item Id="@f058b89b-d0cf-4460-bdc7-46e28f9f8d12" Caption="Виза" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Views>
+    <ListView Id="ApplicationForEmployee" Caption="Работник" />
+    <ListView Id="ApplicationForFamilymember" Caption="Член семъи" />
+    <DetailView Id="ApplicationType_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ApplicationType" Caption="Тип обращения" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ApplicationTypeForEmployee_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ApplicationType" Caption="Тип обращения" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ApplicationTypeForFamilyMember_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ApplicationType" Caption="Тип обращения" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Employee_Invitation_Variable">
+      <Columns>
+        <ColumnInfo Id="Visaperiod" Caption="Срок визы" />
+      </Columns>
+    </ListView>
+    <ListView Id="Familymember_Invitation_Variable">
+      <Columns>
+        <ColumnInfo Id="Visaperiod" Caption="Срок визы" />
+      </Columns>
+    </ListView>
+    <ListView Id="FamilyMember_Invitation_Variable_">
+      <Columns>
+        <ColumnInfo Id="VisaCategory" Caption="Категория визы" />
+        <ColumnInfo Id="Visaperiod" Caption="Срок визы" />
+      </Columns>
+    </ListView>
+    <ListView Id="FamilyMember_PersonalData_Variable" Caption="Член семъи" />
+    <ListView Id="FamilyMemberInvitation_Variable" Caption="Приглашение" />
+    <ListView Id="FamilyMemberPassport_Variable_" Caption="Паспорт" />
+    <DetailView Id="IApplication_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="IApplication">
+                <LayoutGroup Id="IApplication_col1">
+                  <TabbedGroup Id="Item9">
+                    <LayoutGroup Id="PersonInApplication" Caption="Лицо в обращении" />
+                  </TabbedGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+            </TabbedGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IApplicationResult_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="IApplicationResult" Caption="Результат обращения" />
+              <LayoutGroup Id="Item2">
+                <LayoutGroup Id="CopyOfResult" Caption="Копия результата обращения " />
+              </LayoutGroup>
+            </TabbedGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ICompany_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ICompany_col1">
+              <LayoutGroup Id="Item3" Caption="Фирма" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IEducation_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="Item2" Caption="Копия диплома">
+                <LayoutGroup Id="DiplomaCopy_Group" Caption="Копия диплома" />
+              </LayoutGroup>
+            </TabbedGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IEmployee_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="IPersonn" Caption="Работник" />
+            </TabbedGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="EmployeeInApplications" Caption="Обращения для работника" />
+            <LayoutGroup Id="TravelInformations" Caption="Поездки" />
+            <LayoutGroup Id="AddressOfResidences" Caption="Адрес проживания" />
+            <LayoutGroup Id="Passports" Caption="Паспорта" />
+            <LayoutGroup Id="Educations" Caption="Образование" />
+            <LayoutGroup Id="FamilyMembers" Caption="Члены семъи" />
+            <LayoutGroup Id="WorkHistories" Caption="Трудовая история" />
+            <LayoutGroup Id="WorkPermits" Caption="Трудовые разрешения" />
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IFamilyMember_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="IPersonn" Caption="Член семъи" />
+            </TabbedGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="WorkHistories" Caption="Трудовая история" />
+            <LayoutGroup Id="Educations" Caption="Образование" />
+            <LayoutGroup Id="WorkPermits" Caption="Трудовые разрешения" />
+            <LayoutGroup Id="FamilyMembers" Caption="Члены семъи" />
+            <LayoutGroup Id="FamilyMemberInApplications" Caption="Обращения для члена семъи" />
+            <LayoutGroup Id="EmployeeInApplications" Caption="Обращения для работника" />
+            <LayoutGroup Id="TravelInformations" Caption="Поездки" />
+            <LayoutGroup Id="AddressOfResidences" Caption="Адрес проживания" />
+            <LayoutGroup Id="Passports" Caption="Паспорта" />
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="IFamilyMember_ListView_Visa_" Caption="Виза" />
+    <DetailView Id="ILongProcessApplication_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="IApplication">
+                <LayoutGroup Id="IApplication_col1">
+                  <LayoutGroup Id="Auto539fc28c-4f58-4310-837b-c00883c98629">
+                    <LayoutGroup Id="Item3" Caption="Обращение" />
+                  </LayoutGroup>
+                  <TabbedGroup Id="Item7">
+                    <LayoutGroup Id="PersonInApplication" Caption="Лицо в обращении" />
+                    <LayoutGroup Id="Invitations" Caption="Результат обращения" />
+                  </TabbedGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+            </TabbedGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IPassport_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="Item4" Caption="Копия паспорта">
+                <LayoutGroup Id="PassportCopy" Caption="Копия паспорта" />
+              </LayoutGroup>
+            </TabbedGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="Visas" Caption="Визы" />
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRegistration_DetailView" Caption="IKaydetmek">
+      <Items>
+        <PropertyEditor Id="RegistrationDate" Caption="Kaydetme tarih" />
+        <PropertyEditor Id="RegistrationNumber" Caption="Kaydetme numara" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRegistration" Caption="IKaydetmek" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="IRegistration_ListView">
+      <Columns>
+        <ColumnInfo Id="ManualApplicationDate" Caption="El ile tarih bermek" />
+        <ColumnInfo Id="ManualApplicationNumber" Caption="Eli le numara berlem" />
+      </Columns>
+    </ListView>
+    <DetailView Id="IRelation_DetailView" Caption="IAkrabalık">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRelation" Caption="IAkrabalık" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ISimpleProcessApplication_DetailView">
+      <Items>
+        <PropertyEditor Id="AppliedMinistery" Caption="Başvurulan bakanlık" />
+        <PropertyEditor Id="AutoRegistration" Caption="Otomatik numara bermek" />
+        <PropertyEditor Id="BaseApplicationType" Caption="Başvuru türü" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="IApplication">
+                <LayoutGroup Id="IApplication_col1">
+                  <LayoutGroup Id="Auto67a48f82-e96c-4f5c-bdfb-6ed9faac9ca4">
+                    <LayoutGroup Id="Item3" Caption="Обращение" />
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+            </TabbedGroup>
+            <TabbedGroup Id="Tabs">
+              <LayoutGroup Id="PersonInApplication" Caption="Лицо в обращении" />
+              <LayoutGroup Id="ApplicationResult" Caption="Результат обращения" />
+            </TabbedGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IVisa_DetailView">
+      <Items>
+        <PropertyEditor Id="ASNumber" Caption="Номер прцесса" />
+      </Items>
+    </DetailView>
+    <DetailView Id="IWorkPermitLetter_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IWorkPermitLetter">
+              <TabbedGroup Id="Item2">
+                <LayoutGroup Id="Item1" Caption="Писъмо труд. разрешения" />
+                <LayoutGroup Id="WorkPermitCopy" Caption="Копия трудового разрешения" />
+              </TabbedGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>
