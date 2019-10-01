@@ -22,6 +22,7 @@ namespace VISA2014.Module.DC
         VALID,
         EXPIRED,
         CANCELLED,
+        Cancelled,
       //  NONE_0,
       //  NONE_5,
       //  NONE_4,

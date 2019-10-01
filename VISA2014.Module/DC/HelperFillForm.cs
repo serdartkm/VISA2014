@@ -5,6 +5,7 @@ using System.Text;
 using Spire.Pdf;
 using Spire.Pdf.Widget;
 using System.Drawing;
+using VISA2014.Module.BusinessObjects;
 
 namespace VISA2014.Module.DC
 {
@@ -1066,18 +1067,38 @@ namespace VISA2014.Module.DC
                 }
             }
             else if (personInApp.Application.SubType == SubType.ApplicationForVisaExtention  | personInApp.Application.SubType== SubType.ApplicationForInvitation) {
-
+                // 14 BS1
+                //21 FM
+                //10 ex
+                //11 WP 
                 if (personInApp.AppliedPerson.IsEmployee)
                 {
                     //VISA GORNUSI //derejesi
                     if (loField is XfaChoiceListField && (loField as XfaChoiceListField).Name == "topmostSubform[0].Page2[0]._25[0]")
                     {
 
-                        if (personInApp.PersonType.IsEmployee && (personInApp.Application.SubType== SubType.ApplicationForVisaExtention ||
-                            personInApp.Application.SubType== SubType.ApplicationForInvitation || personInApp.Application.SubType== SubType.RugsatnamaMöhletineGöräÇakylyk||
-                            personInApp.Application.SubType== SubType.VisaExtentionAccordingToWorkPermit) && (personInApp.Application.IsInvitationWithWorkPermitVisibility || personInApp.Application.IsWizaWithWorkPermitVisibility))
+                        if (personInApp.PersonType.IsEmployee)
                         {
-                            (loField as XfaChoiceListField).SelectedItem = "11";
+                            if (personInApp.Application.IsInvitationWithWorkPermit !=null && personInApp.Application.IsInvitationWithWorkPermit.InvitationAndWorkPermitRequired == WPForInvitationRequired.InvitationAndWorkPermit)
+                            {
+                                (loField as XfaChoiceListField).SelectedItem = "11";
+                            }
+                            if (personInApp.Application.IsWizaWithWorkPermit !=null && personInApp.Application.IsWizaWithWorkPermit.WizaAndWorkPermitRequired == IsWPForWizaRequired.WizaAndWorkPermit)
+                            {
+                                (loField as XfaChoiceListField).SelectedItem = "11";
+                            }
+                        }
+
+                        if (personInApp.PersonType.IsEmployee)
+                        {
+                            if (personInApp.Application.IsInvitationWithWorkPermit != null && personInApp.Application.IsInvitationWithWorkPermit.InvitationAndWorkPermitRequired == WPForInvitationRequired.OnlyInvitation)
+                            {
+                                (loField as XfaChoiceListField).SelectedItem = "14";
+                            }
+                            if (personInApp.Application.IsWizaWithWorkPermit != null && personInApp.Application.IsWizaWithWorkPermit.WizaAndWorkPermitRequired == IsWPForWizaRequired.OnlyWiza)
+                            {
+                                (loField as XfaChoiceListField).SelectedItem = "14";
+                            }
                         }
 
                         else if (personInApp.PersonType.IsFamilyMember)
@@ -1091,7 +1112,7 @@ namespace VISA2014.Module.DC
                         }
                         else
                         {
-                            (loField as XfaChoiceListField).SelectedItem = "14";
+                            (loField as XfaChoiceListField).SelectedItem = "14"; 
 
                         }
 
