@@ -42,7 +42,7 @@ namespace VISA2014.Module.DC
                     if (personInApp.PersonType.IsEmployee)
                     {
                         FillEmploymentInfo(personInApp, loFields[i]);
-                        FillEmployeeVisaPeriodForExtention(personInApp, loFields[i]);
+                       FillEmployeeVisaPeriodForExtention(personInApp, loFields[i]);
                         FillEmployeeVisaPeriodForInvitation(personInApp, loFields[i]);
                         FillEducationInfo(personInApp, loFields[i]);
                     }
@@ -1077,29 +1077,27 @@ namespace VISA2014.Module.DC
                     if (loField is XfaChoiceListField && (loField as XfaChoiceListField).Name == "topmostSubform[0].Page2[0]._25[0]")
                     {
 
-                        if (personInApp.PersonType.IsEmployee)
-                        {
+                     
                             if (personInApp.Application.IsInvitationWithWorkPermit !=null && personInApp.Application.IsInvitationWithWorkPermit.InvitationAndWorkPermitRequired == WPForInvitationRequired.InvitationAndWorkPermit)
                             {
                                 (loField as XfaChoiceListField).SelectedItem = "11";
                             }
-                            if (personInApp.Application.IsWizaWithWorkPermit !=null && personInApp.Application.IsWizaWithWorkPermit.WizaAndWorkPermitRequired == IsWPForWizaRequired.WizaAndWorkPermit)
-                            {
-                                (loField as XfaChoiceListField).SelectedItem = "11";
-                            }
-                        }
+                       
+                        
 
-                        if (personInApp.PersonType.IsEmployee)
-                        {
+                     
                             if (personInApp.Application.IsInvitationWithWorkPermit != null && personInApp.Application.IsInvitationWithWorkPermit.InvitationAndWorkPermitRequired == WPForInvitationRequired.OnlyInvitation)
                             {
                                 (loField as XfaChoiceListField).SelectedItem = "14";
                             }
-                            if (personInApp.Application.IsWizaWithWorkPermit != null && personInApp.Application.IsWizaWithWorkPermit.WizaAndWorkPermitRequired == IsWPForWizaRequired.OnlyWiza)
+                         
+                            if (personInApp.Application.SubType == SubType.ApplicationForVisaExtention)
                             {
-                                (loField as XfaChoiceListField).SelectedItem = "14";
+                                (loField as XfaChoiceListField).SelectedItem = "11";
                             }
-                        }
+                        
+
+                            
 
                         else if (personInApp.PersonType.IsFamilyMember)
                         {
@@ -1179,9 +1177,9 @@ namespace VISA2014.Module.DC
 
             if (loField is XfaTextField && (loField as XfaTextField).Name == "topmostSubform[0].Page2[0]._38[0]")
             {
-                if (personInApp.Application.Bellik != null && personInApp.Application.Bellik.BelliklerL.Length> 0)
-                {
-                    (loField as XfaTextField).Value = UpdateHelperClasses.ReplaceLetters(personInApp.Application.Bellik.BelliklerL);
+                if (personInApp.Application.Bellik != null && !String.IsNullOrEmpty( personInApp.Application.Bellik.BelliklerL))
+               {
+                   (loField as XfaTextField).Value = UpdateHelperClasses.ReplaceLetters(personInApp.Application.Bellik.BelliklerL);
                 }
 
 
@@ -1191,8 +1189,10 @@ namespace VISA2014.Module.DC
 
             if (loField is XfaTextField && (loField as XfaTextField).Name == "topmostSubform[0].Page1[0]._23[0]")
             {
-
-                (loField as XfaTextField).Value = UpdateHelperClasses.ReplaceLetters(personInApp.PersonType.LastPosition.Position.TitleOfPosition);
+               if(personInApp.PersonType.LastPosition !=null && personInApp.PersonType.LastPosition.Position.TitleOfPosition.Length>0){
+                  (loField as XfaTextField).Value = UpdateHelperClasses.ReplaceLetters(personInApp.PersonType.LastPosition.Position.TitleOfPosition);
+                }
+             
 
             }
         }

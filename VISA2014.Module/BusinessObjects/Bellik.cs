@@ -35,7 +35,7 @@ namespace VISA2014.Module.BusinessObjects
         //// Fields...
 
         private string bellikler;
-
+        
         public string Bellikler
         {
             get
