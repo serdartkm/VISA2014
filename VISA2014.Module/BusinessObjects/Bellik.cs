@@ -61,6 +61,20 @@ namespace VISA2014.Module.BusinessObjects
                 SetPropertyValue("BelliklerL", ref belliklerL, value);
             }
         }
+
+        private string maksady;
+
+        public string Maksady
+        {
+            get
+            {
+                return maksady;
+            }
+            set
+            {
+                SetPropertyValue("Maksady", ref maksady, value);
+            }
+        }
     }
 
 }

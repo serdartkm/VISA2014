@@ -901,7 +901,6 @@ namespace VISA2014.Module.DC
             }
         }
 
-
         private static void FillFMVisaPeriodForExtention(IPersonInApplication personInApp, XfaField loField)
         {
             if (personInApp.Application.SubType == SubType.ApplicationForVisaExtention)
@@ -959,7 +958,6 @@ namespace VISA2014.Module.DC
             }
             
         }
-
 
         private static void FillEmployeeVisaPeriodForInvitation(IPersonInApplication personInApp, XfaField loField)
         {
@@ -1040,7 +1038,7 @@ namespace VISA2014.Module.DC
                 {
                     if (personInApp.Application.BorderZoneCollectionForLine != null)
                     {
-                        (loField as XfaTextField).Value = UpdateHelperClasses.ReplaceLetters(personInApp.Application.BorderZoneCollectionForLine);
+                        (loField as XfaTextField).Value =UpdateHelperClasses.ReplaceLetters(personInApp.Application.BorderZoneCollectionForLine).Trim() ;
                     }
 
 
@@ -1185,6 +1183,18 @@ namespace VISA2014.Module.DC
 
             }
 
+            //30.MAKSADY
+
+            if (loField is XfaTextField && (loField as XfaTextField).Name == "topmostSubform[0].Page2[0]._50[0]")
+            {
+                if (personInApp.Application.AnketaMaksat != null && !String.IsNullOrEmpty(personInApp.Application.AnketaMaksat.Maksat))
+                {
+                    (loField as XfaTextField).Value = UpdateHelperClasses.ReplaceLetters(personInApp.Application.AnketaMaksat.Maksat);
+                }
+
+
+            }
+
             //31.WEZIPESI
 
             if (loField is XfaTextField && (loField as XfaTextField).Name == "topmostSubform[0].Page1[0]._23[0]")
@@ -1268,5 +1278,6 @@ namespace VISA2014.Module.DC
 
             }
         }
+ 
     }
 }

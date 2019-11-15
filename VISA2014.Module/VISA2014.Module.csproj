@@ -143,6 +143,7 @@
     <Compile Include="BusinessObjects\Salary.cs" />
     <Compile Include="BusinessObjects\Taşaron.cs" />
     <Compile Include="BusinessObjects\UserCode.cs" />
+    <Compile Include="DC\IAnketaMaksat.cs" />
     <Compile Include="DC\VisaStateHelper.cs" />
     <Compile Include="DC\CreateMergedPDF.cs" />
     <Compile Include="DC\FamilyProofDocument.cs" />

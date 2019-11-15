@@ -110,7 +110,7 @@ namespace VISA2014.Module
             //Invitation
 
             XafTypesInfo.Instance.RegisterEntity("ApplicationResult", typeof(IApplicationResult));
-          
+            XafTypesInfo.Instance.RegisterEntity("AnketaMaksat", typeof(IAnketaMaksat));
        
             XafTypesInfo.Instance.RegisterEntity("PersonInInvitation", typeof(IPersonInResult));
             XafTypesInfo.Instance.RegisterEntity("BorderZoneForVisa", typeof(IBorderZoneForVisa));

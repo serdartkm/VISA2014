@@ -907,6 +907,7 @@ namespace VISA2014.Module.DC
 
         Bellik Bellik { get; set; }
 
+        IAnketaMaksat AnketaMaksat { get; set; }
 
 
         IList<DevExpress.Persistent.BaseImpl.AuditDataItemPersistent> ChangeHistory { get; }
