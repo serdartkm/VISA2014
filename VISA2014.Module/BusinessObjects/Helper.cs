@@ -2767,13 +2767,11 @@ namespace VISA2014.Module.BusinessObjects
                         return SubType.ApplicationForStrikeOffRegister;
                     case SubType.ApplicationForExitVisa:
                         return SubType.ApplicationForExitVisa;
+                    case SubType.ApplicationForCancellingWorkPermitAndInvitation:
+                        return SubType.ApplicationForCancellingWorkPermitAndInvitation;
 
                     default: return SubType.None;
                 }
-
-
-
-
 
 
             }
