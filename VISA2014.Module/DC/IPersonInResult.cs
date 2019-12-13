@@ -54,8 +54,7 @@ namespace VISA2014.Module.DC
 "Iºgäri saýlamaly", SkipNullOrEmptyValues = false)]
 
 
-    [RuleCriteria("PersonIsValid", DefaultContexts.Save, "PersonIsValid =true",
-"Bu raýat çakylyk üçin ýüztutmada ýok", SkipNullOrEmptyValues = false)]
+   // [RuleCriteria("PersonIsValid", DefaultContexts.Save, "PersonIsValid =true","Bu raýat çakylyk üçin ýüztutmada ýok", SkipNullOrEmptyValues = false)]
 
 
     [RuleCombinationOfPropertiesIsUnique("UniqueCivil", DefaultContexts.Save, "AppliedCivil, Invitation ", MessageTemplateCombinationOfPropertiesMustBeUnique = "Bu raýat çakylyga goºulan.")]
